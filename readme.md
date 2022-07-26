@@ -8,7 +8,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Code we are proud of](#code-we-are-proud-of)
 - [Author](#author)
 
 
@@ -19,8 +19,8 @@
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- 
+- 
 
 
 ### Links
@@ -36,32 +36,24 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
+- Django
 
 
-### What I learned
+### Code We are proud of
 
-```html
-<p class="price"> <p id="new-price">$149.99</p>
-        <strike><p id="old-price">$169.99</p></strike>
-      </p>
+```HTML
+
+
 ```
-```css
-.btn:hover {
-    font-family: 'Montserrat', sans-serif; 
-    background: var(--darker);
-    text-decoration: none;
-}
+
+```CSS
+
 ```
+
 ```JS
-<script>
-    if(screen.width <= 380){
-      document.getElementById("goods").src="images/image-product-mobile.jpg"
-    }
-  </script>
+
 ```
 
+```Python
 
-### Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+```
