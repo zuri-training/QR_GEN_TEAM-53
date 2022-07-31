@@ -6,5 +6,12 @@
 </head>
 <body>
     <h1>HELOO</h1>
+    {% if user.is_authenticated %}
+
+    <h1>Your name is: {{ user.username }}</h1>
+    {% else %}
+    <h1>You arent logged in</h1>
+    {% endif %}
+
 </body>
 </html>
