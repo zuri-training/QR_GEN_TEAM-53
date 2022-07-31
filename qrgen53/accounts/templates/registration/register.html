@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-</head>
-<body>
-    <h1>Registration page</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/80acf0b03b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/qrgen53/accounts/static/style.css">
+    <title>Sign-In</title>
+  </head>
+  <body class="signup-body">
 
-    <form method="post" action="{% url 'register' %}">
-        {% csrf_token %}
+    <header class="header-signup">
+      <div class="logo-container">
+        <img src="/qrgen53/accounts/static/images/Logo.svg" alt="Site Logo">
+      </div>
+    </header>
 
-        {% if form.errors %}
-        <p>There are errors</p>
-        {% endif %}
+    <main class="signup-container">
 
-        {{ form }}
-        <input type="submit" value="Register">
-    </form>
-</body>
+      <div class="signup-img">
+        <img src="/qrgen53/accounts/static/images/unsplash_RII9HuLDz4M.png" alt="Scanning QR-Code on Table">
+
+      </div>
+
+      <div class="signup-content">
+        <div class="signup-header">
+          <h2>Create an Account</h2>
+        </div>
+
+        <form action="" class="signup-form">
+          <div class="input-container">
+            <label for="signup-email">Email</label>
+            <input
+              type="email"
+              name="signup-email"
+              id="signup-email"
+              class="signup-input"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="signup-password">Password</label>
+            <input
+              type="password"
+              name="signup-password"
+              id="signup-email"
+              class="signup-input"
+              placeholder="************"
+              required
+            />
+            <i class="fa-regular fa-eye-slash togglePassword"></i>
+          </div>
+
+          
+          <div class="input-container">
+              <input 
+              type="submit" 
+              value="Sign up" 
+              class="signup-btn">
+          </div>
+
+        </form>
+
+        <div class="Privacy-policy">
+            <p>By creating this account you agree to our <a href="#"> Privacy policy</a></p> 
+          </div>
+
+        <div class="signup-divider">
+            <p><span>or</span></p>
+        </div>
+
+        <div class="google-signup-container">
+            <button>Sign up with Google</button>
+        </div>
+
+
+        <div class="acc-login">
+            <p>Already have an Account?<a href="#"> Login </a></p>
+        </div>
+
+      </div>
+    </main>
+  </body>
 </html>
