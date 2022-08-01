@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 
+
 def index(request):
     return render(request, 'accounts/index.html')
 
@@ -22,5 +23,5 @@ def register(request):
         form = UserCreationForm()
 
     form = UserCreationForm()
-    context = {'form' : form}
+    context = {'form': form}
     return render(request, 'registration/register.html', context)

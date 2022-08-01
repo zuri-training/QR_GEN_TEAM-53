@@ -1,4 +1,4 @@
-
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,30 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/80acf0b03b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/qrgen53/accounts/static/style.css">
-    <title>Sign-In</title>
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
+    <title>Login</title>
   </head>
   <body class="signin-body">
 
     <header class="header-signin">
       <div class="logo-container">
-        <img src="/qrgen53/accounts/static/images/Logo.svg" alt="Site Logo">
+        <img src="{% static 'accounts/images/Logo.svg' %}" alt="Site Logo">
       </div>
     </header>
 
     <main class="signin-container">
 
       <div class="signin-img">
-        <img src="/qrgen53/accounts/static/images/unsplash_EPeK7w5Eeic.png" alt="Scanning QR-Code">
+        <img src="{% static 'accounts/images/unsplash_EPeK7w5Eeic.png' %}" alt="Scanning QR-Code">
 
       </div>
 
       <div class="signin-content">
         <div class="signin-header">
-          <h2>Welcome Back <img class="emoji" src="/qrgen53/accounts/static/images/Emoji.svg" alt="Hand-waving Emoji"></h2>
+          <h2>Welcome Back <img class="emoji" src="{% static 'accounts/images/Emoji.svg' %}" alt="Hand-waving Emoji"></h2>
         </div>
 
-        <form action="" class="signin-form">
+        <form action="{% url 'login' %}" class="signin-form">
+          {% csrf_token %}
           <div class="input-container">
             <label for="signin-email">Email</label>
             <input
@@ -48,7 +49,7 @@
             <input
               type="password"
               name="signin-password"
-              id="signin-email"
+              id="signin-password"
               class="signin-input"
               placeholder="************"
               required
@@ -64,8 +65,10 @@
           <div class="input-container">
               <input 
               type="submit" 
-              value="Sign in" 
+              value="login"
               class="signin-btn">
+
+              <input type="hidden" name="next" value="{{ next }}" >
           </div>
 
         </form>
