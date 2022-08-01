@@ -28,7 +28,8 @@
           <h2>Create an Account</h2>
         </div>
 
-        <form action="" class="signup-form">
+        <form action="{% url 'register' %}" class="signup-form">
+          {% csrf_token %}
           <div class="input-container">
             <label for="signup-email">Email</label>
             <input
@@ -46,7 +47,7 @@
             <input
               type="password"
               name="signup-password"
-              id="signup-email"
+              id="signup-password"
               class="signup-input"
               placeholder="************"
               required
