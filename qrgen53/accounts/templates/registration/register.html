@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,21 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/80acf0b03b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/qrgen53/accounts/static/style.css">
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
     <title>Sign-In</title>
   </head>
   <body class="signup-body">
 
     <header class="header-signup">
       <div class="logo-container">
-        <img src="/qrgen53/accounts/static/images/Logo.svg" alt="Site Logo">
+        <img src="{% static 'accounts/images/Logo.svg' %}" alt="Site Logo">
       </div>
     </header>
 
     <main class="signup-container">
 
       <div class="signup-img">
-        <img src="/qrgen53/accounts/static/images/unsplash_RII9HuLDz4M.png" alt="Scanning QR-Code on Table">
+        <img src="{% static 'accounts/images/unsplash_RII9HuLDz4M.png' %}" alt="Scanning QR-Code on Table">
 
       </div>
 
