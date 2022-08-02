@@ -39,8 +39,8 @@ User: Authenticated
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Sign-up page: [sign up](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-up.html)
+- Sign-in page: [sign in](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-up.html)
 
 ## My process
 
