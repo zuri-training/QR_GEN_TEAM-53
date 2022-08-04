@@ -3,9 +3,13 @@ from django.db import models
 
 # Create your models here.
 class QRcode(models.Model):
-    title = models.TextField()
-    owner = models.TextField()
-    date_created = models.TimeField()
+    title = models.CharField(
+        max_length=50,
+    )
+    owner = models.CharField(
+        max_length=50, 
+    )
+    date_created = models.TimeField(auto_now=True)
     base_url =  models.TextField()
     type_qr = models.TextField()
     stats = models.IntegerField()
