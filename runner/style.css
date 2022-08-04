@@ -1,12 +1,28 @@
-/* Montserrat font link */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* import Glimer font from local file*/
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+    font-weight: lighter;
+}
 
 :root {
     --primary-color: #061232;
     --text-color: #061232;
     --placeholder-color: rgba(6, 18, 50, 0.4);
     --link-color: #007370;
-    --primary-font: 'Montserrat', sans-serif;
+    --input-active: #4375FA;
 }
 
 html {
@@ -24,7 +40,7 @@ html {
 }
 
 .header-signin, .header-signup {
-    width: 90vw;
+    width: 70vw;
     margin: 1rem auto 0;
 }
 
@@ -34,8 +50,8 @@ html {
 }
 
 .signin-container, .signup-container {
-    font-family: var(--primary-font);
-    width: 80vw;
+    font-family: 'Glimer', sans-serif;
+    width: 70vw;
     display: grid;
     grid-template-areas: "info content";
     grid-template-columns: 1fr 1fr;
@@ -52,14 +68,13 @@ html {
 .signin-img > img, .signup-img > img {
     max-width: 100%;
     height: auto;
-    box-shadow: -10px 10px 5px 0px rgba(6, 18, 50, 0.8);
-    border-radius: 16px;
 }
 
 .signin-content, .signup-content  {
     grid-area: content;
     text-align: center;
-    max-width: 490px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .signin-header, .signup-header {
@@ -84,7 +99,14 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2.438rem;
+}
+
+.password-container {
+    margin-top: 3.18rem;
+}
+
+.submit-btn-container {
+    margin-bottom: 2.13rem;
 }
 
 .input-container label {
@@ -93,6 +115,7 @@ html {
     margin-bottom: 0.313rem;
     color: var(--text-color);
 }
+
 .signin-input, .signup-input {
     width: 100%;
     padding: 1.188rem 1rem;
@@ -100,28 +123,25 @@ html {
     color: var(--text-color);
     background-color: #fff;
     background-clip: padding-box;
-    border: none;
-    border-bottom: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
 }
 
+.signin-input:focus, .signup-input:focus {
+    border-color: var(--input-active);
+    outline: none;
+}
+
 .signin-input::placeholder, .signup-input::placeholder {
-    font-family: inherit;
+    font-family: 'Glimer', sans-serif;
     color: var(--placeholder-color);
     font-size: 0.875rem;
 }
 
-.togglePassword {
-    color: var(--primary-color);
-    text-align: right;
-    margin-top: -30px;
-    margin-right: 10px;
-    cursor: pointer;
-}
 
 .forgot-pw {
     text-align: right;
-    margin-top: 3.2rem;
+    margin-top: 0.69rem;
     margin-bottom: 1.94rem;
 }
 
