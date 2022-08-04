@@ -30,7 +30,7 @@
           <h2>Welcome Back <img class="emoji" src="{% static 'accounts/images/Emoji.svg' %}" alt="Hand-waving Emoji"></h2>
         </div>
 
-        <form action="{% url 'login' %}" class="signin-form">
+        <form method='POST' action="{% url 'login' %}" class="signin-form">
           {% csrf_token %}
           <div class="input-container">
             <label for="signin-email">Email</label>
@@ -83,7 +83,7 @@
 
 
         <div class="create-acc">
-            <p>Don't have an Account?<a href="#">  Create an account</a></p>
+            <p>Don't have an Account?<a href="{% url 'register' %}">  Create an account</a></p>
         </div>
 
       </div>

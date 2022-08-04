@@ -30,7 +30,7 @@
           <h2>Create an Account</h2>
         </div>
 
-        <form action="{% url 'register' %}" class="signup-form">
+        <form method='POST' action="{% url 'register' %}" class="signup-form">
           {% csrf_token %}
           <div class="input-container">
             <label for="signup-email">Email</label>
@@ -81,7 +81,7 @@
 
 
         <div class="acc-login">
-            <p>Already have an Account?<a href="#"> Login </a></p>
+            <p>Already have an Account?<a href="{% url 'login' %}"> Login </a></p>
         </div>
 
       </div>
