@@ -86,7 +86,7 @@ html {
 .signin-header h2, .signup-header h2 {
     font-size: 3rem;
     font-weight: 700;
-    line-break: 1.4;
+    line-height: 1.4;
 }
 
 .signin-form, .signup-form {
