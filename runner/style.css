@@ -73,14 +73,14 @@ html {
 .signin-content, .signup-content  {
     grid-area: content;
     text-align: center;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
 }
 
 .signin-header, .signup-header {
     color: var(--text-color);
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .signin-header h2, .signup-header h2 {
@@ -90,7 +90,8 @@ html {
 }
 
 .signin-form, .signup-form {
-    max-width: 490px;
+    max-width: 360px;
+    margin: 0 auto;
     text-align: left;
 }
 
