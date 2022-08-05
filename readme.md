@@ -40,7 +40,7 @@ User: Authenticated
 ### Links
 
 - Sign-up page: [sign up](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-up.html)
-- Sign-in page: [sign in](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-up.html)
+- Sign-in page: [sign in](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-in.html)
 
 ## My process
 
