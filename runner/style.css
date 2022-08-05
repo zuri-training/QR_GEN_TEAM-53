@@ -66,6 +66,10 @@ html {
     margin-bottom: 2.63rem;
 }
 
+.new-password-logo > img {
+    margin-bottom: 4.69rem;
+}
+
 .logo-container img {
     max-width: 100%;
     height: auto;
@@ -234,6 +238,14 @@ html {
 .forgot-pw-btn {
     width: 100%;
     margin-top: 5.75rem;
+}
+
+.new-password {
+    margin-top: 4.06rem;
+}
+
+.confirm-password {
+    margin-top: 4.38rem;
 }
 
 .signin-divider p, .signup-divider p {
