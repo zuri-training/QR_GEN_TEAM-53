@@ -155,7 +155,7 @@ html {
 }
 
 
-.signin-form, .signup-form {
+.signin-form, .signup-form, .digit-group {
     max-width: 360px;
     margin: 0 auto;
     text-align: left;
@@ -192,6 +192,29 @@ html {
     background-clip: padding-box;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+}
+
+.otp-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.25rem;
+}
+
+.otp-code > input {
+    font-size: 3.3rem;
+    line-height: 50px;
+    font-family: 'Glimer', sans-serif;
+    text-align: center;
+    width: 66px;
+    height: 66px;
+    margin-right: 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 4px;
+}
+
+.otp-code:last-child {
+    margin-right: 0px;
 }
 
 .forgot-pw-email {
@@ -275,6 +298,18 @@ html {
 }
 .Privacy-policy {
     margin-bottom: 1.5rem;
+}
+
+.no-code-container {
+    margin-top: 2.2rem;
+}
+
+.no-code {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .create-acc p, .acc-login p, .Privacy-policy p a {
