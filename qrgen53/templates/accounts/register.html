@@ -36,7 +36,7 @@
             <label for="signup-email">Email</label>
             <input
               type="email"
-              name="signup-email"
+              name="{{ 'username' }}"
               id="signup-email"
               class="signup-input"
               placeholder="example@gmail.com"
@@ -48,8 +48,19 @@
             <label for="signup-password">Password</label>
             <input
               type="password"
-              name="signup-password"
+              name="{{ 'password1' }}"
               id="signup-password"
+              class="signup-input"
+              placeholder="************"
+              required
+            />
+            <i class="fa-regular fa-eye-slash togglePassword"></i>
+
+            <label for="signup-password2">Re enter password</label>
+            <input
+              type="password"
+              name="{{ 'password2' }}"
+              id="signup-password2"
               class="signup-input"
               placeholder="************"
               required

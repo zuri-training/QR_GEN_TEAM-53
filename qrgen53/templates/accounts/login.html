@@ -36,7 +36,7 @@
             <label for="signin-email">Email</label>
             <input
               type="email"
-              name="signin-email"
+              name="{{ 'username' }}"
               id="signin-email"
               class="signin-input"
               placeholder="example@gmail.com"
@@ -48,7 +48,7 @@
             <label for="signin-password">Password</label>
             <input
               type="password"
-              name="signin-password"
+              name="{{ 'password1' }}"
               id="signin-password"
               class="signin-input"
               placeholder="************"
@@ -68,7 +68,7 @@
               value="login"
               class="signin-btn">
 
-              <input type="hidden" name="next" value="{{ next }}" >
+              <input type="hidden" name="next" value="{% url 'register' %}" >
           </div>
 
         </form>
