@@ -20,7 +20,7 @@
 :root {
     --primary-color: #061232;
     --text-color: #061232;
-    --placeholder-color: rgba(6, 18, 50, 0.4);
+    --placeholder-color: rgba(6, 18, 50, 0.5);
     --link-color: #007370;
     --input-active: #4375FA;
 }
@@ -39,9 +39,31 @@ html {
     background-color: #fff;
 }
 
+.canva-body {
+    height: 90vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canva-container {
+    text-align: center;
+}
+
 .header-signin, .header-signup {
     width: 70vw;
     margin: 1rem auto 0;
+}
+
+.canva-header {
+    text-align: center;
+}
+
+.canva-header > img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2.63rem;
 }
 
 .logo-container img {
@@ -58,6 +80,33 @@ html {
     justify-content: center;
     gap: 20px;
     margin: 4rem auto 0;
+}
+
+.forgot-pw-container {
+    font-family: 'Glimer', sans-serif;
+}
+
+.forgot-pw-container > h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 0.63rem;
+}
+
+.forgot-pw-container > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--text-color);
+    margin-bottom: 1.56rem;
+}
+
+.forgot-pw-container > p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 5.06rem;
 }
 
 .signin-img, .signup-img {
@@ -89,6 +138,19 @@ html {
     line-height: 1.4;
 }
 
+.forgot-pw-form {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.forgot-pw-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .signin-form, .signup-form {
     max-width: 360px;
     margin: 0 auto;
@@ -110,14 +172,14 @@ html {
     margin-bottom: 2.13rem;
 }
 
-.input-container label {
+.input-container label, .forgot-pw-email-container label {
     font-size: 1.125rem;
     line-height: 1.1;
     margin-bottom: 0.313rem;
     color: var(--text-color);
 }
 
-.signin-input, .signup-input {
+.signin-input, .signup-input, .forgot-pw-email {
     width: 100%;
     padding: 1.188rem 1rem;
     font-size: 0.85rem;
@@ -128,12 +190,16 @@ html {
     border-radius: 4px;
 }
 
-.signin-input:focus, .signup-input:focus {
+.forgot-pw-email {
+    margin-top: 0.31rem
+}
+
+.signin-input:focus, .signup-input:focus, .forgot-pw-email:focus {
     border-color: var(--input-active);
     outline: none;
 }
 
-.signin-input::placeholder, .signup-input::placeholder {
+.signin-input::placeholder, .signup-input::placeholder, .forgot-pw-email::placeholder {
     font-family: 'Glimer', sans-serif;
     color: var(--placeholder-color);
     font-size: 0.875rem;
@@ -153,7 +219,7 @@ html {
     line-height: 1.2;
 }
 
-.signin-btn, .signup-btn {
+.signin-btn, .signup-btn, .forgot-pw-btn {
     padding: 1.125rem 0;
     font-size: 1rem;
     font-family: inherit;
@@ -161,7 +227,13 @@ html {
     background-color: var(--primary-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+.forgot-pw-btn {
+    width: 100%;
+    margin-top: 5.75rem;
 }
 
 .signin-divider p, .signup-divider p {
