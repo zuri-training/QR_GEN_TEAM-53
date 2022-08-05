@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/80acf0b03b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Sign-In</title>
+    <title>Sign-Up</title>
   </head>
   <body class="signup-body">
 
@@ -41,21 +41,32 @@
             />
           </div>
 
-          <div class="input-container">
+          <div class="input-container password-container">
             <label for="signup-password">Password</label>
             <input
               type="password"
               name="signup-password"
-              id="signup-email"
+              id="signup-password"
               class="signup-input"
               placeholder="************"
               required
             />
-            <i class="fa-regular fa-eye-slash togglePassword"></i>
+          </div>
+
+          <div class="input-container password-container">
+            <label for="confirm-signup-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-signup-password"
+              id="confirm-signup-password"
+              class="signup-input"
+              placeholder="************"
+              required
+            />
           </div>
 
           
-          <div class="input-container">
+          <div class="input-container submit-btn-container password-container">
               <input 
               type="submit" 
               value="Sign up" 
