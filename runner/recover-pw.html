@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Recovery</title>
+  </head>
+  <body class="canva-body">
+    <div class="canva-container">
+      <header class="canva-header">
+        <img src="images/Logo.svg" alt="Site Logo" />
+      </header>
+      <main>
+        <section class="forgot-pw-container">
+          <h2>Reset Password</h2>
+          <h3>Enter the code received</h3>
+
+          <form
+            method=""
+            class="digit-group"
+            data-group-name="digits"
+            data-autosubmit="false"
+            autocomplete="off"
+          >
+            <div class="otp-code">
+                <input
+                  type="text"
+                  id="digit-1"
+                  name="digit-1"
+                  data-next="digit-2"
+                  maxlength="1"
+                  required
+                />
+                <input
+                  type="text"
+                  id="digit-2"
+                  name="digit-2"
+                  data-next="digit-3"
+                  data-previous="digit-1"
+                  maxlength="1"
+                  required
+                />
+                <input
+                  type="text"
+                  id="digit-3"
+                  name="digit-3"
+                  data-next="digit-4"
+                  data-previous="digit-2"
+                  maxlength="1"
+                  required
+                />
+                <input
+                  type="text"
+                  id="digit-4"
+                  name="digit-4"
+                  data-previous="digit-3"
+                  maxlength="1"
+                  required
+                />
+            </div>
+
+            <div class="forgot-pw-btn-container">
+                <input
+                type="submit"
+                value="Continue"
+                class="forgot-pw-btn"
+                >
+            </div>
+
+          </form>
+
+          <div class="no-code-container">
+            <a href="#" class="no-code">Didn’t receive any code?</a>
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
