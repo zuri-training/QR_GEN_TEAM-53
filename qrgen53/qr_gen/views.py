@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import QRcode
 from .forms import QrcodeCreate
+from .qr import *
+
 
 
 # Create your views here.
@@ -24,6 +26,7 @@ def qrcode_create_view(request):
     form = QrcodeCreate(request.POST)
     if form.is_valid():
         form.save()
+
         form = QrcodeCreate()
 
     context = {'form': form}

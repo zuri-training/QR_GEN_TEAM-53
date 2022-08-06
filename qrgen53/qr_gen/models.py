@@ -9,4 +9,9 @@ class QRcode(models.Model):
     date_created = models.DateField(auto_now=True)
     base_url = models.TextField()
     type_qr = models.TextField()
+    light = models.CharField(default='white')
+    dark = models.CharField(default='black')
     stats = models.IntegerField(default=0)
+
+
+
