@@ -6,15 +6,10 @@ from django.contrib.auth import authenticate, login
 def register_view(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
-        print(form)
-        print(form.cleaned_data['username'], form.cleaned_data['password1'])
-        print(form.is_valid())
-        print(form.errors)
         # TODO: handle user already exists error
         if form.is_valid():
             form.validate_unique()
             form.save()
-            print("in")
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
             user = authenticate(username=username, password=password)
