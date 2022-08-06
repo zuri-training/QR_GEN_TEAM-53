@@ -324,8 +324,8 @@ html {
     color: var(--link-color);
 }
 
-/* mobile and tablet views */
- @media (max-width: 850px) {
+/* mobile view */
+ @media (max-width: 480px) {
     
     .header-signin, .header-signup {
         width: 80vw;
