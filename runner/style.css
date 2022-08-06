@@ -255,7 +255,7 @@ html {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 .forgot-pw-btn {
