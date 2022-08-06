@@ -28,7 +28,7 @@ urlpatterns = [
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
     path('dashboard/', dashboard_view, name='dashboard'),
-    path('details/<int:id>/', qrcode_detail_dy_view, name='qr_details'),
+    path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
     path('create/', qrcode_create_view, name='qr_create'),
     path('admin/', admin.site.urls),
     # path('', include('home.urls')),
