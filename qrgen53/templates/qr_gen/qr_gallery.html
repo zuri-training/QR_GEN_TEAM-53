@@ -6,5 +6,12 @@
 </head>
 <body>
 
+
+{% for instance in object_list %}
+    <p> <a href="{{ instance.get_absolute_url }}">{{ instance.title }}</a></p>
+
+{% endfor %}
+
+
 </body>
 </html>

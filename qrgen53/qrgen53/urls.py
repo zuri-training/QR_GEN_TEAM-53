@@ -19,7 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from home.views import home_view, contact_view, about_view
 from accounts.views import register_view, login_view, dashboard_view
-from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view
+from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view
 
 urlpatterns = [
     path('', home_view, name='home'),
@@ -27,10 +27,14 @@ urlpatterns = [
     path('about/', about_view, name='about'),
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
+
     path('dashboard/', dashboard_view, name='dashboard'),
+    path('gallery/', qrcode_gallery_view, name='gallery'),
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
+    path('details/<int:qr_id>/delete', qrcode_delete_view, name='qr_delete'),
     path('create/', qrcode_create_view, name='qr_create'),
     path('admin/', admin.site.urls),
+    # path('/<int:user_id>/dashboard/', dashboard_view, name='dashboard')
     # path('', include('home.urls')),
     # path('register/', include('django.contrib.auth.urls'))
 

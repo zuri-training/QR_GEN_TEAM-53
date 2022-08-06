@@ -28,6 +28,15 @@ def register_view(request):
 
 
 def login_view(request):
+    """
+    if request.method == "POST":
+        # TODO: fix the login
+        form =
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)"""
     return render(request, 'accounts/login.html')
 
 

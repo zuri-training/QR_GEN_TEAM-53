@@ -8,5 +8,17 @@
 </head>
 <body>
 
+<form action="." method="post">
+    {% csrf_token %}
+    <h1>
+        Do you want to delete the QRcode "{{ object.title }}"?
+    </h1>
+    <p>
+        <input type="submit" value="Yes"> <a href="../">Cancel</a>
+    </p>
+
+
+</form>
+
 </body>
 </html>

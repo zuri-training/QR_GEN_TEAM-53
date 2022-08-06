@@ -13,5 +13,9 @@ class QRcode(models.Model):
     dark = models.CharField(max_length=15, default='black')
     stats = models.IntegerField(default=0)
 
+    def get_absolute_url(self):
+        return f"/details/{self.id}/"
+
+
 
 
