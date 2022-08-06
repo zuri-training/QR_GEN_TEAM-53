@@ -323,3 +323,78 @@ html {
     text-decoration: none;
     color: var(--link-color);
 }
+
+/* mobile and tablet views */
+ @media (max-width: 850px) {
+    
+    .header-signin, .header-signup {
+        width: 80vw;
+    }
+
+    .logo-container img {
+        width: 80px;
+    } 
+
+    .signin-container, .signup-container {
+        width: 80vw;
+        grid-template-areas: "info"
+                            "content";
+        grid-template-columns: none;
+        gap: unset;
+        margin: 2rem auto 0;
+    }
+
+    .signin-img, .signup-img {
+        display: none;
+    }
+
+    .signin-content, .signup-content {
+        width: 100%;
+    }
+
+    .signin-header h2, .signup-header h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .input-container label, .forgot-pw-email-container label {
+        font-size: 1rem;
+    }
+
+    .password-container {
+        margin-top: 2rem;
+    }
+
+    .forgot-pw {
+        margin-bottom: 1.2rem;
+    }
+
+    .forgot-pw a {
+        font-size: 0.85rem;
+    }
+
+    .signin-btn, .signup-btn, .forgot-pw-btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .signin-divider p, .signup-divider p {
+        line-height: 0.01em;
+        margin: 5px auto 10px;
+    }
+
+    .signin-divider p span, .signup-divider p span {
+        font-size: 1rem;
+    }
+
+    .google-signin-container button, .google-signup-container button{
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .create-acc p, .acc-login p, .Privacy-policy p a {
+        font-size: 0.85rem;
+    }
+
+ }
+
