@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid: template columns 300px 300px;
+    width: 90%;    
+    height: 100vh; 
+    margin: 0 auto;
+}
+
+header{
+    background-color:white;
+    grid-column: span 3;
+    height: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    margin: auto;
+    
+}
+nav ul{
+    margin-right: 300px;
+}
+header .login{
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+}
+ .reg{
+    padding: 50px;
+}
+h1{
+    color: grey;
+    margin: 16px 0;
+    font-weight: 800;
+}
+
+
+main{
+    
+    grid-column: span 3;
+    
+}
+.wrapper{
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-areas: 
+        'a a a a'
+        'b b b b'
+    ;
+    text-align: center;
+}
+
+.item1{
+    background-color: #CCFAF9;
+    grid-area: a;
+    height: 100px;
+    
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    background-color: white;
+    grid-area: b;
+    height: 400px;
+    
+}
+.item2 p{
+    width: 934px;
+    margin-top: 100px;
+    margin-left: 160px;
+    text-align: justify;
+    
+}
+
+
+.item2 button{
+    background-color:  #061232;
+    
+    color: white;
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+footer{
+    background-color: #CCFAF93D;
+    
+    grid-column: span 3;
+    
+    width: 100%
+    
+    
+}
+footer .f-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;margin: 50px;
+    grid-gap: 100px;
+}
+footer .f-container a{
+   text-decoration: none;
+   
+}footer .f-container ul li{
+    list-style: none;
+    line-height: 30px;
+ }
+
+ footer .copyright{
+    margin-left: 350px;
+    margin-bottom: 20px;
+ }
