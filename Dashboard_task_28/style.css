@@ -1,0 +1,231 @@
+/* import Glimer font from local file*/
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+    font-weight: lighter;
+}
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gilmer';
+    font-size: 16px;
+}
+.decor{
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 4em;
+    margin-top: 2em;
+    padding: .5em 0 .5em .5em;
+}
+.mask{
+    -webkit-mask-image: url(images/Frame\ 603.png);
+    mask-image: url(images/Frame\ 603.png);
+    -webkit-mask-size: 50%;
+    mask-size: 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    background-color: #061232;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+.side a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.side a:hover{
+    background-color: #FFFFFF;
+    color: #061232;
+    border-radius: 0;
+    border-right: 1em solid #121212;
+    border-width: .3em;
+}
+.side__bar{
+    padding: .75rem;
+    margin: 1.5rem 1em 1.5em 0;
+    align-items: baseline;
+}
+.side__bar svg{
+    margin: 0 1em 0 0;
+}
+.plus svg{
+    margin-left: 5em;
+}
+.plus2 svg{
+    margin-left: 4em;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+hr{
+    margin: 0 2em 0 0;
+    border-color: #CCFAF9;
+}
+.header__like{
+    display: flex;
+    justify-content: space-between;
+    color: #061232;
+    margin: 2em 2em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #00bfb942;
+    border-radius: 7px;
+    justify-content: center;
+}
+input{
+    border: transparent;
+    margin: .5em;
+    outline: none;
+    filter: opacity(70%);
+    height: 40px;
+}
+.but{
+    border: none;
+    background-color: transparent;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    margin: 0 .75em;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .75em;
+}
+.date__time{
+    display: flex;
+    padding: .5em;
+    margin: 0 1em;
+}
+.nav__links{
+    display: flex;
+    margin: 0 2em;
+}
+.nav__links a{
+    padding: .5em;
+    text-decoration: none;
+    color: #061232;
+}
+.nav__links a:hover{
+    background-color:#CCFAF9;
+    border-radius: 5px;
+}
+p{
+    padding: 0 1em;
+}
+.h3class{
+    margin:2.5em 5em .5em;
+}
+span{
+    font-weight: 600;
+}
+.top__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 2em;
+    margin: 0 2em;
+    color:  #121212;
+}
+.upper__cards{
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    border-radius: 10px;
+    padding: 1em;
+    height: 6em;
+    box-shadow: 0px 1px 0px 1px #BFBFBF;
+}
+.bottom__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4em;
+    row-gap: 1em;
+    margin: 1em;
+    padding: 0 4em;
+    color: #061232;
+}
+.bottom__container a{
+    text-decoration: none;
+    color: #061232;
+}
+.lower__cards{
+    border: 2px solid #061232;
+    border-radius: 10px;
+    height: 7em;
+    padding: 1em;
+}
+.logout{
+    margin-bottom: 6em;
+}
+.btn{
+    padding: 1.5em 6em;
+    margin: 3em 0;
+    background-color: #061232;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    left: 30em;
+}
+button{
+    cursor: pointer;
+}
+@media screen and (max-width: 970px) {
+    .btn{
+        position: relative;
+        left: 9em;
+    }
+    .nav{
+        display: block;
+        margin: auto;
+    }
+    .date__time{
+        display: flex;
+        padding: .25em;
+        margin: 0 .4em;
+    }
+    .nav__links{
+        margin: 0 1em;
+    }
+}
+@media screen and (max-width: 730px) {
+    .btn{
+        position: relative;
+        left: 3em;
+    }
+    .header__like{
+        display: inline-block;
+        margin: 2em;
+    }
+    .user{
+        margin-top: 1em;
+    }
+    .nav__links{
+        font-size: .75em;
+    }
+}
