@@ -1,0 +1,347 @@
+/* import Glimer font from local file*/
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+  font-weight: lighter;
+}
+
+:root {
+  --primary-color: #061232;
+  --text-color: #061232;
+  --placeholder-color: rgba(6, 18, 50, 0.5);
+  --link-color: #007370;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Glimer", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid: template columns 300px 300px;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px 128px;
+  gap: 72px;
+
+  position: absolute;
+  width: 1446px;
+  height: 112px;
+  left: -1px;
+  top: 8px;
+
+  
+
+  background: #ffffff;
+}
+.logo {
+  left: 128px;
+}
+
+header .login {
+  text-decoration: none;
+  margin-right: 0px;
+  margin-top: 10px;
+  left: 1079px;
+  width: 53px;
+  height: 30px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 250px;
+}
+nav a {
+  text-decoration: none;
+
+  width: 60px;
+  height: 30px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.reg button {
+  color: white;
+  right: 128px;
+
+  align-items: center;
+  padding: 10.5px 24px;
+  gap: 10px;
+
+  width: 162px;
+  height: 47px;
+  background: #061232;
+  border-radius: 4px;
+}
+
+
+main {
+  grid-column: span 3;
+}
+.wrapper {
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;*/
+  grid-template-areas:
+    "a a a a"
+    "b b b b";
+  text-align: center;
+}
+
+.item1 {
+  
+
+  position: absolute;
+  width: 1440px;
+  height: 160px;
+  left: 0px;
+  top: 168px;
+
+  background: rgba(204, 250, 249, 0.4);
+}
+.item1 h1 {
+  text-align: center;
+  margin-top: 25px;
+  color: var(--text-color);
+  position: absolute;
+  width: 325px;
+  left: 542px;
+
+  font-family: "Gilmer" "san-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+}
+.item2 {
+  background-color: white;
+  grid-area: b;
+  height: 400px;
+}
+.item2 p {
+  
+
+  position: absolute;
+  width: 1190px;
+  height: 468px;
+  left: 121px;
+  top: 419px;
+  
+  font-family:  "Gilmer" "san-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  
+ 
+  color: var(--text-color);
+}
+
+.item2 button {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 24px 155px;
+gap: 10px;
+color: white;
+position: absolute;
+width: 422px;
+height: 92px;
+left: 500px;
+top: 1044px;
+
+background: #061232;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+border-radius: 4px;}
+/* footer section */
+
+footer {
+  
+  grid-column: span 3;
+
+  position: absolute;
+width: 1441px;
+height: 600px;
+left: 0px;
+top: 1304px;
+
+background: rgba(204, 250, 249, 0.24);
+border: 1px solid #000000;
+}
+
+footer .f-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+  grid-gap: 100px;
+}
+footer .f-container a:hover {
+  text-decoration: underline;
+}
+
+footer .f-container a {
+  text-decoration: none;
+
+  width: 395px;
+  height: 54px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  color: var(--text-color);
+}
+
+footer .f-container ul li {
+  list-style: none;
+  line-height: 36px;
+}
+.fcol-1 {
+  position: absolute;
+  width: 377px;
+  height: 480px;
+  left: 68px;
+  top: 78px;
+}
+.fcol-1 img {
+  margin-top: 15px;
+  width: 100px;
+  height: 48px;
+  top: 72px;
+  right: 75px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 68px;
+}
+.fcol-1 p {
+  position: absolute;
+  width: 377px;
+  height: 180px;
+
+  top: 72px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+}
+.fcol-2 {
+  position: absolute;
+  width: 500px;
+  height: 36px;
+  left: 592px;
+  top: 78px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+ 
+}
+
+
+.fcol-3 {
+  position: absolute;
+  width: 95px;
+  height: 36px;
+  left: 1043px;
+  top: 78px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  
+  color: var(--text-color);
+}
+
+
+
+footer .copyright {
+
+  position: absolute;
+  width: 366px;
+  height: 30px;
+  left: 463px;
+  top: 500px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  
+  color: var(--text-color);
+}
