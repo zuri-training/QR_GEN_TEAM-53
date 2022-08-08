@@ -8,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard-main</title>
-    <link rel="stylesheet" href="style-block/style-dashboard.css" />
+    <link rel="stylesheet" href="{% static 'styles/style-dashboard.css' %}" />
   </head>
   <body>
     <main class="main">
       <nav class="side">
-        <div class="decor"><img src="images/Logo.png" alt="" /></div>
-        <a href="" class="side__bar"
+        <div class="decor"><img src="{% static 'images/Logo.png' %}" alt="" /></div>
+        <a href="{% url 'dashboard-other' %}" class="side__bar"
           ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 2H4C2.89543 2 2 2.89543 2 4V20C2 21.1046 2.89543 22 4 22H8C9.10457 22 10 21.1046 10 20V4C10 2.89543 9.10457 2 8 2Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M20 2H16C14.8954 2 14 2.89543 14 4V8C14 9.10457 14.8954 10 16 10H20C21.1046 10 22 9.10457 22 8V4C22 2.89543 21.1046 2 20 2Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
             <path d="M12 12H4M12 20V12V20ZM12 12V4V12ZM12 12H20H12Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
             </svg></a>
         <hr />
-        <a href="{% url 'help centre' %}" class="side__bar plus2"
+        <a href="{% url 'faq' %}" class="side__bar plus2"
           >Help centre<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 12H4M12 20V12V20ZM12 12V4V12ZM12 12H20H12Z" stroke="currentcolor" stroke-width="2" stroke-linecap="round"/>
             </svg></a>
@@ -58,9 +58,10 @@
       <div class="main__body">
         <div class="header__like">
             <form class="search" action="">
+              {% csrf_token %}
               <div>
                 <button class="but" type="submit">
-                  <img src="{% static %}" alt="" />
+                  <img src="{% static 'images/search.png' %}" alt="search" />
                 </button>
               </div>
               <div>
@@ -68,17 +69,17 @@
               </div>
             </form>
           <div class="user">
-            <h3>Hi, John</h3>
+            <h3>{{ 'username' }}</h3>
             <div class="mask">
-              <img src="images/jj 3.png" alt="" />
+              <img src="{% static 'images/jj 3.png' %}" alt="" />
             </div>
-            <img src="images/Notification.png" alt="" />
+            <img src="{% static 'images/Notification.png' %}" alt="" />
           </div>
         </div>
         <div class="nav">
           <div class="date__time">
-            <p>01/03/2022</p>
-            <p>12:34:02 PM</p>
+            <p>{{ 'date' }}</p>
+            <p>{{ 'time' }}</p>
           </div>
           <div class="nav__links">
             <a href="">All</a>
@@ -89,54 +90,54 @@
           </div>
         </div>
         <div class="top__container">
-          <div class="upper__cards"><span>94</span><br><br> Total number of codes created</div>
-          <div class="upper__cards"><span>144</span><br><br>Total number of visitors</div>
-          <div class="upper__cards"><span>500</span><br><br>Active QR Codes</div>
-          <div class="upper__cards"><span>144</span><br><br>Archived QR Codes</div>
+          <div class="upper__cards"><span>{{ 'total_codes' }}</span><br><br> Total number of codes created</div>
+          <div class="upper__cards"><span>{{ 'total_clicks' }}</span><br><br>Total number of visitors</div>
+          <div class="upper__cards"><span>{{ 'active_codes' }}</span><br><br>Active QR Codes</div>
+          <div class="upper__cards"><span>{{ 'inactive_codes'}}</span><br><br>Archived QR Codes</div>
         </div>
         <h3 class="h3class">Popular categories</h3>
         <div class="bottom__container">
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/share-2.png" alt="" /><br /><br />Social media
+              <img src="{% static 'images/share-2.png' %}" alt="" /><br /><br />Social media
             </div>
           </a>
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/image.png" alt="" /><br /><br />Download picture or
+              <img src="{% static 'images/image.png' %}" alt="" /><br /><br />Download picture or
               video
             </div>
           </a>
-          <a href="">
-            <div class="lower__cards"><img src="" alt="" /><br /><br />Menu</div>
+          <a href="{% url 'create' %}">
+            <div class="lower__cards"><img src="{% static 'images/openmoji_fork-and-knife.png' %}" alt="" /><br /><br />Menu</div>
           </a>
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/link.png" alt="" /><br /><br />Link to website
+              <img src="{% static 'images/link.png' %}" alt="" /><br /><br />Link to website
             </div>
           </a>
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/smartphone.png" alt="" /><br /><br />App download
+              <img src="{% static 'images/smartphone.png' %}" alt="" /><br /><br />App download
             </div>
           </a>
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/mail.png" alt="" /><br /><br />Send Email
+              <img src="{% static 'images/mail.png' %}" alt="" /><br /><br />Send Email
             </div>
           </a>
-          <a href="">
+          <a href="{% url 'create' %}">
             <div class="lower__cards">
-              <img src="images/calendar.png" alt="" /><br /><br />Event
+              <img src="{% static 'images/calendar.png' %}" alt="" /><br /><br />Event
             </div>
           </a>
-          <a href="dashboard_others.html">
+          <a href="{% url 'dashboard-other' %}">
             <div class="lower__cards">
-              <img src="images/navigation.png" alt="" /><br /><br />Others
+              <img src="{% static 'images/navigation.png' %}" alt="" /><br /><br />Others
             </div>
           </a>
         </div>
-        <a href="">
+        <a href="{% url 'create' %}">
           <button class="btn">Create QR Code</button>
         </a>
       </div>

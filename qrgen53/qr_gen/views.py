@@ -1,3 +1,5 @@
+import datetime
+
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import QRcode
 from .forms import QrcodeCreate
@@ -66,10 +68,48 @@ def qrcode_delete_view(request, qr_id):
 @ login_required(login_url='login')
 def dashboard_view(request):
     username = request.user
+    total_codes = request.user.qr_total
+    total_clicks = request.user.click_total
+    active_codes = request.user.active_codes
+    context = {
+        'username': username,
+        'date': datetime.date,
+        'time': datetime.time,
+        'total_codes': total_codes,  # TODO: add total QRcodes field to user model
+        'total_clicks': total_clicks,  # TODO: add total clicks field to user model
+        'active_codes': active_codes,  # TODO: add total active field to user model
+        'inactive_codes': (total_codes - active_codes)
+
+    }
+    return render(request, "dashboard-main.html", context)
+
+
+@ login_required(login_url='login')
+def dashboard_other_view(request):
+    username = request.user
     context = {
         'username': username
     }
-    return render(request, "dashboard-main.html", context)
+    return render(request, "dashboard-other.html", context)
+
+
+@ login_required(login_url='login')
+def setting_view(request):
+    username = request.user
+    context = {
+        'username': username
+    }
+    return render(request, "settings.html", context)
+
+
+@ login_required(login_url='login')
+def logout_view(request):
+    username = request.user
+    context = {
+        'username': username
+    }
+    return render(request, "logout.html", context)
+
 
 """
     initial_data = {

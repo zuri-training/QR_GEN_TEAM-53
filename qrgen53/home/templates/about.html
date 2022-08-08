@@ -6,25 +6,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-block/style-about-us.css">
+    <link rel="stylesheet" href="{% static 'style-about-us.css' %}">
     <title>About Us</title>
 </head>
 <body>
     <div class="container">
         <header>
-                <img class="logo" src="images/Logo.png" alt="">
+                <img class="logo" src="{% static 'images/Logo.png' %}" alt="Logo">
 
             <nav class="nav-items">
                 <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="http://">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
 
                 </ul>
             </nav>
-            <a class="login" href="sign-in.html">Login</a>
-            <a class="reg" href="sign-up.html"><button>Get Started</button></a>
+            <a class="login" href="{% url 'login' %}">Login</a>
+            <a class="reg" href="{% url 'register %}"><button>Get Started</button></a>
         </header>
         <main>
             <div class="wrapper">
@@ -38,7 +38,7 @@
                     can manage users,choose preferences and also recover your password from our settings page.
                 </p>
 
-                <a href="sign-in.html"><button>Create QR code</button></a>
+                <a href="{% url 'dashboard-main' %}"><button>Create QR code</button></a>
             </div>
 
         </div>
@@ -46,7 +46,7 @@
         <footer>
             <div class="f-container">
                 <div class="fcol-1">
-                    <img class="logo" src="images/Logo.png" alt="">
+                    <img class="logo" src="{% static 'images/Logo.png' %}" alt="Logo">
                     <p>Generates different QR codes.Depending on your purpose, you  can use our  QR generator to create QR codes to open a website, Store image files, View PDF files, connect to a wifi and more</p>
                 </div>
                 <div class="fcol-2">
@@ -55,9 +55,9 @@
                         <h2>Useful Links</h2>
                         <ul>
                         <li><a href="#">Create QR code</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="{% url 'about' %}">About us</a></li>
                         <li><a href="http://">Terms of service</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="{% url 'privacy-policy'%}">Privacy Policy</a></li>
 
                         </ul>
                     </div>
@@ -67,8 +67,8 @@
                     <div class="">
                         <h2>Support</h2>
                         <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="{% url 'contact' %}">Contact us</a></li>
+                        <li><a href="{% url 'faq' %}">FAQ</a></li>
 
 
                         </ul>
