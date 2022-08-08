@@ -2,7 +2,6 @@ import segno
 from segno import helpers
 
 
-
 # import json
 
 
@@ -23,7 +22,3 @@ def simple_qrcode(name, base_link, light, dark, kind):
 def wifi_qrcode(name, ssid, password, security, light, dark, kind):
     qr = helpers.make_wifi(ssid=ssid, password=password, security=security)
     return qr.save(name + kind, dark=dark, light=light)
-
-
-
-
