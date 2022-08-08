@@ -7,27 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/80acf0b03b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style-acc.css' %}">
     <title>Login</title>
   </head>
   <body class="signin-body">
 
     <header class="header-signin">
       <div class="logo-container">
-        <img src="{% static 'accounts/images/Logo.svg' %}" alt="Site Logo">
+        <img src="{% static 'images/Logo.svg' %}" alt="Site Logo">
       </div>
     </header>
 
     <main class="signin-container">
 
       <div class="signin-img">
-        <img src="{% static 'accounts/images/unsplash_EPeK7w5Eeic.png' %}" alt="Scanning QR-Code">
+        <img src="{% static 'images/unsplash_EPeK7w5Eeic.png' %}" alt="Scanning QR-Code">
 
       </div>
 
       <div class="signin-content">
         <div class="signin-header">
-          <h2>Welcome Back <img class="emoji" src="{% static 'accounts/images/Emoji.svg' %}" alt="Hand-waving Emoji"></h2>
+          <h2>Welcome Back <img class="emoji" src="{% static 'images/Emoji.svg' %}" alt="Hand-waving Emoji"></h2>
         </div>
 
         <form method='POST' action="{% url 'login' %}" class="signin-form">
@@ -57,7 +57,7 @@
           </div>
 
           <div class="forgot-pw">
-            <a href="#">Forgot Password?</a>
+            <a href="{% url 'forgot-password' %}">Forgot Password?</a>
           </div>
 
           

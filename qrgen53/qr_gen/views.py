@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import QRcode
 from .forms import QrcodeCreate
-from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.decorators import login_required
 
 
 # from .qr import *
@@ -62,6 +62,14 @@ def qrcode_delete_view(request, qr_id):
     }
     return render(request, "qr_gen/qr_delete.html", context)
 
+
+@ login_required(login_url='login')
+def dashboard_view(request):
+    username = request.user
+    context = {
+        'username': username
+    }
+    return render(request, "dashboard-main.html", context)
 
 """
     initial_data = {

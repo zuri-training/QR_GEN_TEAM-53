@@ -6,13 +6,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style-acc.css' %}">
     <title>Recovery</title>
   </head>
   <body class="canva-body">
     <div class="canva-container">
       <header class="canva-header">
-        <img src="{% static 'accounts/images/Logo.svg' %}" alt="Site Logo" />
+        <img src="{% static 'images/Logo.svg' %}" alt="Site Logo" />
       </header>
       <main>
         <section class="forgot-pw-container">
@@ -20,7 +20,8 @@
           <h3>Enter the code received</h3>
 
           <form
-            method=""
+            method="POST"
+            action="{% url 'recover-password' %}"
             class="digit-group"
             data-group-name="digits"
             data-autosubmit="false"
@@ -74,7 +75,7 @@
           </form>
 
           <div class="no-code-container">
-            <a href="#" class="no-code">Didn’t receive any code?</a>
+            <a href="{% url 'email-collection' %}" class="no-code">Didn’t receive any code?</a>
           </div>
 
         </section>

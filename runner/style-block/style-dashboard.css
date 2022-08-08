@@ -18,7 +18,7 @@
 }
 *{
     margin: 0;
-    padding: o;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -29,14 +29,15 @@ body{
     background-color: #FFFFFF;
     width: 75%;
     height: 4em;
-    margin-top: 2em;
+    margin: 2em 1em 0 1em;
     padding: .5em 0 .5em .5em;
+    border-radius: 5px;
 }
 .mask{
     -webkit-mask-image: url(images/Frame\ 603.png);
     mask-image: url(images/Frame\ 603.png);
-    -webkit-mask-size: 50%;
-    mask-size: 50%;
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: top;
@@ -59,20 +60,22 @@ body{
     border-radius: 0;
     border-right: 1em solid #121212;
     border-width: .3em;
+    border-radius: 5px;
 }
 .side__bar{
     padding: .75rem;
-    margin: 1.5rem 1em 1.5em 0;
-    align-items: baseline;
+    margin: .75rem 1em .75em 0;
+    display: flex;
+    align-items: center;
 }
 .side__bar svg{
     margin: 0 1em 0 0;
 }
-.plus svg{
-    margin-left: 5em;
+.plus{
+    justify-content: space-between;
 }
-.plus2 svg{
-    margin-left: 4em;
+.logo_mobile{
+    display: none;
 }
 .main{
     display: grid;
@@ -80,13 +83,13 @@ body{
 }
 hr{
     margin: 0 2em 0 0;
-    border-color: #CCFAF9;
+    border: 1px solid #CCFAF9;
 }
 .header__like{
     display: flex;
     justify-content: space-between;
     color: #061232;
-    margin: 2em 2em;
+    margin: .75em 2em;
 }
 .search{
     display: flex;
@@ -110,26 +113,30 @@ input{
     display: flex;
     align-items: center;
 }
-.user img{
-    margin: 0 .75em;
-    align-items: center;
+.notification_and_pic{
+    display: flex;
+    justify-content: space-around;
 }
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 0 .75em;
+    font-size: .8em;
 }
 .date__time{
     display: flex;
-    padding: .5em;
+    padding: 1em;
+    margin: 0 1em;
+}
+.date__time p{
     margin: 0 1em;
 }
 .nav__links{
     display: flex;
-    margin: 0 2em;
+    padding: .5em;
+    margin: 0 1.5em;
 }
 .nav__links a{
-    padding: .5em;
+    padding: .5em 1em;
     text-decoration: none;
     color: #061232;
 }
@@ -137,14 +144,11 @@ input{
     background-color:#CCFAF9;
     border-radius: 5px;
 }
-p{
-    padding: 0 1em;
-}
 .h3class{
-    margin:2.5em 5em .5em;
+    margin:2.5em 4.5em .5em;
 }
 span{
-    font-weight: 600;
+    font-size: 24px;
 }
 .top__container{
     display: grid;
@@ -154,11 +158,10 @@ span{
     color:  #121212;
 }
 .upper__cards{
-    border: 1px solid rgba(128, 128, 128, 0.315);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 1em;
-    height: 6em;
-    box-shadow: 0px 1px 0px 1px #BFBFBF;
+    height: 116px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 .bottom__container{
     display: grid;
@@ -174,23 +177,23 @@ span{
     color: #061232;
 }
 .lower__cards{
-    border: 2px solid #061232;
+    border: 3px solid #061232;
     border-radius: 10px;
     height: 7em;
     padding: 1em;
 }
 .logout{
-    margin-bottom: 6em;
+    margin-bottom: 2em;
 }
 .btn{
     padding: 1.5em 6em;
-    margin: 3em 0;
+    margin: 1em 0;
     background-color: #061232;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     position: relative;
-    left: 30em;
+    left: 35.5em;
 }
 button{
     cursor: pointer;
@@ -218,14 +221,122 @@ button{
         position: relative;
         left: 3em;
     }
-    .header__like{
-        display: inline-block;
-        margin: 2em;
+    .nav{
+        display: none;
+    }
+    .search{
+        display: none;
     }
     .user{
         margin-top: 1em;
     }
     .nav__links{
         font-size: .75em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .side{
+        display: none;
+    }
+    .btn{
+        position: relative;
+        left: 3em;
+    }
+    .nav{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .logo_mobile{
+        display: block;
+        justify-self: left;
+    }
+    .user{
+        margin-top: 1em;
+    }
+    .nav__links{
+        font-size: .75em;
+    }
+}
+/* media query for mobile view  */
+@media screen and (max-width: 380px) {
+    .side{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+    .header__like{
+        display: block;
+        margin: 0 0 ;
+    }
+    .logo_mobile{
+        display: block;
+        justify-self: left;
+    }
+    .user{
+        display: flex;
+        justify-content: space-around;
+        margin: 3em 2em;
+    }
+    .notification_and_pic{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .notification_and_pic img{
+        width: 2.75em;
+    }
+    .h3class{
+        margin:2.5em 5em 2em;
+    }
+    p{
+        margin: 0 1em;
+    }
+    .top__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0 2em;
+        color:  #121212;
+    }
+    .upper__cards{
+        display: flex;
+        border-radius: 8px;
+        padding: 1em;
+        height: 68px;
+        align-items: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+    .bottom__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        row-gap: 1em;
+        margin: .5em;
+        padding: 0 1em;
+        color: #061232;
+    }
+    .lower__cards{
+        border: 0;
+        border-radius: 8px;
+        height: 126px;
+        padding: 1em;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+    .btn{
+        padding: 1.25em 4em;
+        margin: 3.5em;
+        background-color: #061232;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
     }
 }

@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login  # logout, urls
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, redirect
 
 
 def register_view(request):
@@ -22,7 +22,7 @@ def register_view(request):
         'password': 'password1'
     }"""
     context = {'form': form}
-    return render(request, 'accounts/register.html', context)
+    return render(request, 'register.html', context)
 
 
 def login_view(request):
@@ -38,7 +38,19 @@ def login_view(request):
             login(request, user)
             return redirect('dashboard-main')
 
-    return render(request, 'accounts/login.html')
+    return render(request, 'login.html')
+
+
+def forgot_password_view(request):
+    return render(request, 'forgot-password.html')
+
+
+def new_password_view(request):
+    return render(request, 'new-password.html')
+
+
+def recover_password_view(request):
+    return render(request, 'recover-password.html')
 
 
 """form =
@@ -54,9 +66,4 @@ def login_view(request):
             return redirect('home')"""
 
 
-def dashboard_view(request):
-    username = request.user
-    context = {
-        'username': username
-    }
-    return render(request, "profile/dashboard-main.html", context)
+

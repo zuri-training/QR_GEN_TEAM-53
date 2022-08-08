@@ -13,20 +13,27 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from home.views import home_view, contact_view, about_view
-from accounts.views import register_view, login_view, dashboard_view
-from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view
+from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.urls import path
+
+from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view
+from home.views import home_view, contact_view, about_view, privacy_policy_view
+from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view, \
+    dashboard_view
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('contact us/', contact_view, name='contact'),
     path('about/', about_view, name='about'),
+    path('privacy-policy/', privacy_policy_view, name='privacy-policy'),
+
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
+    path('forgot-password/', forgot_password_view, name="forgot-password"),
+    path('new-password', new_password_view, name="new-password"),
+    path('recover-password', recover_password_view, name="recover-password"),
 
     path('dashboard-main/', dashboard_view, name='dashboard-main'),
     path('gallery/', qrcode_gallery_view, name='gallery'),
