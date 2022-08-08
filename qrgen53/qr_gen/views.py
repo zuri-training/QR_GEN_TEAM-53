@@ -1,13 +1,14 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import QRcode
 from .forms import QrcodeCreate
+from django.contrib.auth.decorators import login_required, permission_required
 
 
 # from .qr import *
 
 # Create your views here.
 
-
+@ login_required(login_url='login')
 def qrcode_gallery_view(request):
     queryset = QRcode.objects.all()  # list of objects
     # TODO: add functionality for when the qr code gallery is empty
@@ -17,6 +18,7 @@ def qrcode_gallery_view(request):
     return render(request, 'qr_gen/qr_gallery.html', context)
 
 
+@ login_required(login_url='login')
 def qrcode_detail_dy_view(request, qr_id):
     # TODO: apply this
     # obj = QRcode.objects.get(id=qr_id)
@@ -31,6 +33,7 @@ def qrcode_detail_dy_view(request, qr_id):
     return render(request, 'qr_gen/qr_detail.html', context)
 
 
+@ login_required(login_url='login')
 def qrcode_create_view(request):
     qr_form = QrcodeCreate()
     if request.method == "POST":
@@ -47,6 +50,7 @@ def qrcode_create_view(request):
     return render(request, 'qr_gen/qr_create.html', context)
 
 
+@ login_required(login_url='login')
 def qrcode_delete_view(request, qr_id):
     obj = get_object_or_404(QRcode, id=qr_id)
     if request.method == "POST":

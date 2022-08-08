@@ -28,7 +28,7 @@ urlpatterns = [
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
 
-    path('dashboard/', dashboard_view, name='dashboard'),
+    path('dashboard-main/', dashboard_view, name='dashboard-main'),
     path('gallery/', qrcode_gallery_view, name='gallery'),
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
     path('details/<int:qr_id>/delete', qrcode_delete_view, name='qr_delete'),

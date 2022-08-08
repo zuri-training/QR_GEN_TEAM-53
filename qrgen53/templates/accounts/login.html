@@ -48,7 +48,7 @@
             <label for="signin-password">Password</label>
             <input
               type="password"
-              name="{{ 'password1' }}"
+              name="{{ 'password' }}"
               id="signin-password"
               class="signin-input"
               placeholder="************"
@@ -67,7 +67,7 @@
               value="login"
               class="signin-btn">
 
-              <input type="hidden" name="next" value="{% url 'register' %}" >
+              <input type="hidden" name="next" value="{{ next }}" >
           </div>
 
         </form>
