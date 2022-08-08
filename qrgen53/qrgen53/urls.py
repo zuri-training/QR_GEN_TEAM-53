@@ -19,7 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 
 from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view
-from home.views import home_view, contact_view, about_view, privacy_policy_view
+from home.views import home_view, contact_view, about_view, privacy_policy_view, email_collection_view
 from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view, \
     dashboard_view
 
@@ -28,17 +28,18 @@ urlpatterns = [
     path('contact us/', contact_view, name='contact'),
     path('about/', about_view, name='about'),
     path('privacy-policy/', privacy_policy_view, name='privacy-policy'),
+    path('email_collection/', email_collection_view, name='email-collection'),
 
     path('register/', register_view, name='register'),
     path('login/', login_view, name='login'),
     path('forgot-password/', forgot_password_view, name="forgot-password"),
-    path('new-password', new_password_view, name="new-password"),
-    path('recover-password', recover_password_view, name="recover-password"),
+    path('new-password/', new_password_view, name="new-password"),
+    path('recover-password/', recover_password_view, name="recover-password"),
 
     path('dashboard-main/', dashboard_view, name='dashboard-main'),
     path('gallery/', qrcode_gallery_view, name='gallery'),
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
-    path('details/<int:qr_id>/delete', qrcode_delete_view, name='qr_delete'),
+    path('details/<int:qr_id>/delete/', qrcode_delete_view, name='qr_delete'),
     path('create/', qrcode_create_view, name='qr_create'),
     path('admin/', admin.site.urls),
     # path('/<int:user_id>/dashboard/', dashboard_view, name='dashboard')

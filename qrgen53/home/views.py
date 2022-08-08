@@ -12,3 +12,6 @@ def about_view(request):
 
 def privacy_policy_view(request):
     return render(request, 'privacy-policy.html')
+
+def email_collection_view(request):
+    return render(request, 'email-collection.html')
