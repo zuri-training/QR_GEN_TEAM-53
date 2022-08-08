@@ -20,7 +20,3 @@ def privacy_policy_view(request):
 
 def email_collection_view(request):
     return render(request, 'email-collection.html')
-
-
-def faq_view(request):
-    return render(request, 'faq.html')
