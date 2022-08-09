@@ -98,6 +98,7 @@ input{
     outline: none;
     filter: opacity(70%);
     height: 40px;
+    font-family: 'Gilmer';
 }
 .but{
     border: none;
@@ -124,7 +125,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 1em;
     align-items: center;
 }
 .select_and_input{
@@ -146,9 +147,10 @@ select{
     border: transparent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    height: 3em;
-    width: 7.5em;
+    width: 5.5em;
+    height: 2.75em;
     margin: 0 0 4px 10px;
+    font-family: 'Gilmer';
 }
 #sort2{
     margin: 0 10px;
@@ -169,6 +171,7 @@ select{
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     align-items: center;
+    justify-content: flex-start;
 }
 .block{
     display: flex;
@@ -208,12 +211,6 @@ select{
     gap: 10px;
     margin: 3em 5.5em 5em 3em;
 }
-.select_and_input2{
-    display: flex;
-    align-items: center;
-    float: right;
-    margin: 0 2em 0 0;
-}
 .display_box{
     display: flex;
     flex-direction: column;
@@ -233,18 +230,29 @@ select{
     color: #FFFFFF;
     width: 21em;
     height: 4.5em;
+    font-family: 'Gilmer';
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1105px) {
+    .sort_filter a > button{
+        width: 16em;
+        height: 4em;
+    }
+}
+@media screen and (max-width: 1020px) {
     .main__body{
         margin: 2.5em 3em 3em 2em;
     }
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 920px) {
     .side{
         display: none;
     }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 725px) {
     .sort_filter a > button, .left img{
         display: none;
     }
@@ -257,13 +265,13 @@ select{
         flex-direction: row-reverse;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 595px) {
     .right .block span, .left .block span:last-child, .edit_and_download{
         display: none;
     }
     .spread{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     select{
@@ -274,8 +282,14 @@ select{
         height: 2.75em;
         width: 12em;
     }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: left;
+    }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
     .spread{
         padding: 1em;
     }
@@ -301,11 +315,6 @@ select{
         display: block;
         margin: 0 4px;
     }
-}
-@media screen and (max-width: 380px) {
-    .notification_and_pic{
-        margin: 0 0 0 10px;
-    }
     select{
         height: 32px;
         width: 82px;
@@ -321,6 +330,11 @@ select{
     }
     .select_and_input{
         display: flex;  
+    }
+}
+@media screen and (max-width: 380px) {
+    .notification_and_pic{
+        margin: 0 0 0 10px;
     }
     .main__body{
         margin: 40px 21px 40px 25px;

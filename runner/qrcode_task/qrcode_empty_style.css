@@ -86,6 +86,8 @@ hr{
     display: none;
 }
 .search{
+    width: 272px;
+    height: 56px;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -98,6 +100,7 @@ input{
     outline: none;
     filter: opacity(70%);
     height: 40px;
+    font-family: 'Gilmer';
 }
 .but{
     border: none;
@@ -139,12 +142,16 @@ select{
     border: transparent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    height: 3em;
+    height: 48px;
     width: 7.5em;
     margin: 0 0 4px 10px;
 }
 #sort2{
     margin: 0 10px;
+    font-family: 'Gilmer';
+}
+#filter{
+    font-family: 'Gilmer';
 }
 .size3{
     font-size: 24px;
@@ -183,6 +190,7 @@ select{
     color: #FFFFFF;
     width: 21em;
     height: 4.5em;
+    font-family: 'Gilmer';
 }
 @media screen and (max-width: 885px) {
     .main{
