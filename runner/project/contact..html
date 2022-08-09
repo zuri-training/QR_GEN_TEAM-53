@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+    <title>Contact</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        ::selection {
+            color: #fff;
+        }
+
+        .wrapper {
+            width: 380px;
+            padding: 40px 30px 50px 30px;
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 40%;
+        }
+
+        .overlap-group1 {
+            height: 160px;
+            background-color: var(--scandal);
+            display: flex;
+            margin-left: 4px;
+            margin-top: 86px;
+            padding: 30px 469px;
+        }
+
+        .title {
+            letter-spacing: 0;
+            min-height: 72px;
+            width: 599px;
+            color: var(--midnight);
+            font-family: var(--font-family-gilmer_medium-regular);
+            font-size: var(--font-size-xxl);
+            margin-left: 25%;
+        }
+
+        @media screen and (max-width: 375px) {
+            .wrapper {
+                width: 365px;
+                padding: 40px 30px 50px 30px;
+                background: #fff;
+                border-radius: 5px;
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .overlap-group1 {
+                height: 60px;
+                background-color: transparent;
+                display: flex;
+                margin-top: 86px;
+                padding: 0;
+            }
+
+            .title {
+                letter-spacing: 0;
+                min-height: 50px;
+                width: 370px;
+                color: var(--midnight);
+                font-family: var(--font-family-gilmer_regular-regular);
+                font-size: var(--font-size-xxl2);
+                margin-left: 31px;
+            }
+
+            header {
+                width: 350px;
+                margin-left: -31px;
+            }
+
+            footer {
+                background-color: transparent;
+            }
+
+            .main-content .box {
+                flex-basis: 50%;
+                padding: 15px 20px;
+                text-align: left;
+            }
+
+            .left>img {
+                margin-left: 40%;
+            }
+
+
+            .left .content p {
+                width: 363px;
+                text-align: center;
+            }
+
+            .main-content .left {
+                padding: 124px 20px;
+            }
+
+            .center .content .text {
+                padding-left: 10px;
+            }
+
+            .center .content .phone {
+                margin: 15px 0;
+            }
+
+            .center .content {
+                width: auto;
+
+            }
+
+            .gilmerregular-regular-nomal-midnight-16px {
+                display: block;
+            }
+
+        }
+
+        .wrapper header {
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        .wrapper form {
+            margin: 40px 0;
+        }
+
+        form .field {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        form .field .input-area {
+            height: 50px;
+            width: 100%;
+            position: relative;
+            border: 2px solid var(--midnight);
+            border-radius: 4px;
+        }
+
+        form input {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            padding: 0 45px;
+            font-size: 18px;
+            background: none;
+            caret-color: #5372F0;
+            border-radius: 5px;
+            border: 1px solid #bfbfbf;
+            border-bottom-width: 2px;
+            transition: all 0.2s ease;
+        }
+
+        form .field input:focus {
+            border-color: #5372F0;
+        }
+
+
+
+        form input::placeholder {
+            color: #bfbfbf;
+            font-size: 17px;
+        }
+
+        .wrapper a {
+            color: #5372F0;
+            text-decoration: none;
+        }
+
+        .wrapper a:hover {
+            text-decoration: underline;
+        }
+
+        form input[type="submit"] {
+            height: 50px;
+            margin-top: 30px;
+            color: #fff;
+            padding: 0;
+            border: none;
+            background: #5372F0;
+            cursor: pointer;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background: #2c52ed;
+        }
+
+
+
+
+
+
+
+        body {
+            margin: 0px;
+            background: #fff;
+            height: 100%;
+            text-align: center;
+        }
+
+        .img404 {
+            display: block;
+            -webkit-user-select: none;
+            margin: auto;
+            margin-top: 100px;
+            cursor: zoom-in;
+            background-color: hsl(0, 0%, 90%);
+            transition: background-color 300ms;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+
+            background-color: var(--midnight);
+            cursor: pointer;
+            font-family: var(--font-family-gilmer_regular-regular);
+            font-size: var(--font-size-xl2);
+            font-weight: 400;
+            letter-spacing: 0;
+            min-width: 114px;
+            margin-top: -3px;
+            margin-bottom: -1px;
+
+            padding: 10px 10px 10px 10px;
+            border: 2px solid var(--midnight);
+            border-radius: 10px;
+        }
+
+        button a {
+            color: var(--white);
+        }
+
+        button:hover {
+            background-color: var(--white);
+        }
+
+        button a:hover {
+            color: var(--midnight);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+
+
+        .content1 {
+            position: relative;
+            margin: 130px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .content1 .text {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .content1 .p {
+            font-size: 2.1875rem;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            bottom: 0px;
+            width: 100%;
+            background: var(--scandal-2);
+            height: 500px;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .main-content .box {
+            flex-basis: 50%;
+            padding: 123px 0;
+            text-align: left;
+        }
+
+        .box .content {
+            margin: 20px 0 0 0;
+            position: relative;
+        }
+
+        
+
+        .left {
+            margin-left: 260px;
+        }
+
+        .center .content .text {
+            padding-left: 10px;
+        }
+
+        .center .content .phone {
+            margin: 15px 0;
+        }
+
+        .center {
+            margin-left: 50px;
+        }
+
+        .bottom center {
+            padding: 5px;
+            min-height: 30px;
+            background: transparent;
+        }
+
+        .bottom center span {
+            color: var(--midnight);
+        }
+
+        .bottom center a {
+            color: var(--midnight);
+            text-decoration: none;
+        }
+
+        .bottom center a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 900px) {
+            footer {
+                position: relative;
+                bottom: 0px;
+                display: block;
+            }
+
+            /* .main-content { 
+                flex-wrap: wrap;
+                flex-direction: column;
+            } */
+            .main-content {
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+            .main-content .box {
+                margin: 5px 0;
+            }
+
+            .left {
+                margin-left: 260px;
+
+            }
+
+            .center .content .text {
+                padding-left: 10px;
+            }
+
+            .center .content .phone {
+                margin: 15px 0;
+            }
+
+            .center {
+                margin-left: 50px;
+            }
+
+            .email {
+                letter-spacing: 0;
+                margin-top: 12px;
+                min-width: 44px;
+            }
+        }
+        form .field input:focus{
+  border-color: #5372F0;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+.wrapper a{
+  color: #5372F0;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: var(--midnight);
+  cursor: pointer;
+  border: 2px solid var(--midnight);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: transparent;
+  color: var(--midnight);
+}
+       
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./icons/logo.svg" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px border-2px-midnight"><a href="#">Contact</a>
+                    </li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">Login</a></li>
+                    <li><button class="btn navbar-btn register"><a href="#"></a>Get Started</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlap-group1">
+        <h1 class="title">We are here to help!</h1>
+    </div>
+    <div class="wrapper">
+        <header class="send-us-a-message-1 gilmerbold-regular-nomal-midnight-24px">Send us a message</header>
+        <form action="#">
+            <div class="field">
+                <div class="name gilmerregular-regular-nomal-midnight-16px ">
+                    Name
+                </div>
+                <div class="input-area">
+                    <input type="text" placeholder="Enter Name" class="enter">
+                </div>
+            </div>
+            <div class="field">
+                <div class="name gilmerregular-regular-nomal-midnight-16px">
+                    Email
+                </div>
+                <div class="input-area">
+                    <input type="email" placeholder="Enter Email" class="enter">
+                </div>
+            </div>
+            <div class="field">
+                <div class="name gilmerregular-regular-nomal-midnight-16px">
+                    Message
+                </div>
+                <div class="input-area">
+                    <input type="text" placeholder="Enter Message" class="enter">
+                </div>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <img src="./icons/logo.svg" alt="">
+                <div class="content">
+                    <p class="gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">
+                        Generates different QR codes. Depending on your
+                        purpose,
+                        you&nbsp;&nbsp;can use our&nbsp;&nbsp;QR generator to create QR
+                        codes to open a website, Link to URL, View PDF file, connect to
+                        a wifi and more</p>
+                </div>
+            </div>
+            <div class="center box">
+                <h2 class="gilmerbold-regular-nomal-midnight-24px">Useful Links</h2>
+                <div class="content">
+                    <div class="place">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">
+                            Create QR code</span>
+                    </div>
+                    <div class="phone">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">About
+                            us</span>
+                    </div>
+                    <div class="email">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">Terms
+                            of service</span>
+                    </div>
+                    <div class="email">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">
+                            Privacy policy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2 class="gilmerbold-regular-nomal-midnight-24px"> Support</h2>
+                <div class="content">
+                    <div class="email">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">Contact
+                            us</span>
+                    </div>
+                    <div class="email">
+                        <span
+                            class="text gilmerregular-regular-nomal-midnight-20px gilmerregular-regular-nomal-midnight-16px">FAQ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span> copyright <span class="far fa-copyright"></span> 2022 name of company</span>
+            </center>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,14 +1,17 @@
-import datetime
-
+from datetime import date, datetime
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import QRcode
 from .forms import QrcodeCreate
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 
 # from .qr import *
 
 # Create your views here.
+
+today = date.today()
+now = datetime.now()
 
 @ login_required(login_url='login')
 def qrcode_gallery_view(request):
@@ -17,7 +20,7 @@ def qrcode_gallery_view(request):
     context = {
         "object_list": queryset
     }
-    return render(request, 'qr_gen/qr_gallery.html', context)
+    return render(request, 'qr_gallery.html', context)
 
 
 @ login_required(login_url='login')
@@ -32,7 +35,7 @@ def qrcode_detail_dy_view(request, qr_id):
         'type': obj.type_qr,
         'stats': obj.stats
     }
-    return render(request, 'qr_gen/qr_detail.html', context)
+    return render(request, 'qr_detail.html', context)
 
 
 @ login_required(login_url='login')
@@ -49,7 +52,7 @@ def qrcode_create_view(request):
             print(qr_form.errors)
 
     context = {'form': qr_form}
-    return render(request, 'qr_gen/qr_create.html', context)
+    return render(request, 'qr_create.html', context)
 
 
 @ login_required(login_url='login')
@@ -62,25 +65,24 @@ def qrcode_delete_view(request, qr_id):
     context = {
         'object': obj
     }
-    return render(request, "qr_gen/qr_delete.html", context)
+    return render(request, 'qr_delete.html', context)
 
 
 @ login_required(login_url='login')
 def dashboard_view(request):
     username = request.user
-    total_codes = request.user.qr_total
+    """total_codes = request.user.qr_total
     total_clicks = request.user.click_total
-    active_codes = request.user.active_codes
+    active_codes = request.user.active_codes"""
     context = {
         'username': username,
-        'date': datetime.date,
-        'time': datetime.time,
-        'total_codes': total_codes,  # TODO: add total QRcodes field to user model
+        'date': today.strftime("%B %d, %Y"),
+        'time': now.strftime("%H:%M"),
+    }
+    """ 'total_codes': total_codes,  # TODO: add total QRcodes field to user model
         'total_clicks': total_clicks,  # TODO: add total clicks field to user model
         'active_codes': active_codes,  # TODO: add total active field to user model
-        'inactive_codes': (total_codes - active_codes)
-
-    }
+        'inactive_codes': (total_codes - active_codes) """
     return render(request, "dashboard-main.html", context)
 
 
@@ -94,6 +96,15 @@ def dashboard_other_view(request):
 
 
 @ login_required(login_url='login')
+def analytics_view(request):
+    username = request.user
+    context = {
+        'username': username
+    }
+    return render(request, 'analytics-page.html', context)
+
+
+@ login_required(login_url='login')
 def setting_view(request):
     username = request.user
     context = {
@@ -104,14 +115,11 @@ def setting_view(request):
 
 @ login_required(login_url='login')
 def logout_view(request):
-    username = request.user
-    context = {
-        'username': username
-    }
-    return render(request, "logout.html", context)
-
+    logout(request)
+    return render(request, 'index.html')
 
 """
+
     initial_data = {
         'light': 'white',
         'dark' : 'black'

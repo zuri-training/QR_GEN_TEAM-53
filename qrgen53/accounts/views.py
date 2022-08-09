@@ -17,10 +17,6 @@ def register_view(request):
             return redirect('home')
     else:
         form = UserCreationForm()
-    """context = {
-        'username': 'username',
-        'password': 'password1'
-    }"""
     context = {'form': form}
     return render(request, 'register.html', context)
 
