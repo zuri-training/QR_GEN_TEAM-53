@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-block/style-qr-create-raw.css">
     <title>Create QR Code</title>
   </head>
+
   <body>
-    <main>
+    <main class="qr-create-main">
       <div class="side-bar">
         <div class="logo-box">
           <img src="images/Logo.svg" alt="Site-Logo" />
@@ -90,11 +92,11 @@
       </div>
 
       <div class="main-content">
-        <header>
+        <header class="main-content-header">
           <h1>Create QR Code</h1>
-          <div>
+          <div class="right">
             <h3>Hi, John</h3>
-            <div>
+            <div class="menu-addon">
               <img src="images/dash_img/Mask group.png" alt="User-Avatar" class="user-avatar">
               
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="notification-svg">
@@ -102,17 +104,36 @@
                 <path d="M15.58 12.08L14.15 10.65C11.75 12.48 10.17 15.3 10.03 18.5H12.03C12.18 15.85 13.54 13.53 15.58 12.08ZM27.97 18.5H29.97C29.82 15.3 28.24 12.48 25.85 10.65L24.43 12.08C26.45 13.53 27.82 15.85 27.97 18.5ZM26 19C26 15.93 24.36 13.36 21.5 12.68V12C21.5 11.17 20.83 10.5 20 10.5C19.17 10.5 18.5 11.17 18.5 12V12.68C15.63 13.36 14 15.92 14 19V24L12 26V27H28V26L26 24V19ZM20 30C20.14 30 20.27 29.99 20.4 29.96C21.05 29.82 21.58 29.38 21.84 28.78C21.94 28.54 21.99 28.28 21.99 28H17.99C18 29.1 18.89 30 20 30Z" fill="#061232"/>
                 </svg>
 
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-menu">
-                  <path d="M21 10H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21 6H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21 14H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21 18H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+              <div class="mobile-menu-container">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-menu">
+                    <path d="M21 10H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 6H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 14H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 18H3" stroke="#061232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
             </div>
           </div>
         </header>
 
         <div class="main-body">
+
+          <div class="qr-type">
+            <img src="images/dash_img/qr-code-svgrepo-com (1) real 1.png" alt="QR-Code">
+            <form action="">
+
+              <div class="checkbox">
+                <input type="checkbox" name="qr-type" id="dynamic" value="dynamic">
+                <label for="dynamic">Dynamic</label>
+              </div>
+
+              <div class="checkbox static-checkbox">
+                <input type="checkbox" name="qr-type" id="static" value="static">
+                <label for="static">Static</label>
+              </div>
+            </form>
+          </div>
+
           <form action="" class="qr-code-details">
             <div class="input-box">
               <label for="qr-name">Name of your QR Code</label>
@@ -131,50 +152,34 @@
           </form>
 
           <div>
-            <img src="images/dash_img/qr-code-svgrepo-com (1) real 1.png" alt="QR-Code">
-            <form action="">
-
-              <div class="radio">
-                <input type="radio" name="qr-type" id="dynamic" value="dynamic">
-                <label for="dynamic">Dynamic</label>
-              </div>
-
-              <div class="radio">
-                <input type="radio" name="qr-type" id="static" value="static">
-                <label for="static">Static</label>
-              </div>
-            </form>
-          </div>
-
-          <div>
-            <form action="">
-              <div>
+            <form action="" class="qr-code-style">
+              <div class="input-box">
                 <label for="color">Color</label>
                 <input type="text" placeholder="#000000" name="color">
               </div>
 
-              <div>
+              <div class="input-box">
                 <label for="background-color">Background color</label>
                 <input type="text" placeholder="#000000" name="background-color">
               </div>
             </form>
           </div>
-          <div>
+
+          <div class="qr-format-box">
             <p>Format of QR Code</p>
-            <div>
+            <div class="inner-section">
               <form action="">
-                <select name="qr-format" id="qr-format">
+                <select name="qr-format" id="qr-format" class="select-qr-format">
                   <option value="png">PNG</option>
                   <option value="svg">SVG</option>
                   <option value="jpeg">JPEG</option>
                   <option value="pdf">PDF</option>
-
                 </select>
               </form>
               <button>Create QR Code</button>
             </div>
 
-            <button>Download</button>
+            <button class="download-btn">Download</button>
           </div>
 
         </div>
