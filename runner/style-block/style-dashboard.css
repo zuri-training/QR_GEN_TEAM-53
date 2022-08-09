@@ -16,13 +16,14 @@
     src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
     font-weight: lighter;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Gilmer';
+    font-family: 'Glimer';
     font-size: 16px;
 }
 .decor{
