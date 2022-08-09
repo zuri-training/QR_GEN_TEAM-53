@@ -227,3 +227,141 @@ html {
     cursor: pointer;
 }
 
+/* desktop view */
+
+@media (min-width:510px) {
+
+    .qr-create-main {
+        display: grid;
+        grid-template-columns: minmax(min-content, 264px) 4fr;
+        grid-template-areas: "sidebar main-content";
+        height: 100vh;
+    }
+
+    .side-bar {
+        display: block;
+        grid-area: sidebar;
+        background-color: var(--primary-color);
+    }
+    
+    .logo-box {
+        width: 80%;
+        margin: 4.063rem auto 5.93rem;
+        padding: 0.75rem 1rem;
+        background-color: #fff;
+    }
+
+    .logo-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .primary-nav {
+        margin-bottom: 4rem;
+    }
+
+    .primary-nav .nav-link-box, .log-out-box, .sec-nav {
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    .primary-nav .nav-link-box .nav-link, .log-out-box .nav-link, .sec-nav .nav-link {
+        padding: 0.813rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 0.875rem;
+        color: #fff;
+    }
+
+    .primary-nav .nav-link-box .nav-link svg, .log-out-box .nav-link svg {
+        margin-right: 0.625rem;
+    }
+
+    .sec-nav {
+        margin-top: 2rem;
+    }
+
+
+    .sec-nav .nav-link {
+        justify-content: space-between;
+        border-top: 1px solid #fff;
+        padding-top: 2.47rem;
+        padding-bottom: 2.47rem;
+    }
+
+    .sec-nav .nav-link:last-child {
+        border-bottom: 1px solid #fff;
+    }
+
+
+    .main-content {
+        all: unset;
+        grid-area: main-content;
+        width: 90%;
+        margin: 4.063rem auto 0;
+    }
+
+    .main-content-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu-container {
+        display: none;
+    }
+
+    .menu-addon {
+        margin-left: 3.5rem;
+    }
+
+    .user-avatar {
+        display: block;
+        margin-right: 0.9rem;
+    }
+
+    .main-body {
+        display: grid;
+        grid-template-areas: "grid1 grid2"
+                            "grid3 grid4";
+
+        grid-template-columns: 1fr 1fr;
+        gap: 37px;
+        margin-top: 6.4rem;
+    }
+
+    .qr-code-details {
+        margin: unset;
+        grid-area: grid1;
+    }
+
+    .qr-type {
+        margin: unset;
+        grid-area: grid2;
+    }
+
+    .qr-style-box {
+        grid-area: grid3;
+    }
+
+    .qr-format-box {
+        margin: unset;
+        grid-area: grid4;
+    }
+
+    .qr-code-style {
+        margin: unset;
+    }
+
+    .qr-format-box .inner-section {
+        justify-content: space-evenly;
+    }
+
+    .select-qr-format, .qr-format-box .inner-section button {
+        width: 191px;
+    }
+
+    .download-btn {
+        width: 40%;
+    }
+
+}
