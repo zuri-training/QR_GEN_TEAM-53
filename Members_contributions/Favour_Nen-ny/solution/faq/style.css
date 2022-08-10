@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    font-family: Gilmer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 128px;
+}
+.navbar1 {
+    padding-right: 15rem;
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 2px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #061232;
+}
+.active, nav ul li a:hover{
+    text-decoration: underline 2px solid;
+}
+.toggle-button {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #061232;
+    border-radius: 10px;
+
+}
+.first-b{
+        background-color:#061232;;
+        border-radius: 0.25rem;
+        width: 10.12rem;
+        height: 2.9rem;
+        border: none;
+        color: white;
+        font-family:Gilmer;
+        font-size: 1rem;
+    }
+h2 {
+    background-color: rgba(204, 250, 249, 0.4);
+    height: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.one {
+    text-align: center;
+    color: #061232;
+    line-height: 36px;
+    font-size: 1.5rem; 
+    padding-top: 2rem;
+}
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.flexbox-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 39px 47px 39px 125px;
+    gap: 60px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15); 
+    width: 1440px;
+}
+.icons{
+    background-color: #000000;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: #061232;
+    font-size: 1.8rem;
+
+}
+
+.p1 {
+    font-size: 1.5rem;
+    color: #061232;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 155px;
+    gap: 10px;
+}
+
+.second-b {
+    background-color:#061232;;
+    border-radius: 0.25rem;
+    width: 26.3rem;
+    height: 5.75rem;
+    border: none;
+    color: white;
+    font-family: Gilmer;
+    font-size: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+.second-b a {
+    text-decoration: none;
+    color: white;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-family: Glimer;
+    background-color: #EBFDFC;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-logo{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 5rem;
+}
+.two {
+    font-family: 'Gilmer Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    width: 340px;
+    height: 168px;
+}
+.foot-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10rem;
+}
+.footer a{
+    text-decoration: none;
+    color:#061232;
+}
+.foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    margin-top: 5.3rem;
+}
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBFDFC;
+    padding: 2rem;
+}
+
+@media (max-width: 500px) {
+    nav img {
+        margin-left: -6rem;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    nav {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 3rem;
+    }
+    .navbar-links li {
+        padding: .4rem;
+    }
+    .navbar-links:active{
+        display: flex;
+    }
+    .navbar2 button {
+        display: none;
+    } 
+    h2 {
+        font-size: 1.8rem;
+    }
+    .one {
+        text-align: center;
+        color: #061232;
+        line-height: 24px;
+        font-size: 1.3rem; 
+        padding-top: .5rem;
+        width: 20rem;
+        margin: auto;
+    }
+    .flexbox-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 3rem;
+    }
+    .flexbox-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15); 
+        width: 20rem;
+        height: 12rem;
+        border-radius: 1rem;
+        
+    }
+     .copy {
+        display: none;
+     }
+}
