@@ -1,0 +1,458 @@
+/* import Glimer font from local file*/
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Glimer";
+  src: url("font/Gilmer-Font/Gilmer-Medium.otf") format("opentype");
+  font-weight: lighter;
+}
+
+:root {
+  --primary-color: #061232;
+  --text-color: #061232;
+  --placeholder-color: rgba(6, 18, 50, 0.5);
+  --link-color: #007370;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Glimer", sans-serif;
+
+  max-width: 1440px;
+  height: 1024px;
+}
+
+.container {
+  display: grid;
+  grid: template columns 300px 300px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  
+  /* gap: 50px;  */
+
+  position: absolute;
+  width: 100%;
+  height: 112px;
+  left: -1px;
+  top: 8px;
+  background: #ffffff;
+}
+
+header .logo {
+  margin-left: 128px;
+margin-right: 50px;
+  margin-bottom: -10px;
+}
+.log-reg{
+  margin-left: 200px;
+}
+
+header .log-reg .login {
+  text-decoration: none;
+  margin-right: 15px;
+  margin-top: 10px;
+  left: 1079px;
+  width: 53px;
+  height: 30px;
+
+  font-family: "Glimer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 200px;
+  font-family: "Glimer";
+}
+
+nav a {
+  text-decoration: none;
+
+  width: 60px;
+  height: 30px;
+
+  font-family: "Glimer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.reg  {
+  color: white;
+  right: 128px;
+margin-left: 5px;
+  align-items: center;
+  padding: 15px ;
+  gap: 10px;
+  background: #061232;
+  border-radius: 4px;
+}
+.reg button{
+  width: 150px;
+height: 35px;
+background: #061232;
+font-family: 'Gilmer';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+border: none;
+}
+
+
+main {
+  grid-column: span 3;
+}
+.wrapper {
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;*/
+  grid-template-areas:
+    "a a a a"
+    "b b b b";
+  text-align: center;
+}
+
+.item1 {
+  
+
+  position: absolute;
+  width: 1440px;
+  height: 160px;
+  left: 0px;
+  top: 168px;
+
+  background: rgba(204, 250, 249, 0.4);
+}
+.item1 h1 {
+  text-align: center;
+  margin-top: 54px;
+  color: var(--text-color);
+  position: absolute;
+  width: 325px;
+  left: 542px;
+
+  font-family: "Gilmer" "san-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+}
+.item2 {
+  background-color: white;
+  grid-area: b;
+  height: 400px;
+}
+.item2 p {
+  
+
+  position: absolute;
+  width: 1190px;
+  height: 468px;
+  left: 121px;
+  top: 419px;
+  
+  font-family:  "Gilmer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  
+ 
+  color: var(--text-color);
+}
+
+.item2 a{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 24px 155px;
+gap: 10px;
+color: white;
+position: absolute;
+width: 422px;
+height: 92px;
+left: 500px;
+top: 1044px;
+text-decoration: none;
+background: #061232;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+border-radius: 4px;}
+
+.item2 button{
+  border: 0;
+  text-decoration: none;
+  width: 190px;
+  height: 36px;
+  background: #061232;
+  font-family: 'Gilmer';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  
+  
+  /* Pure white */
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+/* footer section */
+
+footer {
+  
+  grid-column: span 3;
+
+  position: absolute;
+width: 1441px;
+height: 600px;
+left: 0px;
+top: 1304px;
+
+
+/* border: 1px solid #000000; */
+
+background: #F3FEFD;
+}
+
+footer .f-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+  grid-gap: 100px;
+}
+footer .f-container a:hover {
+  text-decoration: underline;
+}
+
+footer .f-container a {
+  text-decoration: none;
+
+  /* width: 395px; 
+  height: 54px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  /* color: var(--text-color); */
+
+  width: 124px;
+height: 19px;
+
+/* Body Text (base) */
+
+font-family: 'Gilmer Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #061232;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+footer .f-container ul li {
+  list-style: none;
+  line-height: 36px;
+  margin-top: 25px;
+}
+.fcol-3 h5{
+margin-bottom: 45px;
+  top: 159px;
+  width: 131px;
+height: 29px;
+font-family: 'Gilmer Medium';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #061232;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.fcol-2 h5{
+  margin-bottom: 50px;
+  top: 159px;
+  width: 137px;
+height: 29px;
+font-family: 'Gilmer Medium';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #061232;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.fcol-1 {
+  position: absolute;
+  width: 377px;
+  height: 480px;
+  left: 200px;
+  top: 78px;
+}
+.fcol-1 img {
+  /* margin-top: 5px; */
+  margin-bottom: 5px;
+  width: 100px;
+  height: 48px;
+  top: 72px;
+  right: 75px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 68px;
+}
+.fcol-1 p {
+  width: 320px;
+height: 168px;
+margin-top: 60px;
+/* Body Text (Large) */
+
+font-family: 'Gilmer Medium';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+flex: none;
+order: 1;
+flex-grow: 0;
+  /* color: var(--text-color); */
+  color: #061232;
+}
+.fcol-2 {
+  position: absolute;
+  width: 550px;
+  height: 36px;
+  /* left: 592px;  */
+  left: 820px; 
+  top: 78px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+ 
+}
+
+
+.fcol-3 {
+  position: absolute;
+  width: 100px;
+  height: 36px;
+  left: 1043px;
+  top: 78px;
+
+  font-family: "Glimer", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  
+  color: var(--text-color);
+}
+
+
+
+footer .copyright {
+
+  position: absolute;
+  width: 366px;
+  height: 30px;
+  left: 560px;
+  top: 507px;
+  font-family: "Glimer", sans-serif; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  
+  color: var(--text-color);
+}
+
+
+/* mobile view */
+@media only screen and (max-width: 375px) {
+ 
+}
