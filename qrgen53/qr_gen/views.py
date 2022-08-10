@@ -22,7 +22,6 @@ def qrcode_create_view(request):
     if request.method == 'POST':
         form = QrcodeCreate(request.POST)
         if form.is_valid():
-            QRcode.objects.create(**form.cleaned_data)
             owner = request.user.id
             base_url = form.cleaned_data['base_url']
             dark = form.cleaned_data['dark']
@@ -75,11 +74,13 @@ def qrcode_detail_dy_view(request, qr_id):
     # obj = QRcode.objects.get(id=qr_id)
     obj = get_object_or_404(QRcode, id=qr_id)
     context = {
+        'owner': request.user,
         'title': obj.title,
         'date': obj.date_created,
         'url': obj.base_url,
         'type': obj.type_qr,
-        'stats': obj.stats
+        'stats': obj.stats,
+        'qrcode': obj.qrcode,
     }
     return render(request, 'qr_detail.html', context)
 
@@ -88,7 +89,6 @@ def qrcode_detail_dy_view(request, qr_id):
 def qrcode_delete_view(request, qr_id):
     obj = get_object_or_404(QRcode, id=qr_id)
     if request.method == "POST":
-        # method above confirms delete
         obj.delete()
         return redirect('../../')
     context = {
