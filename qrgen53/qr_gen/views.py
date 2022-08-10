@@ -33,7 +33,7 @@ def qrcode_create_view(request):
             qrcode.save(buff, kind=type_qr, light=light, dark=dark, scale=7)
             qr_code = QRcode(title=title, owner=owner, base_url=base_url,
                              type_qr=type_qr, light=light, dark=dark, )
-            url_img = 'static/qrcodes/' + title + '.' + type_qr
+            url_img = '/static/qrcodes/' + title + '.' + type_qr
             created = True
             t2 = title + '.' + type_qr
             qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
@@ -73,6 +73,7 @@ def qrcode_detail_dy_view(request, qr_id):
     # TODO: apply this
     # obj = QRcode.objects.get(id=qr_id)
     obj = get_object_or_404(QRcode, id=qr_id)
+    location = '/' + str(obj.qrcode)
     context = {
         'owner': request.user,
         'title': obj.title,
@@ -81,6 +82,7 @@ def qrcode_detail_dy_view(request, qr_id):
         'type': obj.type_qr,
         'stats': obj.stats,
         'qrcode': obj.qrcode,
+        'location': location
     }
     return render(request, 'qr_detail.html', context)
 
