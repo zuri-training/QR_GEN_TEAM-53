@@ -38,3 +38,9 @@ FAQ page
 
 Solution: 
 Coded up My QR Code Empty State, Analytics and FAQ page. 
+
+Analytics Page: https://github.com/zuri-training/QR_GEN_TEAM-53/tree/testing/Members_contributions/Favour_Nen-ny/solution/analytics
+
+FAQ Page: https://github.com/zuri-training/QR_GEN_TEAM-53/tree/testing/Members_contributions/Favour_Nen-ny/solution/faq
+
+QR Code Empty Page: https://github.com/zuri-training/QR_GEN_TEAM-53/tree/testing/Members_contributions/Favour_Nen-ny/solution/qr%20empty%20page
