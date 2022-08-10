@@ -1,6 +1,8 @@
 # Ridwan Amoo 
 
 - Slack Username: Ralat
+- Zuri Student ID: I4G000308OPV
+- Track: Ful Stack
 - Member of Team 53 QR Generator project
 
 # Contributions 
