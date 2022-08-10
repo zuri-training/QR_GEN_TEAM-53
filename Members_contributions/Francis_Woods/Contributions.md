@@ -36,7 +36,7 @@ As the Team lead (dev), I took up the following responsibilities
 
 #### Assistant Team Lead (Designers)
 
-- gave creative input on the create qr raw page both Desktop and mobile views ( LowFi & Hifi)
+- gave creative input on the create qr raw page both Desktop and mobile views [( LowFi & Hifi)](https://github.com/zuri-training/QR_GEN_TEAM-53/tree/testing/Members_contributions/Francis_Woods)
 - gave creative input on the settings mobile page
 - link to our [Figma board](https://www.figma.com/file/DaCupcCqB7ZJ3ixvHBsTyi/Team-53-Proj-QR-board?node-id=29%3A4)
  
