@@ -1,8 +1,7 @@
+import io
 import segno
 from segno import helpers
 
-
-# import json
 
 
 # TODO: receive input to determine the output type
@@ -16,6 +15,10 @@ from segno import helpers
 
 def simple_qrcode(name, base_link, light, dark, kind):
     qr = segno.make_qr(content=base_link, error="H", boost_error=True)
+    img = qr.to_pil(dark=dark, light=light)
+    out = io.BytesIO()
+    img.save(out, format='jpg')
+
     return qr.save(name + kind, dark=dark, light=light)
 
 

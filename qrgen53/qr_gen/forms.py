@@ -1,5 +1,6 @@
 from django import forms
-from .models import QRcode
+
+from .models import QRcode, Owner
 
 
 class QrcodeCreate(forms.ModelForm):
@@ -11,4 +12,21 @@ class QrcodeCreate(forms.ModelForm):
             'type_qr',
             'light',
             'dark'
+        }
+
+
+class OwnerCreate(forms.ModelForm):
+    class Meta:
+        model = Owner
+        fields = {
+            'id',
+        }
+
+
+class AddOwner(forms.ModelForm):
+    class Meta:
+        model = Owner
+        fields = {
+            'total_qr',
+            'total_active',
         }
