@@ -3765,6 +3765,9 @@ th {
 }
 
 @media screen and (max-width:767px) {
+    .side{
+        display: none;
+    }
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
@@ -8818,3 +8821,5 @@ button.close {
         display: none !important
     }
 }
+
+

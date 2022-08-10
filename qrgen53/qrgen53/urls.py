@@ -46,7 +46,6 @@ urlpatterns = [
     path('create/', qrcode_create_view, name='create'),
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
     path('details/<int:qr_id>/delete/', qrcode_delete_view, name='qr_delete'),
-    path('create/', qrcode_create_view, name='qr_create'),
     path('settings/', setting_view, name='settings'),
 
     path('admin/', admin.site.urls),
