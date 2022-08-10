@@ -20,7 +20,7 @@ Third task: code up destop view for About us page and Privacy policy page
 link to issues: https://github.com/zuri-training/QR_GEN_TEAM-53/issues/14
 
 Evidence of work
-link to submissions https://github.com/zuri-training/QR_GEN_TEAM-53/tree/ibukun-dev/About%20us%20page
+link to submissions https://github.com/zuri-training/QR_GEN_TEAM-53/tree/ibukub-patch-3/Privacy%20Policy
 https://github.com/zuri-training/QR_GEN_TEAM-53/tree/ibukun-dev/Privacy%20Policy
 
 
