@@ -213,8 +213,8 @@ html {
     border-radius: 4px;
 }
 
-.otp-code:last-child {
-    margin-right: 0px;
+.otp-code > input:last-child {
+    margin-right: 0;
 }
 
 .forgot-pw-email {
