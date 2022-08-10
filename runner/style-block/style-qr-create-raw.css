@@ -319,7 +319,7 @@ html {
         margin-right: 0.9rem;
     }
 
-    .main-body {
+    .main-body form {
         display: grid;
         grid-template-areas: "grid1 grid2"
                             "grid3 grid4";

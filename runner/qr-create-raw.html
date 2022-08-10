@@ -117,70 +117,72 @@
         </header>
 
         <div class="main-body">
+          <form action="">
 
-          <div class="qr-type">
-            <img src="images/dash_img/qr-code-svgrepo-com (1) real 1.png" alt="QR-Code">
-            <div class="form">
-
-              <div class="checkbox">
-                <input type="checkbox" name="qr-type" id="dynamic" value="dynamic">
-                <label for="dynamic">Dynamic</label>
+            <div class="qr-type">
+              <img src="images/dash_img/qr-code-svgrepo-com (1) real 1.png" alt="QR-Code">
+              <div class="form">
+  
+                <div class="checkbox">
+                  <input type="checkbox" name="qr-type" id="dynamic" value="dynamic">
+                  <label for="dynamic">Dynamic</label>
+                </div>
+  
+                <div class="checkbox static-checkbox">
+                  <input type="checkbox" name="qr-type" id="static" value="static">
+                  <label for="static">Static</label>
+                </div>
               </div>
-
-              <div class="checkbox static-checkbox">
-                <input type="checkbox" name="qr-type" id="static" value="static">
-                <label for="static">Static</label>
+            </div>
+  
+            <div class="qr-code-details">
+              <div class="input-box">
+                <label for="qr-name">Name of your QR Code</label>
+                <input type="text" placeholder="QR Code Name" name="qr-name">
+              </div>
+  
+              <div class="input-box">
+                <label for="website-url">Website URL</label>
+                <input type="text" placeholder="www.mysite.com" name="website-url">
+              </div>
+  
+              <div class="input-box">
+                <label for="qr-type">Type of QR Code</label>
+                <input type="text" placeholder="www.mysite.com" name="qr-type">
               </div>
             </div>
-          </div>
-
-          <form action="" class="qr-code-details">
-            <div class="input-box">
-              <label for="qr-name">Name of your QR Code</label>
-              <input type="text" placeholder="QR Code Name" name="qr-name">
+  
+            <div class="qr-style-box">
+              <div class="qr-code-style">
+                <div class="input-box">
+                  <label for="color">Color</label>
+                  <input type="text" placeholder="#000000" name="color">
+                </div>
+  
+                <div class="input-box">
+                  <label for="background-color">Background color</label>
+                  <input type="text" placeholder="#000000" name="background-color">
+                </div>
+              </div>
             </div>
-
-            <div class="input-box">
-              <label for="website-url">Website URL</label>
-              <input type="text" placeholder="www.mysite.com" name="website-url">
-            </div>
-
-            <div class="input-box">
-              <label for="qr-type">Type of QR Code</label>
-              <input type="text" placeholder="www.mysite.com" name="qr-type">
+  
+            <div class="qr-format-box">
+              <p>Format of QR Code</p>
+              <div class="inner-section">
+                <div>
+                  <select name="qr-format" id="qr-format" class="select-qr-format">
+                    <option value="png">PNG</option>
+                    <option value="svg">SVG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="pdf">PDF</option>
+                  </select>
+                </div>
+                <button>Create QR Code</button>
+              </div>
+  
+              <button class="download-btn">Download</button>
             </div>
           </form>
-
-          <div class="qr-style-box">
-            <div class="qr-code-style">
-              <div class="input-box">
-                <label for="color">Color</label>
-                <input type="text" placeholder="#000000" name="color">
-              </div>
-
-              <div class="input-box">
-                <label for="background-color">Background color</label>
-                <input type="text" placeholder="#000000" name="background-color">
-              </div>
-            </div>
-          </div>
-
-          <div class="qr-format-box">
-            <p>Format of QR Code</p>
-            <div class="inner-section">
-              <div>
-                <select name="qr-format" id="qr-format" class="select-qr-format">
-                  <option value="png">PNG</option>
-                  <option value="svg">SVG</option>
-                  <option value="jpeg">JPEG</option>
-                  <option value="pdf">PDF</option>
-                </select>
-              </div>
-              <button>Create QR Code</button>
-            </div>
-
-            <button class="download-btn">Download</button>
-          </div>
 
         </div>
       </div>
