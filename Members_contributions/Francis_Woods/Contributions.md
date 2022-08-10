@@ -34,6 +34,7 @@ As the Team lead (dev), I took up the following responsibilities
 - linking webpages
 
 
+
 #### Assistant Team Lead (Designers)
 
 - gave creative input on the create qr raw page both Desktop and mobile views [( LowFi & Hifi)](https://github.com/zuri-training/QR_GEN_TEAM-53/tree/testing/Members_contributions/Francis_Woods)
