@@ -1,0 +1,325 @@
+/* import Glimer font from local file*/
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+    font-weight: lighter;
+}
+
+:root {
+    --primary-color: #061232;
+    --text-color: #061232;
+    --placeholder-color: rgba(6, 18, 50, 0.5);
+    --link-color: #007370;
+    --input-active: #4375FA;
+}
+
+html {
+    font-size: 16px;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.signin-body, .signup-body {
+    background-color: #fff;
+}
+
+.canva-body {
+    height: 90vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canva-container {
+    text-align: center;
+}
+
+.header-signin, .header-signup {
+    width: 70vw;
+    margin: 1rem auto 0;
+}
+
+.canva-header {
+    text-align: center;
+}
+
+.canva-header > img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2.63rem;
+}
+
+.new-password-logo > img {
+    margin-bottom: 4.69rem;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signin-container, .signup-container {
+    font-family: 'Glimer', sans-serif;
+    width: 70vw;
+    display: grid;
+    grid-template-areas: "info content";
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    margin: 3.2rem auto 0;
+}
+
+.forgot-pw-container {
+    font-family: 'Glimer', sans-serif;
+}
+
+.forgot-pw-container > h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 0.63rem;
+}
+
+.forgot-pw-container > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--text-color);
+    margin-bottom: 1.56rem;
+}
+
+.forgot-pw-container > p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 5.06rem;
+}
+
+.signin-img, .signup-img {
+    grid-area: info;
+    margin: auto;
+}
+
+.signin-img > img, .signup-img > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signin-content, .signup-content  {
+    grid-area: content;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.signin-header, .signup-header {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.signin-header h2, .signup-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.forgot-pw-form {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.forgot-pw-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.signin-form, .signup-form, .digit-group {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password-container {
+    margin-top: 3.18rem;
+}
+
+.submit-btn-container {
+    margin-bottom: 2.13rem;
+}
+
+.input-container label, .forgot-pw-email-container label {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.313rem;
+    color: var(--text-color);
+}
+
+.signin-input, .signup-input, .forgot-pw-email {
+    width: 100%;
+    padding: 1.188rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-color);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.otp-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.25rem;
+}
+
+.otp-code > input {
+    font-size: 3.3rem;
+    line-height: 50px;
+    font-family: 'Glimer', sans-serif;
+    text-align: center;
+    width: 66px;
+    height: 66px;
+    margin-right: 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 4px;
+}
+
+.otp-code:last-child {
+    margin-right: 0px;
+}
+
+.forgot-pw-email {
+    margin-top: 0.31rem
+}
+
+.signin-input:focus, .signup-input:focus, .forgot-pw-email:focus {
+    border-color: var(--input-active);
+    outline: none;
+}
+
+.signin-input::placeholder, .signup-input::placeholder, .forgot-pw-email::placeholder {
+    font-family: 'Glimer', sans-serif;
+    color: var(--placeholder-color);
+    font-size: 0.875rem;
+}
+
+
+.forgot-pw {
+    text-align: right;
+    margin-top: 0.69rem;
+    margin-bottom: 1.94rem;
+}
+
+.forgot-pw a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.signin-btn, .signup-btn, .forgot-pw-btn {
+    padding: 1.125rem 0;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+.forgot-pw-btn {
+    width: 100%;
+    margin-top: 5.75rem;
+}
+
+.new-password {
+    margin-top: 4.06rem;
+}
+
+.confirm-password {
+    margin-top: 4.38rem;
+}
+
+.signin-divider p, .signup-divider p {
+    text-align: center;
+    width: 80%;
+    border-bottom: 2px solid rgba(6, 18, 50, 0.3);
+    line-height: 0.1em;
+    margin: 10px auto 20px;
+}
+
+.signin-divider p span, .signup-divider p span {
+    background: #fff;
+    padding: 0 10px;
+    font-size: 1.25rem;
+}
+
+.google-signin-container button, .google-signup-container button {
+    width: 80%;
+    padding: 1.125rem 0;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--primary-color);
+    background-color: inherit;
+    border-radius: 4px;
+    margin-top: 0.75rem;
+    margin-bottom: 3.5rem;
+}
+.Privacy-policy {
+    margin-bottom: 1.5rem;
+}
+
+.no-code-container {
+    margin-top: 2.2rem;
+}
+
+.no-code {
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.create-acc p, .acc-login p, .Privacy-policy p a {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.create-acc p a, .acc-login p a, .Privacy-policy p a {
+    text-decoration: none;
+    color: var(--link-color);
+}
