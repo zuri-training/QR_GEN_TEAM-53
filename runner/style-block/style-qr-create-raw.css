@@ -101,7 +101,7 @@ html {
     height: auto;
 }
 
-.qr-type form {
+.qr-type .form {
     display: flex;
     align-items: center;
     justify-content: space-between;
