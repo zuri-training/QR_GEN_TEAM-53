@@ -27,7 +27,7 @@ https://github.com/zuri-training/QR_GEN_TEAM-53/tree/ibukun-dev/Privacy%20Policy
 Fourth Task Assigned
 code up the mobile view for About Us and privacy Policy pages
 
-Solution
+
 I am currently working on this task and i will make the necessary update  when it has been completed.
 
 Thank you.
