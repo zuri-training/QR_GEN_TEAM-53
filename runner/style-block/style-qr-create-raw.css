@@ -17,6 +17,13 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Medium.otf") format("opentype");
+    font-weight: 600;
+}
+
+
 :root {
     --primary-color: #061232;
     --text-color: #061232;
@@ -345,11 +352,11 @@ html {
     font-size: 3rem;
     font-weight: bold;
 }
-
+/* ending for detail page */
 
 /* desktop view */
 
-@media (min-width:510px) {
+@media (min-width:760px) {
 
     .qr-create-main {
         display: grid;
@@ -483,5 +490,109 @@ html {
     .download-btn {
         width: 40%;
     }
+
+    /* for detail  desktop page */
+
+    .details-body {
+        margin-top: 5%;
+    }
+
+    .section-1 {
+        display: grid;
+        grid-template-areas: "a b"
+                             "c d";
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .inner-wrapper {
+        grid-area: a;
+        justify-content: space-around;
+    }
+
+    .img-box {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .img-box .image {
+        width: 132px;
+    }
+
+    .qr-detail-info {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .qr-detail-info > .name {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .qr-detail-info > .category {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .status {
+        grid-area: b;
+    }
+
+    .status > h3, .status > p {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    .detail-edit {
+        grid-area: d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .detail-box {
+        margin: 0;
+        width: 30vw;
+    }
+
+    .save-edit-box {
+        margin: 0;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    .save-edit {
+        width: 15vw;
+        height: 56px;
+        margin: 0;
+    }
+
+    .scan-activities {
+        margin-top: 3rem;
+    }
+
+    .stat-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .scan-info {
+        flex: 1;
+        margin: 0;
+        width: calc(100% / 3);
+        padding: 3.6rem 0.5rem;
+    }
+
+
+
+
+
+
 
 }
