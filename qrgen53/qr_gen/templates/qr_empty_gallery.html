@@ -1,14 +1,13 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Codes</title>
-    <link rel="stylesheet" href="{% static 'styles/qrcode_style.css' %}">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="{% static 'styles/qrcode_empty_style.css' %}">
 </head>
 <body>
     <main class="main">
@@ -55,9 +54,10 @@
                 </svg><p>Log out</p></a
             >
           </nav>
-          <div class="main__body">
+          <div class="empty__body">
             <div class="user2">
                 <span class="size4">QR Codes</span>
+                <img src="{% static 'images/Logo.png' %}" alt="">
                 <div class="user">
                     <span class="size3">{{ username }}</span>
                     <div class="notification_and_pic">
@@ -65,21 +65,20 @@
                         <img src="{% static 'images/jj 3.png' %}" alt="" />
                       </div>
                       <div>
-                        <img src="{% static 'images/Notification.png' %}" alt="" />
+                        <img id="notify" src="{% static 'images/Notification.png' %}" alt="" />
                       </div>
                       <img class="justify" src="{% static 'images/align-justify.png' %}" alt="">
                     </div>
                     </div>
                 </div>
-                <div class="sort_filter">
-                    <a href="{% url 'create' %}"><button>Create QR Code</button></a>
-                    <div class="select_and_input">
+                <div class="sort_filter2">
+                    <div class="select_and_input2">
                         <div class="select">
                             <select name="filter" id="filter">
                                 <option value="">Filter by</option>
                                 <option value="">Option 2</option>
                             </select>
-                            <select name="sort" id="sort">
+                            <select name="sort" id="sort2">
                                 <option value="" name="sort">Sort by</option>
                                 <option value="" name="sort">Choice 1</option>
                             </select>
@@ -94,39 +93,13 @@
                               <input type="text" placeholder="Search"/>
                             </div>
                           </form>
+                        </div>
                     </div>
-                </div>
-            {% for instance in object_list %}
-                <div class="spread">
-                <div class="left">
-                    <img src="{{ instance.qrcode }}" alt="">
-                    <div class="block">
-                        <span class="size">{{ instance.type_qr }}</span>
-                        <span class="size2">{{ instance.title }}</span>
-                        <span class="size">Created: {{ instance.date_created }}</span>
+                <div class="display_box">
+                      <img src="{% static 'images/qr-code-svgrepo-com (1) real 1.png' %}" alt="">
+                      <span>You don't have any QR Code</span>
+                      <a href=""><button id="bttn">Create QR Code</button></a>
                     </div>
-                </div>
-                <div class="right">
-                    <span class="size2">
-                        {% if instance.active == True %}
-                            Active
-                        {% else %}
-                            Inactive
-                        {% endif %}
-
-                    </span>
-                    <div class="block">
-                        <span class="size2">{{ instance.stats }}</span>
-                        <span class="size">Scan</span>
-                    </div>
-                    <div class="edit_and_download">
-                        <img src="{% static 'images/edit.png' %}" alt="">
-                        <img src="{% static 'images/download.png' %}" alt="">
-                    </div>
-                    <a href="{{ instance.get_absolute_url }}"><button>Detail</button></a>
-                </div>
-            </div>
-            {% endfor %}
           </div>
     </main>
 </body>

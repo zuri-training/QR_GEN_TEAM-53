@@ -56,15 +56,20 @@ def qrcode_create_view(request):
 
 @login_required(login_url='login')
 def qrcode_gallery_view(request):
-    username = request.user.id
-    queryset = QRcode.objects.filter(owner=username)  # list of objects
+    userid = request.user.id
+    queryset = QRcode.objects.filter(owner=userid)  # list of objects
     # TODO: add functionality for when the qr code gallery is empty
-    print(username)
-    print(queryset)
-    context = {
-        "object_list": queryset
-    }
-    return render(request, 'qr_gallery.html', context)
+    if queryset.exists():
+        context = {
+            "object_list": queryset,
+            'username': request.user
+        }
+        return render(request, 'qr_gallery.html', context)
+    else:
+        context = {
+            'username': request.user,
+        }
+        return render(request, 'qr_empty_gallery.html', context)
 
 
 @login_required(login_url='login')
