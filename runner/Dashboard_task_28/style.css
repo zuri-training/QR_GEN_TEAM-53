@@ -1,0 +1,338 @@
+/* import Glimer font from local file*/
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+    font-weight: lighter;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gilmer';
+    font-size: 16px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.decor{
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 4em;
+    margin: 2em 1em 0 1em;
+    padding: .5em 0 .5em .5em;
+    border-radius: 5px;
+}
+.mask{
+    -webkit-mask-image: url(images/Frame\ 603.png);
+    mask-image: url(images/Frame\ 603.png);
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    background-color: #061232;
+    padding-left: 30px;
+    color: #FFFFFF;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.main__body{
+    grid-column-start: 2;
+}
+.side a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.side a:hover{
+    background-color: #FFFFFF;
+    color: #061232;
+    border-radius: 0;
+    border-right: 1em solid #121212;
+    border-width: .3em;
+    border-radius: 5px;
+}
+.side__bar{
+    padding: .75rem;
+    margin: .75rem 1em .75em 0;
+    display: flex;
+    align-items: center;
+}
+.side__bar svg{
+    margin: 0 1em 0 0;
+}
+.plus{
+    justify-content: space-between;
+}
+.logo_mobile{
+    display: none;
+}
+hr{
+    margin: 0 2em 0 0;
+    border: 1px solid #CCFAF9;
+}
+.header__like{
+    display: flex;
+    justify-content: space-between;
+    color: #061232;
+    margin: .75em 2em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #00bfb942;
+    border-radius: 7px;
+    justify-content: center;
+}
+input{
+    border: transparent;
+    margin: .5em;
+    outline: none;
+    filter: opacity(70%);
+    height: 40px;
+}
+.but{
+    border: none;
+    background-color: transparent;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.notification_and_pic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+}
+.date__time{
+    display: flex;
+    padding: 1em;
+    margin: 0 1em;
+}
+.date__time p{
+    margin: 0 1em;
+}
+.nav__links{
+    display: flex;
+    padding: .5em;
+    margin: 0 1.5em;
+}
+.nav__links a{
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #061232;
+}
+.nav__links a:hover{
+    background-color:#CCFAF9;
+    border-radius: 5px;
+}
+.h3class{
+    margin:2.5em 4.5em .5em;
+}
+span{
+    font-size: 24px;
+}
+.top__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 2em;
+    margin: 0 2em;
+    color:  #121212;
+}
+.upper__cards{
+    border-radius: 8px;
+    padding: 1em;
+    height: 116px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+.bottom__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4em;
+    row-gap: 1em;
+    margin: 1em;
+    padding: 0 4em;
+    color: #061232;
+}
+.bottom__container a{
+    text-decoration: none;
+    color: #061232;
+}
+.lower__cards{
+    border: 3px solid #061232;
+    border-radius: 10px;
+    height: 7em;
+    padding: 1em;
+}
+.logout{
+    margin-bottom: 2em;
+}
+.btn{
+    padding: 1.5em 6em;
+    margin: 1em 0;
+    background-color: #061232;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    left: 35.5em;
+}
+button{
+    cursor: pointer;
+}
+@media screen and (max-width: 970px) {
+    .btn{
+        position: relative;
+        left: 18em;
+    }
+    .nav{
+        display: block;
+        margin: auto;
+    }
+    .date__time{
+        display: flex;
+        padding: .25em;
+        margin: 0 .4em;
+    }
+    .nav__links{
+        margin: 0 1em;
+    }
+}
+@media screen and (max-width: 730px) {
+    .bottom__container{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    }
+    .lower__cards{
+        height: 126px;
+        padding: 1em;
+    }
+    .btn{
+        position: relative;
+        left: 9.25em;
+        padding: 1.25em 3em;
+    }
+    .nav, .search{
+        display: none;
+    }
+    .header__like{
+        display: flex;
+        justify-content: right;
+    }
+    .user{
+        margin-top: 1em;
+    }
+    .nav__links{
+        font-size: .75em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main__body{
+        grid-column-start: 1;
+    }
+    .side, .nav{
+        display: none;
+    }
+    .logo_mobile{
+        display: block;
+        justify-self: left;
+    }
+    .header__like{
+        display: flex;
+        justify-content: center;
+    }
+    .nav__links{
+        font-size: .75em;
+    }
+}
+/* media query for mobile view  */
+@media screen and (max-width: 380px) {
+    .header__like{
+        display: block;
+        margin: 0 0;
+    }
+    .user{
+        display: flex;
+        justify-content: space-between;
+        margin: 3em 2em;
+    }
+    .notification_and_pic{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .notification_and_pic img{
+        width: 2.75em;
+    }
+    .h3class{
+        margin:2.5em 5em 2em;
+    }
+    p{
+        margin: 0 1em;
+    }
+    .top__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0 2em;
+        color:  #121212;
+    }
+    .upper__cards{
+        display: flex;
+        border-radius: 8px;
+        padding: 1em;
+        height: 68px;
+        align-items: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+    .bottom__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+        gap: 24px;
+        row-gap: 1em;
+        margin: .5em;
+        padding: 0 1em;
+        color: #061232;
+    }
+    .lower__cards{
+        border: 0;
+        border-radius: 8px;
+        height: 126px;
+        padding: 1em;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    }
+    .btn{
+        position: relative;
+        left: 7.25em;
+    }
+}

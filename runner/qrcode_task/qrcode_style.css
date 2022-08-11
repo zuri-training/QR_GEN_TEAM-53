@@ -49,6 +49,9 @@ body{
     background-color: #061232;
     padding-left: 30px;
     color: #FFFFFF;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .side a{
     color: #FFFFFF;
@@ -204,12 +207,7 @@ select{
     grid-template-rows: 1fr;
     gap: 18px;
     margin: 2.5em 3em 3em 8em;
-}
-.empty__body{
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    margin: 3em 5.5em 5em 3em;
+    grid-column-start: 2;
 }
 .display_box{
     display: flex;
@@ -290,6 +288,9 @@ select{
     }
 }
 @media screen and (max-width: 510px) {
+    .main__body{
+        margin: 40px 16px 40px 16px;
+    }
     .spread{
         padding: 1em;
     }
@@ -336,7 +337,5 @@ select{
     .notification_and_pic{
         margin: 0 0 0 10px;
     }
-    .main__body{
-        margin: 40px 21px 40px 25px;
-    }
+    
 }
