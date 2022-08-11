@@ -256,6 +256,7 @@ button{
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .side, .nav{
         display: none;
     }
@@ -263,6 +264,7 @@ button{
         position: relative;
         left: 3em;
     }
+
     .logo_mobile{
         display: block;
         justify-self: left;
@@ -340,5 +342,6 @@ button{
         border-radius: 4px;
         position: relative;
         left: 40px;
+
     }
 }
