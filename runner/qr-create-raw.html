@@ -124,12 +124,12 @@
               <div class="form">
   
                 <div class="checkbox">
-                  <input type="checkbox" name="qr-type" id="dynamic" value="dynamic">
+                  <input type="radio" name="qr-type" id="dynamic" value="dynamic">
                   <label for="dynamic">Dynamic</label>
                 </div>
   
                 <div class="checkbox static-checkbox">
-                  <input type="checkbox" name="qr-type" id="static" value="static">
+                  <input type="radio" name="qr-type" id="static" value="static">
                   <label for="static">Static</label>
                 </div>
               </div>
@@ -139,18 +139,18 @@
             <div class="qr-code-details">
               <div class="input-box">
                 <label for="qr-name">Name of your QR Code</label>
-                <input type="text" placeholder="QR Code Name" name="qr-name">
+                <input type="text" placeholder="QR Code Name" id="qr-name">
               </div>
   
               <div class="input-box">
 
                 <label for="website-url">Website URL</label>
-                <input type="text" placeholder="www.mysite.com" name="website-url">
+                <input type="text" placeholder="www.mysite.com" id="website-url">
               </div>
   
               <div class="input-box">
                 <label for="qr-type">Type of QR Code</label>
-                <input type="text" placeholder="www.mysite.com" name="qr-type">
+                <input type="text" placeholder="www.mysite.com" id="qr-type">
               </div>
             </div>
   
@@ -158,12 +158,44 @@
               <div class="qr-code-style">
                 <div class="input-box">
                   <label for="color">Color</label>
-                  <input type="text" placeholder="#000000" name="color">
+                  <select name="qr-format" id="color" class="select-qr-format" style="border: 1px solid var(--primary-color);border-radius: 4px;width: auto;height: 56px;">
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                    <option value="grey">grey</option>
+                    <option value="silver">silver</option>
+                    <option value="marron">maroon</option>
+                    <option value="red">red</option>
+                    <option value="purple">purple</option>
+                    <option value="green">green</option>
+                    <option value="lime">lime</option>
+                    <option value="olive">olive</option>
+                    <option value="yellow">yellow</option>
+                    <option value="navy">navy</option>
+                    <option value="blue">blue</option>
+                    <option value="teal">teal</option>
+                    <option value="aqua">aqua</option>
+                  </select>
                 </div>
   
                 <div class="input-box">
                   <label for="background-color">Background color</label>
-                  <input type="text" placeholder="#000000" name="background-color">
+                  <select name="qr-format" id="background-color" class="select-qr-format" style="border: 1px solid var(--primary-color);border-radius: 4px;width: auto;height: 56px;">
+                    <option value="white">white</option>
+                    <option value="black">black</option>
+                    <option value="grey">grey</option>
+                    <option value="silver">silver</option>
+                    <option value="marron">maroon</option>
+                    <option value="red">red</option>
+                    <option value="purple">purple</option>
+                    <option value="green">green</option>
+                    <option value="lime">lime</option>
+                    <option value="olive">olive</option>
+                    <option value="yellow">yellow</option>
+                    <option value="navy">navy</option>
+                    <option value="blue">blue</option>
+                    <option value="teal">teal</option>
+                    <option value="aqua">aqua</option>
+                  </select>
                 </div>
               </div>
             </div>
