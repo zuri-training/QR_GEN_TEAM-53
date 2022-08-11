@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Bold.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Heavy.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Heavy.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Light.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Light.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Medium.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Outline.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Outline.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Read Me.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/www.dfonts.org.url" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/www.dfonts.org.url" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Contributing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Terms of service/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Terms of service/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Terms of service/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Terms of service/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/543F848B-9B76-45DA-8018-2238EE63777F.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/543F848B-9B76-45DA-8018-2238EE63777F.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/An introduction to QR code technology .pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/An introduction to QR code technology .pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/Idea Prioritization.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Idea Prioritization.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/Screenshot_20220730-130028_Figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Screenshot_20220730-130028_Figma.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/Team 53_QRgen(2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Team 53_QRgen(2).docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/cuate.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/cuate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/profile man picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/profile man picture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/designers/raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/raw.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources.md" beforeDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="first cleaning" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,13 +78,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Home and external website view">
-      <created>1659343320243</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1659343320243</updated>
     </task>
     <task id="LOCAL-00015" summary="Home and external website view">
       <created>1659343630983</created>
@@ -448,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660184516457</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="first cleaning">
+      <created>1660238098856</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1660238098856</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,6 +498,7 @@
     <MESSAGE value="added logging out functionality" />
     <MESSAGE value="built in the features for app" />
     <MESSAGE value="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon" />
-    <option name="LAST_COMMIT_MESSAGE" value="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon" />
+    <MESSAGE value="first cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="first cleaning" />
   </component>
 </project>
