@@ -235,8 +235,7 @@ button{
     }
     .btn{
         position: relative;
-        left: 9.25em;
-        padding: 1.25em 3em;
+        left: 4.5em;
     }
     .nav, .search{
         display: none;
@@ -257,12 +256,15 @@ button{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .main__body{
-        grid-column-start: 1;
-    }
+
     .side, .nav{
         display: none;
     }
+    .btn{
+        position: relative;
+        left: 3em;
+    }
+
     .logo_mobile{
         display: block;
         justify-self: left;
@@ -332,7 +334,14 @@ button{
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     }
     .btn{
+        padding: 1.25em 4em;
+        margin: 3.5em;
+        background-color: #061232;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
         position: relative;
-        left: 7.25em;
+        left: 40px;
+
     }
 }
