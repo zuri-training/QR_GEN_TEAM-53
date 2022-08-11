@@ -49,6 +49,9 @@ body{
     background-color: #061232;
     padding-left: 30px;
     color: #FFFFFF;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .side a{
     color: #FFFFFF;
@@ -126,16 +129,11 @@ input{
     justify-content: space-around;
     align-items: center;
 }
-.sort_filter{
+.sort_filter2{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     gap: 24px;
-    align-items: center;
-}
-.select_and_input{
-    display: flex;
-    align-items: center;
 }
 select{
     text-align: center;
@@ -164,12 +162,12 @@ select{
     grid-template-columns: 1fr;
     gap: 10px;
     margin: 3em 5.5em 5em 3em;
+    grid-column-start: 2;
 }
 .select_and_input2{
     display: flex;
     align-items: center;
     float: right;
-    margin: 0 2em 0 0;
 }
 .display_box{
     display: flex;
@@ -192,7 +190,7 @@ select{
     height: 4.5em;
     font-family: 'Gilmer';
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 890px) {
     .main{
         grid-template-columns: 1fr 3fr;
     }
@@ -225,12 +223,15 @@ select{
     .main{
         grid-template-columns: 1fr;
     }
+    .empty__body{
+        grid-column-start: 1;
+    }
     .select_and_input{
         display: flex;
         flex-direction: row-reverse;
     }
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 540px) {
     .justify{
         display: block;
         margin: 0 4px;
@@ -245,9 +246,9 @@ select{
         margin: 40px 21px 40px 25px;
     }
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 450px) {
     .user2{
-        width: 340px;
+        /* width: 340px; */
         padding: 0 1em;
     }
     .notification_and_pic{
@@ -257,6 +258,14 @@ select{
         height: 32px;
         width: 82px;
         margin: 0;
+    }
+    .search{
+        height: 37px;
+        width: 151px;
+    }
+    input{
+        width: 120px;
+        height: 35px;
     }
     .select_and_input2{
         display: flex;
@@ -269,25 +278,20 @@ select{
     #filter{
         margin: 0 0 0 10px;
     }
-}
-@media screen and (max-width: 380px) {
-    .search{
-        height: 37px;
-        width: 151px;
-    }
-    input{
-        width: 120px;
-        height: 35px;
-    }
-    .select_and_input2{
-        display: flex;  
-    }
-    .display_box{
-        position: relative;
-        right: 1.25em;
-    }
     #bttn{
         width: 171px;
         height: 42px;
     }
+    .user{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    .display_box{
+        justify-self: center;
+    }
+   .empty__body{
+    margin: 40px 16px;
+   }
 }
