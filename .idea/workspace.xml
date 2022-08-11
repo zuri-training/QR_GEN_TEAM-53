@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Bold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Heavy.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Heavy.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Light.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Light.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Medium.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Outline.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Outline.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Gilmer-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Gilmer-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/Read Me.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Gilmer-Font/www.dfonts.org.url" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Gilmer-Font/www.dfonts.org.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Terms of service/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Terms of service/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Terms of service/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Terms of service/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/543F848B-9B76-45DA-8018-2238EE63777F.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/543F848B-9B76-45DA-8018-2238EE63777F.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/An introduction to QR code technology .pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/An introduction to QR code technology .pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/Idea Prioritization.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Idea Prioritization.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/Screenshot_20220730-130028_Figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Screenshot_20220730-130028_Figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/Team 53_QRgen(2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/Team 53_QRgen(2).docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/cuate.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/cuate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/profile man picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/profile man picture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/designers/raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/designers/raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,15 +68,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/templates",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
@@ -60,11 +86,11 @@
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Terms of service" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\create\static" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -441,7 +467,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

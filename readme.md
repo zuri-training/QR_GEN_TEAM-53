@@ -39,8 +39,7 @@ User: Authenticated
 
 ### Links
 
-- Sign-up page: [sign up](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-up.html)
-- Sign-in page: [sign in](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/sign-in.html)
+- link to site hosted by github: [Pseudo-site](https://zuri-training.github.io/QR_GEN_TEAM-53/runner/index.html)
 
 ## My process
 
@@ -50,7 +49,9 @@ User: Authenticated
 - CSS custom properties
 - CSS Grid
 - Django
-
+- [Segno]("https://segno.readthedocs.io/en/stable/make.html")
+- [django-segno-qr]("https://pypi.org/project/django-segno-qr/")
+- [django]("https://www.djangoproject.com/")
 
 ### Code We are proud of
 
