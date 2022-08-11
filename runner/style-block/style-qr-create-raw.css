@@ -141,7 +141,7 @@ html {
     margin-bottom: 0.3rem;
 }
 
-.input-box input {
+.input-box input, .detail-box > input {
     color: var(--primary-color);
     font-family: 'Glimer', sans-serif;
     font-size: 0.875rem;
@@ -151,7 +151,7 @@ html {
     border-radius: 4px;
 }
 
-.input-box input:focus {
+.input-box input:focus, .detail-box > input:focus {
     outline: none;
     border-color: var(--input-active);
 }
@@ -197,7 +197,7 @@ html {
     border: 1px solid #BFBFBF; 
 }
 
-.qr-format-box .inner-section button {
+.qr-format-box .inner-section button, .save-edit {
     width: 160px;
     font-family: inherit;
     color: #fff;
@@ -226,6 +226,126 @@ html {
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* for qr-details page */
+
+.details-body {
+    margin: 1.13rem 0;
+}
+
+.section-1 .inner-wrapper {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.img-box {
+    padding: 0.57rem 0.75rem;
+    background: #CCFAF9;
+    border-radius: 8px;
+    max-width: max-content;
+}
+
+.img-box .image {
+    max-width: 100%;
+    height: auto;
+    width: 55px;
+}
+
+.qr-detail-info {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-detail-info > .category {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.qr-detail-info > .name {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.section-1 > .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.38rem;
+    padding: 0.5rem 0.3rem;
+    margin-top: 1rem;
+}
+
+.status > h3, .status > p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 2.25rem 0 1.5rem; 
+}
+.detail-box > label {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.detail-box > input::placeholder {
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.save-edit-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.save-edit {
+    width: 40%;
+    height: 37px;
+    margin: 0;
+}
+
+.scan-activities {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.scan-activities > .heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.scan-info {
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    padding: 4.5rem 0.5rem;
+    margin-bottom: 1.63rem;
+}
+
+.scan-info:last-child {
+    margin-bottom: 0;
+}
+
+.scan-info > h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.scan-info > h4 > .number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 
 /* desktop view */
 
