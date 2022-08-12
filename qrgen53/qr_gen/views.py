@@ -165,4 +165,11 @@ def logout_view(request):
         'dark' : 'black'
     }
     qr_form = QrcodeCreate(request.POST, initial=initial_data)
+    
+    def code_download_pdf(request, pk):
+        obj = get_object_or_404(QRcode.objects.filter(user=request.user)
+        filepath, filename = convert_to_pdf(obj.qr_code.path)
+        response = HttpResponse(open(filepath, 'rb').read(), content_type='application/force-download')
+        response['Content-Disposition'] = 'attachment; filename=%s' % filename
+        return response
 """

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="rearranging">
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/style-qr-create-raw.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/style-qr-create-raw.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00022" summary="fixed the user auth and built Qrcode model">
-      <created>1659723449288</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1659723449288</updated>
     </task>
     <task id="LOCAL-00023" summary="fixed the user auth and built Qrcode model">
       <created>1659723467474</created>
@@ -432,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660328764622</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="rearranging">
+      <created>1660330138008</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1660330138009</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
