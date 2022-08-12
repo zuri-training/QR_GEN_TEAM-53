@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="rearranging">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/templates/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/templates/forgot-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/templates/new-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/templates/new-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/templates/recover-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/templates/recover-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/styles-faq.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/styles-faq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/email-collection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/dashboard-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/dashboard-main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/dashboard-other.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/dashboard-other.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_empty_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_empty_gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/templates/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/runner/project/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/404-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/404-bg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/akar-icons-dashboard@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/akar-icons-dashboard@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/akar-icons-plus-1@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/akar-icons-plus-1@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/akar-icons-plus@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/akar-icons-plus@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/chevron-down@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/chevron-down@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/eva-settings-outline@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/eva-settings-outline@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/ic-baseline-log-out@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/ic-baseline-log-out@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/ic-sharp-qr-code@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/ic-sharp-qr-code@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/images.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/images.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/line-5@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/line-5@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/line-6@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/line-6@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/line-7@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/line-7@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/mdi-google-analytics@2x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/mdi-google-analytics@2x.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/menu-bar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/menu-bar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/stock-vector-wifi-warning-241168096.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/stock-vector-wifi-warning-241168096.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/icons/vuesax-linear-menu@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/icons/vuesax-linear-menu@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner/project/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/style-error.css" afterDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="finished building into django" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/static/images&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/privacy policy page/index.html&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/static/styles",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "two.files.diff.last.used.file": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/privacy policy page/index.html"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -133,27 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00025" summary="new pages, yet to be authorised">
-      <created>1659783006930</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1659783006930</updated>
-    </task>
-    <task id="LOCAL-00026" summary="new pages, yet to be authorised">
-      <created>1659805932515</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1659805932515</updated>
-    </task>
-    <task id="LOCAL-00027" summary="updated db">
-      <created>1659813298878</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1659813298878</updated>
     </task>
     <task id="LOCAL-00028" summary="updated db">
       <created>1659814160066</created>
@@ -477,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660331300181</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="building into django">
+      <created>1660339754279</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1660339754279</updated>
+    </task>
+    <task id="LOCAL-00075" summary="building into django">
+      <created>1660339765094</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1660339765094</updated>
+    </task>
+    <task id="LOCAL-00076" summary="finished building into django">
+      <created>1660341954809</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1660341954809</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,8 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Home and external website view" />
-    <MESSAGE value="style d 1" />
     <MESSAGE value="style d 2" />
     <MESSAGE value="style d 3" />
     <MESSAGE value="fixed the user auth and built Qrcode model" />
@@ -591,6 +541,8 @@
     <MESSAGE value="Update contribution.md&#10;&#10;(cherry picked from commit 23f010afad8a81efd700e0205298e5d4c4afa35c)" />
     <MESSAGE value="contributions" />
     <MESSAGE value="rearranging" />
-    <option name="LAST_COMMIT_MESSAGE" value="rearranging" />
+    <MESSAGE value="building into django" />
+    <MESSAGE value="finished building into django" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished building into django" />
   </component>
 </project>
