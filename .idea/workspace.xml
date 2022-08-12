@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="rearranging" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="rearranging">
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/style-qr-create-raw.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/style-qr-create-raw.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/static/images",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "two.files.diff.last.used.file": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/privacy policy page/index.html"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/static/images&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/privacy policy page/index.html&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
