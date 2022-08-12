@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="contributions" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="contributions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us pagee/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us pagee/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About us pagee/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Members_contributions/Terms of service/mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Members_contributions/Terms of service/web.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/web.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Bold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Heavy.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Heavy.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Light.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Light.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Medium.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Outline.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Outline.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Read Me.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/www.dfonts.org.url" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/www.dfonts.org.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Privacy Policy/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq1/analytics/analytics_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/analytics_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy policy page/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy policy page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy policy page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-about-us.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-privacy.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-privacy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,29 +79,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/static/images",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "two.files.diff.last.used.file": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/privacy policy page/index.html"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -434,6 +466,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="94df3774-8820-4939-8845-10e8d768be7b">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/faq1/analytics" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -463,6 +520,11 @@
             </State>
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="94df3774-8820-4939-8845-10e8d768be7b" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="RECENT_FILTERS">

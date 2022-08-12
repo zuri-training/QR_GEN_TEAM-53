@@ -1,31 +1,31 @@
 /* import Glimer font from local file*/
 @font-face {
     font-family: 'Glimer';
-    src: url("Gilmer-Font/Gilmer\ Bold.otf") format("opentype");
+    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Glimer';
-    src: url("Gilmer-Font/Gilmer\ Heavy.otf") format("opentype");
+    src: url("font/Gilmer-Font/Gilmer-Heavy.otf") format("opentype");
     font-weight: bolder;
 }
 
 @font-face {
     font-family: 'Glimer';
-    src: url("Gilmer-Font/Gilmer\ Regular.otf") format("opentype");
+    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Glimer';
-    src: url("Gilmer-Font/Gilmer\ Light.otf") format("opentype");
+    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
     font-weight: light;
 }
 
 @font-face {
     font-family: "Glimer";
-    src: url("Gilmer-Font/Gilmer\ Medium.otf") format("opentype");
+    src: url("font/Gilmer-Font/Gilmer-Medium.otf") format("opentype");
 }
 :root {
     --primary-color: #061232;
