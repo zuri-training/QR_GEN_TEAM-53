@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'qrgen53.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -94,11 +94,11 @@ DATABASES = {
 
     'default': {
 
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
         'NAME': 'qrgen53',
 
-        'USER': '',
+        'USER': 'postgres',
 
         'PASSWORD': '63509',
 
@@ -108,7 +108,7 @@ DATABASES = {
 
     }
 }
-"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

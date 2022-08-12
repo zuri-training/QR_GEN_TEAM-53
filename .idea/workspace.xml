@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="integrated landing page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Home and external website view">
-      <created>1659343695274</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1659343695274</updated>
     </task>
     <task id="LOCAL-00017" summary="Home and external website view">
       <created>1659344050946</created>
@@ -431,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660306570914</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="integrated landing page">
+      <created>1660315439076</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1660315439076</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
