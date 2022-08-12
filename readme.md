@@ -48,9 +48,9 @@ User: Authenticated
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- Javascript
 - Django
 - [Segno]("https://segno.readthedocs.io/en/stable/make.html")
-- [django-segno-qr]("https://pypi.org/project/django-segno-qr/")
 - [django]("https://www.djangoproject.com/")
 
 ### Code We are proud of
