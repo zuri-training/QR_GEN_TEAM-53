@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'styles/style-set.css' %}">
 
-        <style>
+    <style>
             .container {
               max-width: 1100px;
               margin: 0 auto;
@@ -360,128 +360,120 @@
           height: 24px;
           min-width: 24px;
       }
-          </style>
-        </head>
 
-        <body>
-          <div class="settings screen">
-              <div class="nav-bar">
-                  <div class="frame-120"><img src="./icons/logo.svg" alt=""></div>
-                  <div class="frame-121">
-                      <a href=""><img src="./icons/akar-icons-dashboard@2x.svg" class="akar-iconsdashboard">
-                          <div class="dashboard gilmerregular-regular-nomal-silver-14px">Dashboard</div>
-                      </a>
-                  </div>
-                  <div class="frame-12">
-                      <a href=""><img src="./icons/ic-sharp-qr-code@2x.svg" class="icsharp-qr-code">
-                          <div class="qr-code gilmerregular-regular-nomal-silver-14px">QR Codes</div>
-                      </a>
-                  </div>
-                  <div class="frame-12">
-                      <a href=""><img src="./icons/mdi-google-analytics@2x.svg" class="mdigoogle-analytics">
-                          <div class="analytics gilmerregular-regular-nomal-silver-14px">Analytics</div>
-                      </a>
-                  </div>
-                  <div class="frame-124">
-                      <a href=""><img src="./icons/eva-settings-outline@2x.svg" class="evasettings-outline">
-                          <div class="settings-1">Settings</div>
-                      </a>
-                  </div>
-                  <img src="./icons/line-5@2x.svg" alt="" class="line-6">
-                  <div class="frame-125">
-                      <a href="">
-                          <div class="about-us gilmerregular-regular-nomal-silver-14px">About us</div>
-                          <img src="./icons/akar-icons-plus@2x.svg" class="akar-iconsplus">
-                      </a>
-                  </div>
-                  <img src="./icons/line-5@2x.svg" alt="" class="line">
-                  <div class="frame-126">
-                      <a href="">
-                          <div class="help-center gilmerregular-regular-nomal-silver-14px">Help center</div>
-                          <img src="./icons/akar-icons-plus@2x.svg" alt="" class="akar-iconplus-1">
-                      </a>
-                  </div>
-                  <img src="./icons/line-5@2x.svg" alt="" class="line">
-                  <div class="frame-127">
-                      <a href="">
-                          <img src="./icons/ic-baseline-log-out@2x.svg" alt="" class="icbaseline-log-out">
-                          <div class="log-out">Logout</div>
-                      </a>
-                  </div>
-              </div>
-              <div class="languages">
-                  <nav class="navbar navbar-inverse">
-                  <div class="container-fluid">
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand gilmerbold-regular-nomal-silver-48px" href="#">Settings</a>
-                      </div>
-                      <div class="collapse navbar-collapse" id="myNavbar">
-                          <ul class="nav navbar-nav left">
-                              <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
-                              <li class="gilmerregular-regular-nomal-midnight-20px">
-                                  <a href="#">About</a>
-                              </li>
-                              <li class="gilmerregular-regular-nomal-midnight-20px border-2px-midnight"><a href="#">Contact</a>
-                              </li>
-                              <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
-                          </ul>
-                          <ul class="nav navbar-nav navbar-right">
-                              <li class="gilmerregular-regular-nomal-midnight-20px">Hi, John</li>
-                              <li class="img-man"><img src="./icons/man.png" alt=""></li>
-                              <li class="img-rounded"><img src="./icons/Notification.png" alt=""></li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
+    </style>
+</head>
 
-                  <div class="container flex">
-                    <div class="card border-2px-hawks-blue">
-                      <h4
-                        class="gilmerbold-regular-nomal-downriver-48px "
-                      >
-                        Manage <br />
-                        Users
-                      </h4>
-                    </div>
-                    <div class="card border-2px-hawks-blue">
-                      <h4
-                        class="gilmerbold-regular-nomal-downriver-48px "
-                      >
-                        Password <br />
-                        Recovery
-                      </h4>
-                    </div>
-                    <div class="card border-2px-hawks-blue">
-                      <h4
-                        class="gilmerbold-regular-nomal-downriver-48px "
-                      >
-                        Preferences
-                      </h4>
-                    </div>
-                    <div class="card border-2px-hawks-blue">
-                      <h4
-                        class="gilmerbold-regular-nomal-downriver-48px "
-                      >
-                        Change <br />
-                        Language
-                      </h4>
-                    </div>
-                    <div class="card border-2px-hawks-blue">
-                      <h4
-                        class="gilmerbold-regular-nomal-downriver-48px "
-                      >
-                        Delete <br />
-                        Account
-                      </h4>
-                    </div>
-                  </div>
+<body>
+<div class="settings screen">
+    <div class="nav-bar">
+        <div class="frame-120"><img src="./icons/logo.svg" alt=""></div>
+        <div class="frame-121">
+            <a href="{% url '' %}"><img src="./icons/akar-icons-dashboard@2x.svg" class="akar-iconsdashboard">
+                <div class="dashboard gilmerregular-regular-nomal-silver-14px">Dashboard</div>
+            </a>
+        </div>
+        <div class="frame-12">
+            <a href="{% url '' %}"><img src="./icons/ic-sharp-qr-code@2x.svg" class="icsharp-qr-code">
+                <div class="qr-code gilmerregular-regular-nomal-silver-14px">QR Codes</div>
+            </a>
+        </div>
+        <div class="frame-12">
+            <a href="{% url '' %}"><img src="./icons/mdi-google-analytics@2x.svg" class="mdigoogle-analytics">
+                <div class="analytics gilmerregular-regular-nomal-silver-14px">Analytics</div>
+            </a>
+        </div>
+        <div class="frame-124">
+            <a href="{% url '' %}"><img src="./icons/eva-settings-outline@2x.svg" class="evasettings-outline">
+                <div class="settings-1">Settings</div>
+            </a>
+        </div>
+        <img src="./icons/line-5@2x.svg" alt="" class="line-6">
+        <div class="frame-125">
+            <a href="{% url '' %}">
+                <div class="about-us gilmerregular-regular-nomal-silver-14px">About us</div>
+                <img src="./icons/akar-icons-plus@2x.svg" class="akar-iconsplus">
+            </a>
+        </div>
+        <img src="./icons/line-5@2x.svg" alt="" class="line">
+        <div class="frame-126">
+            <a href="{% url '' %}">
+                <div class="help-center gilmerregular-regular-nomal-silver-14px">Help center</div>
+                <img src="./icons/akar-icons-plus@2x.svg" alt="" class="akar-iconplus-1">
+            </a>
+        </div>
+        <img src="./icons/line-5@2x.svg" alt="" class="line">
+        <div class="frame-127">
+            <a href="{% url '' %}">
+                <img src="./icons/ic-baseline-log-out@2x.svg" alt="" class="icbaseline-log-out">
+                <div class="log-out">Logout</div>
+            </a>
+        </div>
+    </div>
+    <div class="languages">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand gilmerbold-regular-nomal-silver-48px" href="{% url '' %}">Settings</a>
                 </div>
-          </div>
-        </body>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav left">
+                        <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="{% url '' %}">Home</a></li>
+                        <li class="gilmerregular-regular-nomal-midnight-20px">
+                            <a href="{% url '' %}">About</a>
+                        </li>
+                        <li class="gilmerregular-regular-nomal-midnight-20px border-2px-midnight"><a
+                                href="{% url '' %}">Contact</a>
+                        </li>
+                        <li class="gilmerregular-regular-nomal-midnight-20px"><a href="{% url '' %}">FAQ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="gilmerregular-regular-nomal-midnight-20px">{{ username }}</li>
+                        <li class="img-man"><img src="./icons/man.png" alt=""></li>
+                        <li class="img-rounded"><img src="./icons/Notification.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container flex">
+            <div class="card border-2px-hawks-blue">
+                <h4 class="gilmerbold-regular-nomal-downriver-48px " >
+                    Manage <br/>
+                    Users
+                </h4>
+            </div>
+            <div class="card border-2px-hawks-blue">
+                <h4 class="gilmerbold-regular-nomal-downriver-48px " >
+                    Password <br/>
+                    Recovery
+                </h4>
+            </div>
+            <div class="card border-2px-hawks-blue">
+                <h4 class="gilmerbold-regular-nomal-downriver-48px " >
+                    Preferences
+                </h4>
+            </div>
+            <div class="card border-2px-hawks-blue">
+                <h4 class="gilmerbold-regular-nomal-downriver-48px " >
+                    Change <br/>
+                    Language
+                </h4>
+            </div>
+            <div class="card border-2px-hawks-blue">
+                <h4 class="gilmerbold-regular-nomal-downriver-48px " >
+                    Delete <br/>
+                    Account
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 
 </html>
