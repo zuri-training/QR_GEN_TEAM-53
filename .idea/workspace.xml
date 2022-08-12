@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="integrated landing page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="contributions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +16,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ibukun &lt;ibukunatolagbe@gmail.com&gt;" />
+        <option value="Nneoma.favour &lt;favoureboagwu@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="testing" />
@@ -81,27 +84,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Home and external website view">
-      <created>1659344050946</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1659344050946</updated>
-    </task>
-    <task id="LOCAL-00018" summary="style d 1">
-      <created>1659345527457</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1659345527457</updated>
-    </task>
-    <task id="LOCAL-00019" summary="style d 2">
-      <created>1659346866886</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1659346866886</updated>
     </task>
     <task id="LOCAL-00020" summary="style d 3">
       <created>1659348276772</created>
@@ -425,7 +407,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660315439076</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="analytics page completed&#10;&#10;(cherry picked from commit 176afcaff41de37ceb5566ded1fadf4c6da9ed86)">
+      <created>1660319353556</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319353556</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Update contribution.md&#10;&#10;(cherry picked from commit 23f010afad8a81efd700e0205298e5d4c4afa35c)">
+      <created>1660319400018</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319400018</updated>
+    </task>
+    <task id="LOCAL-00068" summary="contributions">
+      <created>1660319647661</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319647661</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,6 +472,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="HEAD" />
                 </option>
               </RecentGroup>
@@ -479,8 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more edits" />
-    <MESSAGE value="incomplete, dont pull" />
     <MESSAGE value="QR Code main" />
     <MESSAGE value="Home and external website view" />
     <MESSAGE value="style d 1" />
@@ -503,6 +509,9 @@
     <MESSAGE value="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon" />
     <MESSAGE value="first cleaning" />
     <MESSAGE value="integrated landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrated landing page" />
+    <MESSAGE value="analytics page completed&#10;&#10;(cherry picked from commit 176afcaff41de37ceb5566ded1fadf4c6da9ed86)" />
+    <MESSAGE value="Update contribution.md&#10;&#10;(cherry picked from commit 23f010afad8a81efd700e0205298e5d4c4afa35c)" />
+    <MESSAGE value="contributions" />
+    <option name="LAST_COMMIT_MESSAGE" value="contributions" />
   </component>
 </project>
