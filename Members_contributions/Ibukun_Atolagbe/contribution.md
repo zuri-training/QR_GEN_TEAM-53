@@ -29,4 +29,5 @@ Fourth Task Assigned
 code up the mobile view for About Us and privacy Policy pages, i used media queries to effect this, its in the same file with the desktop view.
 
 
+
 Thank you.
