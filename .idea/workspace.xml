@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="first cleaning" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="first cleaning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/runner/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/Group.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/Group.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/amico.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/amico.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/ci_qr-code-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/ci_qr-code-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/image1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/jam_qr-code.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/jam_qr-code.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why2.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why3.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Landing Page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,11 +78,11 @@
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Terms of service" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\create\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

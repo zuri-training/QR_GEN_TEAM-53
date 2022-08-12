@@ -24,3 +24,7 @@ def email_collection_view(request):
 
 def faq_view(request):
     return render(request, 'faq.html')
+
+
+def tos_view(request):
+    return render(request, 'tos.html')

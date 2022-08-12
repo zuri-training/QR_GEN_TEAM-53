@@ -38,7 +38,7 @@
                     can manage users,choose preferences and also recover your password from our settings page.
                 </p>
 
-                <a href="{% url 'dashboard-main' %}"><button>Create QR code</button></a>
+                <a href="{% url 'create' %}"><button>Create QR code</button></a>
             </div>
 
         </div>
@@ -54,7 +54,7 @@
                     <div>
                         <h2>Useful Links</h2>
                         <ul>
-                        <li><a href="#">Create QR code</a></li>
+                        <li><a href="{% url 'create' %}">Create QR code</a></li>
                         <li><a href="{% url 'about' %}">About us</a></li>
                         <li><a href="http://">Terms of service</a></li>
                         <li><a href="{% url 'privacy-policy'%}">Privacy Policy</a></li>

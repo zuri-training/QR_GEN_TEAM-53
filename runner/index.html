@@ -1,37 +1,33 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="stylesheet" href="{% static 'style-index.css' %} " />
+		<title>MIQR Landing Page</title>
+		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
 			rel="stylesheet"
 		/>
-        <title>MIQR Landing Page</title>
 	</head>
 	<body>
 		<div class="hero">
 			<nav>
-				<img class="logo" src="{% static 'images/logo.png' %}" alt="" />
+				<img class="logo" src="resources/logo.png" alt="" />
 				<ul>
-					<li><a href="{% url 'home' %}">Home</a></li>
-					<li><a href="{% url 'about' %}">About</a></li>
-					<li><a href="{% url 'contact' %}">Contact</a></li>
-					<li><a href="{% url 'faq' %}" style="margin-right: 390px;" >FAQ</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#" style="margin-right: 390px;" >FAQ</a></li>
 				</ul>
 				<div class="log">
-					<a href="{% url 'login' %}">Login</a>
-
-					<a href="{% url 'register' %}"><button type="button" style="margin-left: 16px;">Get Started</button></a>
+					<a href="#">Login</a>
+					<button type="button" style="margin-left: 16px;">Get Started</button>
 				</div>
-				<a href="{% url '' %}"><img class="menu" src="{% static 'images/menu.png' %} " alt=""></a>
+				<a href="#"><img class="menu" src="resources/menu.png" alt=""></a>
 			</nav>
 		</div>
 
@@ -49,14 +45,12 @@
 						tracking,analytics and free texts.
 					</p>
 					<br /><br />
-					<a  href="{% url 'create' %}">
-						<button class="create">Create QR Code</button>
-					</a>
+					<button class="create">Create QR Code</button>
 				</div>
 			</div>
 			<div class="col2">
 				<div class="illustration">
-					<img src="{% static 'images/amico.png' %}" alt="" />
+					<img src="resources/amico.png" alt="" />
 				</div>
 			</div>
 		</section>
@@ -65,7 +59,7 @@
 			<h3 class="fsh3">Why Choose Us</h3>
 			<div class="feature">
 				<div class="illustration">
-					<img src="{% static 'images/why1.png' %}" alt=""  class='why1' />
+					<img src="resources/why1.png" alt=""  class='why1' />
 				</div>
 				<div class="text-info">
 					<p>
@@ -82,12 +76,12 @@
 					</p>
 				</div>
 				<div class="illustration">
-					<img src="{% static 'images/why2.png' %}" alt="" class='why2'/>
+					<img src="resources/why2.png" alt="" class='why2'/>
 				</div>
 			</div>
 			<div class="feature">
 				<div class="illustration">
-					<img src="{% static 'images/why3.png' %}" alt="" class='why3'/>
+					<img src="resources/why3.png" alt="" class='why3'/>
 				</div>
 				<div class="text-info">
 					<p>
@@ -131,22 +125,20 @@
 			<h1>How it works</h1>
 			<div class="wrapper-items">
 				<div class="content">
-					<img class='howimg' src="{% static 'images/jam_qr-code.png' %}" /><br /><br />
+					<img class='howimg' src="resources/jam_qr-code.png" /><br /><br />
 					<p>Choose a category for your QR Code</p>
 				</div>
 				<div class="content">
 					<p>Create and customize your unique QR Code</p>
 					<br />
-					<img class='howimg' src="{% static 'images/ci_qr-code-1.png' %}" />
+					<img class='howimg' src="resources/ci_qr-code-1.png" />
 				</div>
 				<div class="content">
-					<img class='howimg' src="{% static 'images/Group.png' %}" /><br /><br />
+					<img class='howimg' src="resources/Group.png" /><br /><br />
 					<p>Save and download your QR Code</p>
 				</div>
 			</div>
-			<a  href="{% url 'create' %}">
-				<button>Create QR Code</button>
-			</a>
+			<button>Create QR Code</button>
 		</section>
 		<section class="wrapper3">
 			<div class="head">
@@ -160,31 +152,29 @@
 			</div>
 			<div class="faq">
 				<div class="can">
-					<a href="{% url 'faq' %}"><p>Can i generate a QR Code from URL?</p></a>
+					<a href="faq"><p>Can i generate a QR Code from URL?</p></a>
 				</div>
 				<div class="can">
-					<a href="{% url 'faq' %}"><p>Do i have to register to generate my QR Code?</p></a>
+					<a href="faq"><p>Do i have to register to generate my QR Code?</p></a>
 				</div>
 				<div class="can">
-					<a href="{% url 'faq' %}">
-                        <p>
+					<a href="faq"
+						><p>
 							What is the difference between static and dynamic QR Codes?
-						</p>
-                    </a>
+						</p></a
+					>
 				</div>
 				<div class="can">
-					<a href="{% url 'faq' %}"><p>Is generating a code free?</p></a>
+					<a href="faq"><p>Is generating a code free?</p></a>
 				</div>
 			</div>
-            <a href="{% url 'faq' %}">
-			    <button>View More</button>
-            </a>
+			<button>View More</button>
 		</section>
 
 		<footer>
 			<div class="foot">
 				<div class="gen">
-					<img src="{% static 'images/logo.png' %}" /><br /><br />
+					<img src="resources/logo.png" /><br /><br />
 					<p>
 						Generates different QR Codes. Depending on your purpose, you can use
 						our QR generator to create QR Codes to open a website, Store image
@@ -194,16 +184,16 @@
 				<div>
 					<h5>Useful Links</h5>
 					<br />
-					<a href="{% url 'create' %}" ><p>Create QR Codes</p></a><br /><br />
-					<a href="{% url 'about' %}" ><p>About Us</p></a><br /><br />
-					<a href="{% url 'tos' %}" ><p>Terms of Service</p></a><br /><br />
-					<a href="{% url 'privacy-policy' %}" ><p>Privacy Policy</p></a>
+					<a><p>Create QR Codes</p></a><br /><br />
+					<a><p>About Us</p></a><br /><br />
+					<a><p>Terms of Service</p></a><br /><br />
+					<a><p>Privacy Policy</p></a>
 				</div>
 				<div>
 					<h5>Support</h5>
 					<br />
-					<a href="{% url 'contact' %}" ><p>Contact Us</p></a><br /><br />
-					<a href="{% url 'faq' %}" ><p>FAQ</p></a>
+					<a><p>Contact Us</p></a><br /><br />
+					<a><p>FAQ</p></a>
 				</div>
 			</div>
 			<br /><br />
