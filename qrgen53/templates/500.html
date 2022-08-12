@@ -6,11 +6,12 @@
     <title>Bad connection</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="{% static 'script.js' %}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style-error.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
     <style>
         body {
@@ -99,26 +100,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="./icons/logo.svg" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="{% static 'icons/logo.svg' %}" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="{% url 'home' %}">Home</a></li>
                     <li class="gilmerregular-regular-nomal-midnight-20px">
-                        <a href="#">About</a>
+                        <a href="{% url 'about' %}">About</a>
                     </li>
-                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">Contact</a>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="{% url 'contact' %}">Contact</a>
                     </li>
-                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="{% url 'faq' %}">FAQ</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">Login</a></li>
-                    <li><button class="btn navbar-btn register"><a href="#"></a>Get Started</a></button></li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="{% url 'login' %}">Login</a></li>
+                    <li><button class="btn navbar-btn register"><a href="{% url 'register' %}"></a>Get Started</a></button></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <img class="img-error-net" src="./icons/images.jpg">
+    <img class="img-error-net" src="{% static 'icons/images.jpg' %}">
     <h4 class="gilmerregular-regular-nomal-midnight-32px">
         Whooops, something went wrong
     </h4>
@@ -126,7 +127,7 @@
     <p class="gilmerregular-regular-nomal-midnight-20px">
         Please check your internet connection and try again.
     </p><br>
-    <button class="btn button"><a href="#">Try Again</a></button>
+    <button class="btn button"><a href="{% url 'home' %}">Try Again</a></button>
 </body>
 
 </html>

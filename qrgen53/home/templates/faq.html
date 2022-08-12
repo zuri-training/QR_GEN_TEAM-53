@@ -7,13 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <title>FAQ Page</title>
-    <link rel="stylesheet" href="font/Gilmer-Font/Gilmer Bold.otf">
-    <link rel="stylesheet" href="font/Gilmer-Font/Gilmer Heavy.otf">
-    <link rel="stylesheet" href="font/Gilmer-Font/Gilmer Light.otf">
+    <link rel="stylesheet" src="{% static 'font/Gilmer-Font/Gilmer-Bold.otf' %}">
+    <link rel="stylesheet" href="{% static 'font/Gilmer-Font/Gilmer-Heavy.otf' %}">
+    <link rel="stylesheet" href="{% static 'font/Gilmer-Font/Gilmer-Light.otf' %}">
     <link rel="stylesheet" href="{% static 'styles-faq.css' %}" type="text/css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="script.js" type="text/Javascript"></script>
+    <script src="{% static 'script.js' %}" type="text/Javascript"></script>
 </head>
 <body>
     <div class="main-body">
@@ -71,7 +72,7 @@
                 <h3 class="second">Useful Links</h3>
                 <p><a href="{% url 'dashboard-main' %}">Create QR Code</a></p>
                 <p><a href="{% url 'about' %}">About Us</a></p>
-                <p><a href="#">Terms of Service</a></p>
+                <p><a href="{% url 'tos' %}">Terms of Service</a></p>
                 <p><a href="{% url 'privacy-policy' %}">Privacy Policy</a></p>
             </div>
             <div class="foot1">

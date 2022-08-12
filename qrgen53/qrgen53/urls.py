@@ -19,7 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 
 from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view
-from home.views import home_view, contact_view, about_view, privacy_policy_view, email_collection_view, faq_view, tos_view
+from home.views import home_view, contact_view, about_view, privacy_policy_view, faq_view, tos_view
 from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view, \
     dashboard_view, dashboard_other_view, setting_view, logout_view, analytics_view
 
@@ -28,7 +28,6 @@ urlpatterns = [
     path('contact us/', contact_view, name='contact'),
     path('about/', about_view, name='about'),
     path('privacy-policy/', privacy_policy_view, name='privacy-policy'),
-    path('email_collection/', email_collection_view, name='email-collection'),
     path('FAQ/', faq_view, name='faq'),
     path('Terms-of-service/', tos_view, name='tos'),
 
@@ -50,11 +49,6 @@ urlpatterns = [
     path('settings/', setting_view, name='settings'),
 
     path('admin/', admin.site.urls),
-    # path('/<int:user_id>/dashboard/', dashboard_view, name='dashboard')
-    # path('', include('home.urls')),
-    # path('register/', include('django.contrib.auth.urls')) """"""
-
-]
+ ]
 
 urlpatterns += staticfiles_urlpatterns()
-# path('', views.home, name='home')

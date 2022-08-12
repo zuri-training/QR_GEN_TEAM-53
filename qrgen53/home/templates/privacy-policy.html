@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <title>Privacy Policy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style-about-us.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>\
+  </head>
   <body>
 
     <header>
-        <img class="logo" src="Logo.png" alt="">
+        <img class="logo" src="{% static 'images/Logo.png' %}" alt="logo">
 
     <nav class="nav-items" id="myTopnav">
         <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="http://">About</a></li>
-        <li><a href="http://">Contact</a></li>
-        <li><a href="http://">FAQ</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'faq' %}">FAQ</a></li>
         </ul>
 
         <div class="log-reg">
-            <a class="login" href="http://">Login</a>
-        <a class="reg" href=""><button>Get Started</button></a>
+            <a class="login" href="{% url 'login' %}">Login</a>
+        <a class="reg" href="{% url 'register' %}"><button>Get Started</button></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -42,7 +45,7 @@
             The QR code image/symbol will be deleted- 30 seconds after delivery from the cache and is not permanently stored. Additionally, our on webservers logfiles are storing some data about the request(namely Broswer type and version, operating stystem, etc.- all of this data has nothing to do with the QR code contents!) Another important detail that should be noted, because our systems are not involved when the QR code gets scanned the codes cannot “expire”(also refer to FAQ entry for more information)</p>
     <div class="create">
 
-      <a class="create_qr" href="#"><button>Create QR code</button></a>
+      <a class="create_qr" href="{% url 'create' %}"><button>Create QR code</button></a>
     </div>
   </div>
   </div>
@@ -52,7 +55,7 @@
      <section class="container">
       <div class="column-1">
         <label class="logo-footer">
-         <img src="Logo.png" alt="">
+         <img src="{% static 'images/Logo.png' %}" alt="logo">
         </label>
         <p class="generate">Generate different QR codes depending on your purpose,you can use our QR generator to create QR codes to open a website,store image files,view PDF files,connect to a Wifi and more.</p>
       </div>
@@ -60,10 +63,10 @@
           <ul>
             <li><h5>Useful links</h5></li>
 
-               <li> <a href="#">Create QR code</a></li>
-               <li> <a href="#">About Us</a></li>
-               <li> <a href="#">Terms of service</a></li>
-               <li> <a href="#">Privacy Policy</a></li>
+               <li> <a href="{% url 'create' %}">Create QR code</a></li>
+               <li> <a href="{% url 'about' %}">About Us</a></li>
+               <li> <a href="{% url 'tos' %}">Terms of service</a></li>
+               <li> <a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
 
           </ul>
 
@@ -71,8 +74,8 @@
         <div class="column-3">
           <ul>
               <li><h5>Support</h5></li>
-               <li> <a href="#">Contact us</a></li>
-               <li> <a href="#">FAQ</a></li>
+               <li> <a href="{% url 'contact' %}">Contact us</a></li>
+               <li> <a href="{% url 'faq' %}">FAQ</a></li>
           </ul>
 
         </div>

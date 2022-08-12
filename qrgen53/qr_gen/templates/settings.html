@@ -1,10 +1,487 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" height=100%;>
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
 
-</body>
+        <style>
+            .container {
+              max-width: 1100px;
+              margin: 0 auto;
+              overflow: auto;
+              padding: 0 40px;
+            }
+
+            .card {
+              background-color: white;
+              border-radius: 10px;
+              box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+              padding: 20px;
+              margin: 10px;
+            }
+
+            .flex {
+              display: flex;
+              align-items: center;
+              height: 100%;
+            }
+            @media (min-width:768px) {
+            ul.nav.navbar-nav.left{
+            visibility: hidden;
+             }
+            }
+
+            .languages .flex {
+              flex-wrap: wrap;
+            }
+
+            .languages .container {
+              width: 1000px;
+              margin-top: 282px;
+              margin-left: 10%;
+            }
+
+            .languages .card h4 {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+
+            .languages .card:hover {
+              transform: translateY(-15px);
+            }
+
+            .languages .card {
+              text-align: left;
+              margin: 18px 30px 40px;
+              transition: traform 0.2s ease-in;
+              width: 200px;
+              height: 100px;
+            }
+
+            @media screen and (max-width: 375px) {
+              .languages .flex {
+                flex-wrap: wrap;
+              }
+
+              .languages .container {
+                width: 255px;
+                overflow: hidden;
+              }
+
+              .flex {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                height: 100%;
+              }
+
+              .languages .card {
+                text-align: left;
+                margin: 14px -8px 6px;
+                transition: traform 0.2s ease-in;
+                width: 286px;
+                height: 7px;
+                margin-left: -15%;
+              }
+
+              h4 {
+                margin-top: -10px;
+                height: 58px;
+                letter-spacing: 0;
+              }
+
+              br {
+                display: none;
+              }
+              .border-2px-hawks-blue{
+                  border: transparent;
+              }
+              .nav-bar{
+                  display: none;
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .settings {
+          align-items: flex-start;
+          background-color: var(--white);
+          display: flex;
+
+      }
+      body {
+                  margin: 0px;
+                  background: #fff;
+                  height: 100%;
+                  text-align: center;
+              }
+      .nav-bar {
+
+          align-items: center;
+          background-color: var(--midnight);
+          /* display: flex; */
+          flex-direction: column;
+          height: max-content;
+          width: 264px;
+      }
+
+      .line {
+          height: 1px;
+          margin-right: 2px;
+          margin-top: 25px;
+          width: 200px;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      .frame-12 a {
+          align-items: center;
+          display: flex;
+          gap: 8px;
+          height: 50px;
+          margin-top: 24px;
+          padding: 13px;
+          width: 232px;
+      }
+
+      .frame-12 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .icsharp-qr-code {
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .qr-code {
+          letter-spacing: 0;
+          min-width: 69px;
+      }
+
+      .frame-121 a {
+          align-items: center;
+          display: flex;
+          gap: 8px;
+          height: 50px;
+          margin-top: 109px;
+          padding: 13px;
+          width: 232px;
+      }
+
+      .frame-121 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .dashboard {
+          height: 15px;
+          letter-spacing: 0;
+          width: 96px;
+      }
+
+
+      .akar-iconsdashboard {
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .frame-127 a {
+          align-items: center;
+          display: flex;
+          gap: 8px;
+          height: min-content;
+          margin-top: 17px;
+          margin-left: 10px;
+          padding: 13px;
+          width: 210px;
+          margin-bottom: 20px;
+      }
+
+      .frame-127 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .icbaseline-log-out {
+
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .log-out {
+          color: var(--silver);
+          font-family: var(--font-family-inter);
+          font-size: var(--font-size-m2);
+          font-weight: 600;
+          letter-spacing: 0;
+          min-width: 52px;
+      }
+
+      .line-6 {
+          height: 1px;
+          margin-top: 63px;
+          margin-left: auto;
+          width: 200px;
+      }
+
+      .frame-120 {
+          background-color: var(--white);
+          height: 72px;
+          margin-right: 2px;
+          width: 184px;
+          margin-top: 40px;
+          border-radius: 4px;
+          margin-left: 40px;
+      }
+      .frame-120 img{
+          margin-left: 30px;
+          margin-top: 10px;
+      }
+      .frame-126 a{
+          align-items: center;
+          display: flex;
+          gap: 65px;
+          height: min-content;
+          margin-right: 9px;
+          margin-top: 24px;
+          padding: 13px;
+          width: min-content;
+          margin-left: 30px;
+      }
+
+      .frame-126 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .akar-iconplus-1 {
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .help-center {
+          letter-spacing: 0;
+          min-width: 78px;
+      }
+
+      .analytics {
+          letter-spacing: 0;
+          min-width: 63px;
+      }
+
+      .mdigoogle-analytics {
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .frame-124 a {
+          align-items: center;
+          background-color: var(--white);
+          border: 3px solid #2a2a2a;
+          display: flex;
+          gap: 8px;
+          height: min-content;
+          margin-top: 24px;
+          padding: 13px 10px 13px 10px;
+          width: 232px;
+          margin-left: inherit;
+      }
+
+      .frame-124 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .settings-1 {
+          color: var(--midnight);
+          font-family: var(--font-family-gilmer_regular-regular);
+          font-size: var(--font-size-l2);
+          font-weight: 400;
+          letter-spacing: 0;
+          margin-top: -0.5px;
+          min-width: 65px;
+      }
+
+      .evasettings-outline {
+          height: 24px;
+          min-width: 24px;
+      }
+
+      .frame-125 a {
+          align-items: center;
+          display: flex;
+          gap: 85px;
+          height: min-content;
+          margin-right: 6px;
+          margin-top: 24px;
+          padding: 13px;
+          width: min-content;
+          margin-left: 30px;
+      }
+
+      .frame-125 a:hover {
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .about-us {
+          letter-spacing: 0;
+          min-width: 61px;
+      }
+
+      .akar-iconsplus {
+          height: 24px;
+          min-width: 24px;
+      }
+          </style>
+        </head>
+
+        <body>
+          <div class="settings screen">
+              <div class="nav-bar">
+                  <div class="frame-120"><img src="./icons/logo.svg" alt=""></div>
+                  <div class="frame-121">
+                      <a href=""><img src="./icons/akar-icons-dashboard@2x.svg" class="akar-iconsdashboard">
+                          <div class="dashboard gilmerregular-regular-nomal-silver-14px">Dashboard</div>
+                      </a>
+                  </div>
+                  <div class="frame-12">
+                      <a href=""><img src="./icons/ic-sharp-qr-code@2x.svg" class="icsharp-qr-code">
+                          <div class="qr-code gilmerregular-regular-nomal-silver-14px">QR Codes</div>
+                      </a>
+                  </div>
+                  <div class="frame-12">
+                      <a href=""><img src="./icons/mdi-google-analytics@2x.svg" class="mdigoogle-analytics">
+                          <div class="analytics gilmerregular-regular-nomal-silver-14px">Analytics</div>
+                      </a>
+                  </div>
+                  <div class="frame-124">
+                      <a href=""><img src="./icons/eva-settings-outline@2x.svg" class="evasettings-outline">
+                          <div class="settings-1">Settings</div>
+                      </a>
+                  </div>
+                  <img src="./icons/line-5@2x.svg" alt="" class="line-6">
+                  <div class="frame-125">
+                      <a href="">
+                          <div class="about-us gilmerregular-regular-nomal-silver-14px">About us</div>
+                          <img src="./icons/akar-icons-plus@2x.svg" class="akar-iconsplus">
+                      </a>
+                  </div>
+                  <img src="./icons/line-5@2x.svg" alt="" class="line">
+                  <div class="frame-126">
+                      <a href="">
+                          <div class="help-center gilmerregular-regular-nomal-silver-14px">Help center</div>
+                          <img src="./icons/akar-icons-plus@2x.svg" alt="" class="akar-iconplus-1">
+                      </a>
+                  </div>
+                  <img src="./icons/line-5@2x.svg" alt="" class="line">
+                  <div class="frame-127">
+                      <a href="">
+                          <img src="./icons/ic-baseline-log-out@2x.svg" alt="" class="icbaseline-log-out">
+                          <div class="log-out">Logout</div>
+                      </a>
+                  </div>
+              </div>
+              <div class="languages">
+                  <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand gilmerbold-regular-nomal-silver-48px" href="#">Settings</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav left">
+                              <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px">
+                                  <a href="#">About</a>
+                              </li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px border-2px-midnight"><a href="#">Contact</a>
+                              </li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                              <li class="gilmerregular-regular-nomal-midnight-20px">Hi, John</li>
+                              <li class="img-man"><img src="./icons/man.png" alt=""></li>
+                              <li class="img-rounded"><img src="./icons/Notification.png" alt=""></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+
+                  <div class="container flex">
+                    <div class="card border-2px-hawks-blue">
+                      <h4
+                        class="gilmerbold-regular-nomal-downriver-48px "
+                      >
+                        Manage <br />
+                        Users
+                      </h4>
+                    </div>
+                    <div class="card border-2px-hawks-blue">
+                      <h4
+                        class="gilmerbold-regular-nomal-downriver-48px "
+                      >
+                        Password <br />
+                        Recovery
+                      </h4>
+                    </div>
+                    <div class="card border-2px-hawks-blue">
+                      <h4
+                        class="gilmerbold-regular-nomal-downriver-48px "
+                      >
+                        Preferences
+                      </h4>
+                    </div>
+                    <div class="card border-2px-hawks-blue">
+                      <h4
+                        class="gilmerbold-regular-nomal-downriver-48px "
+                      >
+                        Change <br />
+                        Language
+                      </h4>
+                    </div>
+                    <div class="card border-2px-hawks-blue">
+                      <h4
+                        class="gilmerbold-regular-nomal-downriver-48px "
+                      >
+                        Delete <br />
+                        Account
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </body>
+
 </html>
