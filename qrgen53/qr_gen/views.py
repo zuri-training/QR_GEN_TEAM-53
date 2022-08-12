@@ -28,27 +28,23 @@ def qrcode_create_view(request):
             light = form.cleaned_data['light']
             title = form.cleaned_data['title']
             type_qr = form.cleaned_data['type_qr']
+            tag = form.cleaned_data['tag']
             qrcode = segno.make_qr(base_url)  # TODO: create rule if QR is pdf, create jpeg by default and save both
             buff = io.BytesIO()
-            qrcode.save(buff, kind=type_qr, light=light, dark=dark, scale=7)
+            qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
             qr_code = QRcode(title=title, owner=owner, base_url=base_url,
-                             type_qr=type_qr, light=light, dark=dark, )
-            url_img = '/static/qrcodes/' + title + '.' + type_qr
+                             type_qr=type_qr, light=light, dark=dark, tag=tag,
+                             )
+            url_img = '/static/qrcodes/' + title + '.' + tag
             created = True
-            t2 = title + '.' + type_qr
+            t2 = title + '.' + tag
             qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
             context = {
                 'form': form,
                 'url_img': url_img,
-                'created': created
+                'created': created,
+                'download': t2
             }
-
-            """if request.user not in database
-                OwnerCreate.objects.create(request.user.id)
-            else:
-                AddOwner.up
-            # qr_form.save()
-            # qr_form = QrcodeCreate()"""
             return render(request, 'qr_create.html', context)
             # return send_
         else:
@@ -60,12 +56,20 @@ def qrcode_create_view(request):
 
 @login_required(login_url='login')
 def qrcode_gallery_view(request):
-    queryset = QRcode.objects.all()  # list of objects
+    userid = request.user.id
+    queryset = QRcode.objects.filter(owner=userid)  # list of objects
     # TODO: add functionality for when the qr code gallery is empty
-    context = {
-        "object_list": queryset
-    }
-    return render(request, 'qr_gallery.html', context)
+    if queryset.exists():
+        context = {
+            "object_list": queryset,
+            'username': request.user
+        }
+        return render(request, 'qr_gallery.html', context)
+    else:
+        context = {
+            'username': request.user,
+        }
+        return render(request, 'qr_empty_gallery.html', context)
 
 
 @login_required(login_url='login')

@@ -1,7 +1,5 @@
 *{
-
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -16,51 +14,106 @@
 nav{
   background: white;
   height: 80px;
-  width : 100%;
-  margin-top: 20px;
-  margin-right: 100px;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-}
-.logo{
-  margin-left: 20px;
-  margin-top: 15px;
-}
-.left
-{
-  margin-right: 550px;
-}
-li .right{
-  margin-left: 400px;
-  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
-
-nav ul {
-  float: right;
-  margin-right: 20px;
+.logo{
+  margin-top: 15px;
+  margin-left: 20px;
 }
-nav ul li {
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a {
-color: #061232;
-width: 65px;
-height: 30px;
-font-family: sans-serif;;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 30px;
-padding: 20px;
+nav ul li a{
+  color: #061232;
+  width: 65px;
+  height: 30px;
+  font-family: sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.btn {
+  background: #061232;;
+  background-image: -webkit-linear-gradient(top, #061232;, #2980b9);
+  background-image: -moz-linear-gradient(top, #061232;, #2980b9);
+  background-image: -ms-linear-gradient(top, #061232;, #2980b9);
+  background-image: -o-linear-gradient(top, #061232;, #2980b9);
+  background-image: linear-gradient(to bottom, #061232;, #2980b9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+}
+
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+   display: none;
+}
+#check{
+   display: none;
+}
+@media screen and (max-width: 1300px) {
+  .checkbtn{
+    display:block;
+  }
+  label.logo{
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+   nav ul{
+   position: fixed;
+    width: 100%;
+    height: 70vh;
+    background:  #CCFAF9;
+    top: 80px;
+    left: 0;
+    text-align: center;
+
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+
 }
 .terms{
 position: absolute;
@@ -99,7 +152,7 @@ padding: 15px 30px;
 margin-top: 50px;
 width: 310px;
 height: 80px;
-margin-left: 400px;
+margin-left: 450px;
 top: 1156px;
 background: #061232;
 border-radius: 8px;

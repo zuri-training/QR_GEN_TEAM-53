@@ -11,7 +11,8 @@ class QrcodeCreate(forms.ModelForm):
             'base_url',
             'type_qr',
             'light',
-            'dark'
+            'dark',
+            'tag'
         }
 
 

@@ -1,19 +1,19 @@
 /* import Glimer font from local file*/
 @font-face {
     font-family: 'Glimer';
-    src: url("font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
+    src: url("../font/Gilmer-Font/Gilmer-Regular.otf") format("opentype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Glimer';
-    src: url("font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
+    src: url("../font/Gilmer-Font/Gilmer-Bold.otf") format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Glimer';
-    src: url("font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
+    src: url("../font/Gilmer-Font/Gilmer-Light.otf") format("opentype");
     font-weight: lighter;
 }
 

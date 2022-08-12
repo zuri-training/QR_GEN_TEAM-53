@@ -29,7 +29,11 @@
               align-items: center;
               height: 100%;
             }
-
+            @media (min-width:768px) {
+            ul.nav.navbar-nav.left{
+            visibility: hidden;
+             }
+            }
       
             .languages .flex {
               flex-wrap: wrap;
@@ -404,6 +408,35 @@
                   </div>
               </div>
               <div class="languages">
+                  <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand gilmerbold-regular-nomal-silver-48px" href="#">Settings</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav left">
+                              <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px">
+                                  <a href="#">About</a>
+                              </li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px border-2px-midnight"><a href="#">Contact</a>
+                              </li>
+                              <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                              <li class="gilmerregular-regular-nomal-midnight-20px">Hi, John</li>
+                              <li class="img-man"><img src="./icons/man.png" alt=""></li>
+                              <li class="img-rounded"><img src="./icons/Notification.png" alt=""></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+                  
                   <div class="container flex">
                     <div class="card border-2px-hawks-blue">
                       <h4
