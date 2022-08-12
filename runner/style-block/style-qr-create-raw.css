@@ -17,6 +17,13 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: 'Glimer';
+    src: url("font/Gilmer-Font/Gilmer-Medium.otf") format("opentype");
+    font-weight: 600;
+}
+
+
 :root {
     --primary-color: #061232;
     --text-color: #061232;
@@ -141,7 +148,7 @@ html {
     margin-bottom: 0.3rem;
 }
 
-.input-box input {
+.input-box input, .detail-box > input {
     color: var(--primary-color);
     font-family: 'Glimer', sans-serif;
     font-size: 0.875rem;
@@ -151,7 +158,7 @@ html {
     border-radius: 4px;
 }
 
-.input-box input:focus {
+.input-box input:focus, .detail-box > input:focus {
     outline: none;
     border-color: var(--input-active);
 }
@@ -197,7 +204,7 @@ html {
     border: 1px solid #BFBFBF; 
 }
 
-.qr-format-box .inner-section button {
+.qr-format-box .inner-section button, .save-edit {
     width: 160px;
     font-family: inherit;
     color: #fff;
@@ -227,9 +234,129 @@ html {
     cursor: pointer;
 }
 
+/* for qr-details page */
+
+.details-body {
+    margin: 1.13rem 0;
+}
+
+.section-1 .inner-wrapper {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.img-box {
+    padding: 0.57rem 0.75rem;
+    background: #CCFAF9;
+    border-radius: 8px;
+    max-width: max-content;
+}
+
+.img-box .image {
+    max-width: 100%;
+    height: auto;
+    width: 55px;
+}
+
+.qr-detail-info {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-detail-info > .category {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.qr-detail-info > .name {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.section-1 > .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.38rem;
+    padding: 0.5rem 0.3rem;
+    margin-top: 1rem;
+}
+
+.status > h3, .status > p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 2.25rem 0 1.5rem; 
+}
+.detail-box > label {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.detail-box > input::placeholder {
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+.save-edit-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.save-edit {
+    width: 40%;
+    height: 37px;
+    margin: 0;
+}
+
+.scan-activities {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.scan-activities > .heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.scan-info {
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    padding: 4.5rem 0.5rem;
+    margin-bottom: 1.63rem;
+}
+
+.scan-info:last-child {
+    margin-bottom: 0;
+}
+
+.scan-info > h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.scan-info > h4 > .number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* ending for detail page */
+
 /* desktop view */
 
-@media (min-width:510px) {
+@media (min-width:760px) {
 
     .qr-create-main {
         display: grid;
@@ -363,5 +490,109 @@ html {
     .download-btn {
         width: 40%;
     }
+
+    /* for detail  desktop page */
+
+    .details-body {
+        margin-top: 5%;
+    }
+
+    .section-1 {
+        display: grid;
+        grid-template-areas: "a b"
+                             "c d";
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .inner-wrapper {
+        grid-area: a;
+        justify-content: space-around;
+    }
+
+    .img-box {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .img-box .image {
+        width: 132px;
+    }
+
+    .qr-detail-info {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .qr-detail-info > .name {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .qr-detail-info > .category {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .status {
+        grid-area: b;
+    }
+
+    .status > h3, .status > p {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    .detail-edit {
+        grid-area: d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .detail-box {
+        margin: 0;
+        width: 30vw;
+    }
+
+    .save-edit-box {
+        margin: 0;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    .save-edit {
+        width: 15vw;
+        height: 56px;
+        margin: 0;
+    }
+
+    .scan-activities {
+        margin-top: 3rem;
+    }
+
+    .stat-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .scan-info {
+        flex: 1;
+        margin: 0;
+        width: calc(100% / 3);
+        padding: 3.6rem 0.5rem;
+    }
+
+
+
+
+
+
 
 }
