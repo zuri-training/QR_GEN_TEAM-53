@@ -288,7 +288,6 @@ h5 {
 }
 
 .wrapper3 button {
-	margin-left: 37%;
 	margin-bottom: 40px;
 	margin-top: 50px;
 	border: none;
@@ -371,6 +370,12 @@ h4 {
 	padding: 50px;
 	background-color: #ccfaf966;
 	font-size: 32px;
+}
+
+.vmbtn{
+    margin: 0px auto;
+    display: block;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 380px) {

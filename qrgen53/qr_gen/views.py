@@ -43,14 +43,18 @@ def qrcode_create_view(request):
                 'form': form,
                 'url_img': url_img,
                 'created': created,
-                'download': t2
+                'download': t2,
+                'username': request.user
             }
             return render(request, 'qr_create.html', context)
             # return send_
         else:
             print(form.errors)
 
-    context = {'form': form}
+    context = {
+        'form': form,
+        'username': request.user
+        }
     return render(request, 'qr_create.html', context)
 
 

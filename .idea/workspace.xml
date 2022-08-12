@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="first cleaning">
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="integrated landing page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/runner/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/Group.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/Group.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/amico.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/amico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/ci_qr-code-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/ci_qr-code-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/image1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/jam_qr-code.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/jam_qr-code.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why1.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why2.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/resources/why3.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/why3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing Page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Home and external website view">
-      <created>1659343630983</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1659343630983</updated>
     </task>
     <task id="LOCAL-00016" summary="Home and external website view">
       <created>1659343695274</created>
@@ -440,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660238098856</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="integrated landing page">
+      <created>1660306570913</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1660306570914</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,6 +508,7 @@
     <MESSAGE value="built in the features for app" />
     <MESSAGE value="built the gallery full and empty state&#10;intergrated the create qrraw, need to work on download buttoon" />
     <MESSAGE value="first cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="first cleaning" />
+    <MESSAGE value="integrated landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated landing page" />
   </component>
 </project>
