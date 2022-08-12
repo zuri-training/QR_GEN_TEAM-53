@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="contributions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us pagee/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us pagee/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About us pagee/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Members_contributions/Terms of service/mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/mobile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Members_contributions/Terms of service/web.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/images/web.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Bold.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Heavy.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Heavy.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Light.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Light.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Medium.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Medium.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Outline.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Outline.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Gilmer-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Gilmer-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/Read Me.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Gilmer-Font/www.dfonts.org.url" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Gilmer-Font/www.dfonts.org.url" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Privacy Policy/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/Privacy Policy/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faq1/analytics/analytics_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/static/styles/analytics_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/privacy policy page/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/privacy policy page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/privacy policy page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/privacy policy page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/About us pagee/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-about-us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/static/style-privacy.css" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/static/style-privacy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/privacy-policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/analytics-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Members_contributions/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="rearranging" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,11 +67,11 @@
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,13 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00021" summary="style d 3">
-      <created>1659348491556</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1659348491556</updated>
     </task>
     <task id="LOCAL-00022" summary="fixed the user auth and built Qrcode model">
       <created>1659723449288</created>
@@ -460,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660319774774</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="rearranging">
+      <created>1660328764621</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1660328764622</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="QR Code main" />
     <MESSAGE value="Home and external website view" />
     <MESSAGE value="style d 1" />
     <MESSAGE value="style d 2" />
@@ -574,6 +542,7 @@
     <MESSAGE value="analytics page completed&#10;&#10;(cherry picked from commit 176afcaff41de37ceb5566ded1fadf4c6da9ed86)" />
     <MESSAGE value="Update contribution.md&#10;&#10;(cherry picked from commit 23f010afad8a81efd700e0205298e5d4c4afa35c)" />
     <MESSAGE value="contributions" />
-    <option name="LAST_COMMIT_MESSAGE" value="contributions" />
+    <MESSAGE value="rearranging" />
+    <option name="LAST_COMMIT_MESSAGE" value="rearranging" />
   </component>
 </project>
