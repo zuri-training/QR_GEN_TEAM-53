@@ -9,7 +9,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Code we are proud of](#code-we-are-proud-of)
+- [Run locally](#run-locally)
 
 
 
@@ -53,21 +53,61 @@ User: Authenticated
 - [Segno]("https://segno.readthedocs.io/en/stable/make.html")
 - [django]("https://www.djangoproject.com/")
 
-### Code We are proud of
+## Run locally.
 
-```HTML
+If you want to run locally,then you can use the following command to run locally on your machine:
 
-
-```
-
-```CSS
+Clone the project
 
 ```
-
-```JS
-
+  git clone git@github.com:zuri-training/QR_GEN_TEAM-53.git
 ```
 
-```Python
+Go to the project directory
 
 ```
+  cd QR_GEN_TEAM-53.git
+```
+
+Create a Virtual Environment
+
+```
+python -m venv venv
+```
+
+Activate Virtual Environment
+
+```
+venv\scripts\activate
+```
+
+Install Dependencies
+
+```
+  pip install -r requirements.txt
+```
+
+make migrations
+
+```
+python manage.py makemigrations
+```
+
+Migrate the database
+
+```
+python manage.py migrate
+```
+
+create superuser
+
+```
+python manage.py createsuperuser
+```
+
+Finally, Start The Server.
+
+```
+python manage.py runserver
+```
+
