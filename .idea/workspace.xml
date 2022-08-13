@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="finished building into django">
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/settings.html" afterDir="false" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added missing images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/favicon.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +70,8 @@
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\static" />
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
@@ -87,13 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00028" summary="updated db">
-      <created>1659814160066</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1659814160066</updated>
     </task>
     <task id="LOCAL-00029" summary="added 404 basic page">
       <created>1659819416700</created>
@@ -431,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660341954809</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="added missing images">
+      <created>1660349036443</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1660349036443</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style d 2" />
     <MESSAGE value="style d 3" />
     <MESSAGE value="fixed the user auth and built Qrcode model" />
     <MESSAGE value="new pages, yet to be authorised" />
@@ -545,6 +545,7 @@
     <MESSAGE value="rearranging" />
     <MESSAGE value="building into django" />
     <MESSAGE value="finished building into django" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished building into django" />
+    <MESSAGE value="added missing images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing images" />
   </component>
 </project>
