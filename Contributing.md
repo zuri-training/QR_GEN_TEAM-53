@@ -175,18 +175,6 @@ create superuser
 python manage.py createsuperuser
 ```
 
-Create a new branch to work with
-
-```
-git branch <new-branch>
-```
-
-switch to the new branch to make changes
-
-```
-git checkout <new-branch>
-```
-
 Finally, Start The Server.
 
 ```
