@@ -1,5 +1,6 @@
 import io
-import os
+# import os
+from pathlib import Path
 from datetime import date, datetime
 import mimetypes
 
@@ -17,6 +18,7 @@ from .models import QRcode
 
 today = date.today()
 now = datetime.now()
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 @login_required(login_url='login')
@@ -45,7 +47,7 @@ def qrcode_create_view(request):
             qr_code = QRcode(title=title, owner=owner, base_url=base_url,
                              type_qr=type_qr, light=light, dark=dark, tag=tag,
                              )
-            url_img = '/static/qrcodes/' + title + '.' + tag
+            url_img = '/media/media/' + title + '.' + tag
             url_down = ''
             created = True
             if tag != 'pdf':
@@ -64,8 +66,8 @@ def qrcode_create_view(request):
                 t3 = title + '.png'
                 q_code.qrcode.save(t3, ContentFile(b2.getvalue()), save=True)
 
-                url_img = '/static/qrcodes/' + title + '.png'
-                url_down = '/static/qrcodes/' + title + '.pdf'
+                url_img = '/media/media/' + title + '.png'
+                url_down = '/media/media/' + title + '.pdf'
             print(url_down)
 
             context = {
@@ -73,7 +75,8 @@ def qrcode_create_view(request):
                 'url_img': url_img,
                 'created': created,
                 'url_down': url_down,
-                'username': request.user
+                'username': request.user,
+                'name': t2,
             }
             return render(request, 'qr_create.html', context)
         else:
@@ -86,10 +89,9 @@ def qrcode_create_view(request):
     return render(request, 'qr_create.html', context)
 
 
-def download_file(request, filename=''):
+def download_file_view(request, filename=''):
     if filename != '':
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        filepath = BASE_DIR + '/qrgen53/static/qrcodes' + filename
+        filepath = BASE_DIR + '/media/media/' + filename
         path = open(filepath, 'rb')
         mime_type, _ = mimetypes.guess_type(filepath)
         response = HttpResponse(path, content_type=mime_type)

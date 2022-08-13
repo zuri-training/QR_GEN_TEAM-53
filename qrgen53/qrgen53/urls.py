@@ -16,12 +16,16 @@ Including another URLconf
 
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.urls import path
+from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
+# from django_downloadview import ObjectDownloadView
+
 
 from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view
 from home.views import home_view, contact_view, about_view, privacy_policy_view, faq_view, tos_view
 from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view, \
-    dashboard_view, dashboard_other_view, setting_view, logout_view, analytics_view, download_file
+    dashboard_view, dashboard_other_view, setting_view, logout_view, analytics_view, download_file_view
 
 urlpatterns = [
     path('', home_view, name='home'),
@@ -47,9 +51,10 @@ urlpatterns = [
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
     path('details/<int:qr_id>/delete/', qrcode_delete_view, name='qr_delete'),
     path('settings/', setting_view, name='settings'),
-    path('download/', download_file),
+    # path('download/', include('qrgen.urls')), # name='download', download_file_view,
 
     path('admin/', admin.site.urls),
- ]
+]
 
 urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

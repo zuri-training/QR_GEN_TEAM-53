@@ -13,7 +13,7 @@ class QRcode(models.Model):
     light = models.CharField(max_length=15, default='white')
     dark = models.CharField(max_length=15, default='black')
     stats = models.IntegerField(default=0)
-    qrcode = models.ImageField(upload_to='static/qrcodes/')
+    qrcode = models.ImageField(upload_to='media')
 
     def get_absolute_url(self):
         return f"/details/{self.id}/"
