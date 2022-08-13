@@ -4,6 +4,7 @@
 ## Table of contents
 
 - [Overview](#overview)
+  - [Architecture](#architecture)
   - [The challenge](#the-challenge)
   - [Features](#features)
   - [Links](#links)
