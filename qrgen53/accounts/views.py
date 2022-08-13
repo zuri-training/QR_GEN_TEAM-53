@@ -1,6 +1,7 @@
-from django.contrib.auth import authenticate, login, urls # logout, urls
+from django.contrib.auth import authenticate, login, urls, logout, urls
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 
 def register_view(request):
@@ -47,6 +48,12 @@ def new_password_view(request):
 
 def recover_password_view(request):
     return render(request, 'recover-password.html')
+
+
+@login_required(login_url='login')
+def logout_view(request):
+    logout(request)
+    return render(request, 'index.html')
 
 
 """form =
