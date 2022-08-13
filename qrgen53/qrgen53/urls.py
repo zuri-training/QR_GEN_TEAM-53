@@ -22,10 +22,10 @@ from django.conf.urls.static import static
 # from django_downloadview import ObjectDownloadView
 
 
-from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view
+from accounts.views import register_view, login_view, forgot_password_view, new_password_view, recover_password_view, logout_view
 from home.views import home_view, contact_view, about_view, privacy_policy_view, faq_view, tos_view
 from qr_gen.views import qrcode_detail_dy_view, qrcode_create_view, qrcode_delete_view, qrcode_gallery_view, \
-    dashboard_view, dashboard_other_view, setting_view, logout_view, analytics_view, download_file_view
+    dashboard_view, dashboard_other_view, setting_view,  analytics_view, download_file_view
 
 urlpatterns = [
     path('', home_view, name='home'),

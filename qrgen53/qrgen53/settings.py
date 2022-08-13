@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'qr_gen',
     'accounts',
-    'api',
     'home',
 ]
 # 'django.contrib.sites',

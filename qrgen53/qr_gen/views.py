@@ -2,9 +2,7 @@ import io
 import mimetypes
 from datetime import date, datetime
 from pathlib import Path
-
 import segno
-from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
 from django.http.response import HttpResponse
@@ -202,7 +200,3 @@ def setting_view(request):
     return render(request, "settings.html", context)
 
 
-@login_required(login_url='login')
-def logout_view(request):
-    logout(request)
-    return render(request, 'index.html')
