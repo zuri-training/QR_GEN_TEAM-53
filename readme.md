@@ -87,6 +87,13 @@ Install Dependencies
   pip install -r requirements.txt
 ```
 
+Change directory 
+
+```
+  cd qrgen53
+```
+
+
 make migrations
 
 ```
