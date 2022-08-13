@@ -122,7 +122,7 @@
                     </div>
                     <div class="edit_and_download">
                         <img src="{% static 'images/edit.png' %}" alt="">
-                        <img src="{% static 'images/download.png' %}" alt="">
+                        <a href="{{ instance.get_absolute_url }}" download="{{ instance.title }}"><img src="{% static 'images/download.png' %}" alt=""></a>     q
                     </div>
                     <a href="{{ instance.get_absolute_url }}"><button>Detail</button></a>
                 </div>

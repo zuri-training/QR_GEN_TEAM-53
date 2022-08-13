@@ -51,7 +51,7 @@ urlpatterns = [
     path('details/<int:qr_id>/', qrcode_detail_dy_view, name='qr_details'),
     path('details/<int:qr_id>/delete/', qrcode_delete_view, name='qr_delete'),
     path('settings/', setting_view, name='settings'),
-    # path('download/', include('qrgen.urls')), # name='download', download_file_view,
+    path(r'download/<str:filename>/', download_file_view, name='download'), # ,include('qrgen.urls')
 
     path('admin/', admin.site.urls),
 ]

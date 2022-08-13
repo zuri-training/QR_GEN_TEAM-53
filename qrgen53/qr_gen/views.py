@@ -1,15 +1,14 @@
 import io
-# import os
-from pathlib import Path
-from datetime import date, datetime
 import mimetypes
+from datetime import date, datetime
+from pathlib import Path
 
 import segno
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
-from django.shortcuts import render, get_object_or_404, redirect
 from django.http.response import HttpResponse
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import QrcodeCreate
 from .models import QRcode
@@ -31,7 +30,7 @@ def qrcode_create_view(request):
             base_url = form.cleaned_data['base_url']
             dark = form.cleaned_data['dark']
             light = form.cleaned_data['light']
-            title = form.cleaned_data['title']
+            title = form.cleaned_data['title'].replace(' ', '_')
             type_qr = form.cleaned_data['type_qr']
             tag = form.cleaned_data['tag']
             qrcode = segno.make_qr(base_url)  # TODO: create rule if QR is pdf, create jpeg by default and save both
@@ -91,7 +90,8 @@ def qrcode_create_view(request):
 
 def download_file_view(request, filename=''):
     if filename != '':
-        filepath = BASE_DIR + '/media/media/' + filename
+        # filepath = BASE_DIR + '/media/media/' + filename
+        filepath = str(BASE_DIR) + "\\media\\media\\" + filename
         path = open(filepath, 'rb')
         mime_type, _ = mimetypes.guess_type(filepath)
         response = HttpResponse(path, content_type=mime_type)
@@ -186,7 +186,9 @@ def dashboard_other_view(request):
 def analytics_view(request):
     username = request.user
     context = {
-        'username': username
+        'username': username,
+        'date': today.strftime("%B %d, %Y"),
+        'time': now.strftime("%H:%M"),
     }
     return render(request, 'analytics-page.html', context)
 
@@ -204,23 +206,3 @@ def setting_view(request):
 def logout_view(request):
     logout(request)
     return render(request, 'index.html')
-
-
-"""
-def png-jpg()
-    im1 = Image.open(r'path where the PNG is stored\file name.png')
-    im1.save(r'path where the JPG will be stored\new file name.jpg')
-
-    initial_data = {
-        'light': 'white',
-        'dark' : 'black'
-    }
-    qr_form = QrcodeCreate(request.POST, initial=initial_data)
-    
-    def code_download_pdf(request, pk):
-        obj = get_object_or_404(QRcode.objects.filter(user=request.user)
-        filepath, filename = convert_to_pdf(obj.qr_code.path)
-        response = HttpResponse(open(filepath, 'rb').read(), content_type='application/force-download')
-        response['Content-Disposition'] = 'attachment; filename=%s' % filename
-        return response
-"""

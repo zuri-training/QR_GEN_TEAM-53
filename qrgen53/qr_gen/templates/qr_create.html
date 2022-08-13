@@ -223,7 +223,7 @@
                 <button type="submit" value="save">Create QR Code</button>
               </div>
               {% if created == True %}
-                <a href="{{ url_down }}" download="{{ name }}"><button class="download-btn" >Download</button></a>
+                <a href="{% url 'download' name %}" download><button class="download-btn" >Download</button></a>
               {% else %}
                 <a href=""><button class="download-btn">Download</button></a>
               {% endif %}

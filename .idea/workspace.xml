@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="contribution 1.0">
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="changed location to media">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,13 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00034" summary="adding drafts">
-      <created>1659910606725</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1659910606725</updated>
     </task>
     <task id="LOCAL-00035" summary="adding drafts and named folders">
       <created>1659972320023</created>
@@ -436,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660387003654</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="changed location to media">
+      <created>1660391303643</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1660391303643</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added 404 basic page" />
     <MESSAGE value="added 404 basic page&#10;list gallery&#10;Linked Detail to Gallery" />
     <MESSAGE value="new pages not added to the backend" />
     <MESSAGE value="adding drafts" />
@@ -550,6 +548,7 @@
     <MESSAGE value="raw download" />
     <MESSAGE value="download 1.0" />
     <MESSAGE value="contribution 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="contribution 1.0" />
+    <MESSAGE value="changed location to media" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed location to media" />
   </component>
 </project>
