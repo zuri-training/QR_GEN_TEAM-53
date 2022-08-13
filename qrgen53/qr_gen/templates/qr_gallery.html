@@ -100,7 +100,7 @@
             {% for instance in object_list %}
                 <div class="spread">
                 <div class="left">
-                    <img src="{{ instance.qrcode }}" alt="">
+                    <img src="{{ instance.get_absolute_url }}" alt="">
                     <div class="block">
                         <span class="size">{{ instance.type_qr }}</span>
                         <span class="size2">{{ instance.title }}</span>
