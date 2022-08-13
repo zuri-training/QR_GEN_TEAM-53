@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="raw download">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="download 1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,13 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00032" summary="new pages not added to the backend">
-      <created>1659902090951</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1659902090951</updated>
     </task>
     <task id="LOCAL-00033" summary="new pages not added to the backend">
       <created>1659907554431</created>
@@ -433,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660357248592</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="download 1.0">
+      <created>1660360554928</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1660360554928</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new pages, yet to be authorised" />
     <MESSAGE value="updated db" />
     <MESSAGE value="added 404 basic page" />
     <MESSAGE value="added 404 basic page&#10;list gallery&#10;Linked Detail to Gallery" />
@@ -547,6 +542,7 @@
     <MESSAGE value="added missing images" />
     <MESSAGE value="added favicon" />
     <MESSAGE value="raw download" />
-    <option name="LAST_COMMIT_MESSAGE" value="raw download" />
+    <MESSAGE value="download 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="download 1.0" />
   </component>
 </project>
