@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+    <title>Bad connection</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            margin: 0px;
+            background: #fff;
+            height: 100%;
+            text-align: center;
+        }
+
+        .img-error-net {
+            display: block;
+            margin-top: 200px;
+            -webkit-user-select: none;
+            margin: auto;
+            background-color: hsl(0, 0%, 90%);
+            transition: background-color 300ms;
+            width: 450px;
+            height: 450px;
+
+        }
+
+        .button {
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+
+            background-color: var(--midnight);
+            cursor: pointer;
+            font-family: var(--font-family-gilmer_regular-regular);
+            font-size: var(--font-size-xl2);
+            font-weight: 400;
+            letter-spacing: 0;
+            width: 400px;
+            margin-top: -3px;
+            margin-bottom: 25px;
+
+            padding: 10px 10px 10px 10px;
+            border: 2px solid var(--midnight);
+            border-radius: 10px;
+        }
+
+        button a {
+            color: var(--white);
+        }
+
+        button:hover {
+            background-color: var(--white);
+        }
+
+        button a:hover {
+            color: var(--midnight);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+
+
+        @media screen and (max-width: 900px) {
+            .img-error-net {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .img-error-net {
+                width: 292px;
+                height: 292px;
+                border-radius: 15px;
+            }
+            .button{
+                width: 244px;
+            }
+            p{
+                width: 95%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./icons/logo.svg" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="gilmerregular-regular-nomal-midnight-20px place"><a href="#">Home</a></li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">Contact</a>
+                    </li>
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">FAQ</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="gilmerregular-regular-nomal-midnight-20px"><a href="#">Login</a></li>
+                    <li><button class="btn navbar-btn register"><a href="#"></a>Get Started</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img class="img-error-net" src="./icons/images.jpg">
+    <h4 class="gilmerregular-regular-nomal-midnight-32px">
+        Whooops, something went wrong
+    </h4>
+    <br>
+    <p class="gilmerregular-regular-nomal-midnight-20px">
+        Please check your internet connection and try again.
+    </p><br>
+    <button class="btn button"><a href="#">Try Again</a></button>
+</body>
+
+</html>
