@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="updated readme">
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="built forgot password features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +70,11 @@
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\accounts\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,13 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00037" summary="building frame">
-      <created>1659980558180</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1659980558180</updated>
     </task>
     <task id="LOCAL-00038" summary="building frame">
       <created>1659980564099</created>
@@ -442,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660420271909</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="built forgot password features">
+      <created>1660427429272</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1660427429272</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding drafts" />
     <MESSAGE value="adding drafts and named folders" />
     <MESSAGE value="building frame" />
     <MESSAGE value="building frame dashboard integrated" />
@@ -556,6 +545,7 @@
     <MESSAGE value="changed location to media" />
     <MESSAGE value="fist working download" />
     <MESSAGE value="updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+    <MESSAGE value="built forgot password features" />
+    <option name="LAST_COMMIT_MESSAGE" value="built forgot password features" />
   </component>
 </project>
