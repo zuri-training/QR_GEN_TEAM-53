@@ -1,11 +1,15 @@
 import io
+import os
 from datetime import date, datetime
+import mimetypes
 
 import segno
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
 from django.shortcuts import render, get_object_or_404, redirect
+from django.http.response import HttpResponse
+
 
 from .forms import QrcodeCreate
 from .models import QRcode
@@ -30,8 +34,14 @@ def qrcode_create_view(request):
             type_qr = form.cleaned_data['type_qr']
             tag = form.cleaned_data['tag']
             qrcode = segno.make_qr(base_url)  # TODO: create rule if QR is pdf, create jpeg by default and save both
-            buff = io.BytesIO()
-            qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
+            if tag == 'jpg':
+                img = qrcode.to_pil(light=light, dark=dark, scale=7)
+                buff = io.BytesIO()
+                img.save(buff, format='jpeg')
+            else:
+                buff = io.BytesIO()
+                qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
+
             qr_code = QRcode(title=title, owner=owner, base_url=base_url,
                              type_qr=type_qr, light=light, dark=dark, tag=tag,
                              )
@@ -47,7 +57,6 @@ def qrcode_create_view(request):
                 'username': request.user
             }
             return render(request, 'qr_create.html', context)
-            # return send_
         else:
             print(form.errors)
 
@@ -57,6 +66,22 @@ def qrcode_create_view(request):
         }
     return render(request, 'qr_create.html', context)
 
+def download_file(request, filename=''):
+    if filename != '':
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        filepath = BASE_DIR + '/qrgen53/static/qrcodes' + filename
+        path = open(filepath, 'rb')
+        mime_type, _ = mimetypes.guess_type(filepath)
+        response = HttpResponse(path, content_type=mime_type)
+        response['Content-Disposition'] = "attachment; filename=%s" %filename
+        return response
+    else:
+        form = QrcodeCreate()
+        context = {
+            'form': form,
+            'username': request.user
+            }
+        return render(request, 'qr_create.html', context)
 
 @login_required(login_url='login')
 def qrcode_gallery_view(request):
@@ -159,6 +184,9 @@ def logout_view(request):
 
 
 """
+def png-jpg()
+    im1 = Image.open(r'path where the PNG is stored\file name.png')
+    im1.save(r'path where the JPG will be stored\new file name.jpg')
 
     initial_data = {
         'light': 'white',

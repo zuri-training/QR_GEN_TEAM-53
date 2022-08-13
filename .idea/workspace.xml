@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added missing images">
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added favicon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/qr.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/qr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00029" summary="added 404 basic page">
-      <created>1659819416700</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1659819416700</updated>
     </task>
     <task id="LOCAL-00030" summary="added 404 basic page">
       <created>1659820306291</created>
@@ -432,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660349036443</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="added favicon">
+      <created>1660351793097</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1660351793097</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style d 3" />
     <MESSAGE value="fixed the user auth and built Qrcode model" />
     <MESSAGE value="new pages, yet to be authorised" />
     <MESSAGE value="updated db" />
@@ -546,6 +549,7 @@
     <MESSAGE value="building into django" />
     <MESSAGE value="finished building into django" />
     <MESSAGE value="added missing images" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing images" />
+    <MESSAGE value="added favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added favicon" />
   </component>
 </project>

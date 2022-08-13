@@ -216,14 +216,14 @@
                   <select name="{{ 'tag' }}" id="qr-format" class="select-qr-format">
                     <option value="png">PNG</option>
                     <option value="svg">SVG</option>
-                    <option value="jpeg">JPEG</option>
+                    <option value="jpg">JPEG</option>
                     <option value="pdf">PDF</option>
                   </select>
                 </div>
                 <button type="submit" value="save">Create QR Code</button>
               </div>
 
-              <a href="{{ url_img }}" download="{{ 'download' }}"><button class="download-btn">Download</button></a>
+              <a href="{% url 'download_file' filename={{ 't2' }} %}"><button class="download-btn">Download</button></a>
             </div>
           </form>
 
