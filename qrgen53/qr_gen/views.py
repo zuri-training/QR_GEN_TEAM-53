@@ -10,7 +10,6 @@ from django.core.files.base import ContentFile
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http.response import HttpResponse
 
-
 from .forms import QrcodeCreate
 from .models import QRcode
 
@@ -38,6 +37,7 @@ def qrcode_create_view(request):
                 img = qrcode.to_pil(light=light, dark=dark, scale=7)
                 buff = io.BytesIO()
                 img.save(buff, format='jpeg')
+
             else:
                 buff = io.BytesIO()
                 qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
@@ -46,14 +46,33 @@ def qrcode_create_view(request):
                              type_qr=type_qr, light=light, dark=dark, tag=tag,
                              )
             url_img = '/static/qrcodes/' + title + '.' + tag
+            url_down = ''
             created = True
-            t2 = title + '.' + tag
-            qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+            if tag != 'pdf':
+                url_down = url_img
+                t2 = title + '.' + tag
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+            else:
+                t2 = title + '.pdf'
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+
+                b2 = io.BytesIO()
+                qrcode.save(b2, kind='png', light=light, dark=dark, scale=7)
+                q_code = QRcode(title=title, owner=owner, base_url=base_url,
+                                type_qr=type_qr, light=light, dark=dark, tag='png',
+                                )
+                t3 = title + '.png'
+                q_code.qrcode.save(t3, ContentFile(b2.getvalue()), save=True)
+
+                url_img = '/static/qrcodes/' + title + '.png'
+                url_down = '/static/qrcodes/' + title + '.pdf'
+            print(url_down)
+
             context = {
                 'form': form,
                 'url_img': url_img,
                 'created': created,
-                'download': t2,
+                'url_down': url_down,
                 'username': request.user
             }
             return render(request, 'qr_create.html', context)
@@ -63,8 +82,9 @@ def qrcode_create_view(request):
     context = {
         'form': form,
         'username': request.user
-        }
+    }
     return render(request, 'qr_create.html', context)
+
 
 def download_file(request, filename=''):
     if filename != '':
@@ -73,15 +93,16 @@ def download_file(request, filename=''):
         path = open(filepath, 'rb')
         mime_type, _ = mimetypes.guess_type(filepath)
         response = HttpResponse(path, content_type=mime_type)
-        response['Content-Disposition'] = "attachment; filename=%s" %filename
+        response['Content-Disposition'] = "attachment; filename=%s" % filename
         return response
     else:
         form = QrcodeCreate()
         context = {
             'form': form,
             'username': request.user
-            }
+        }
         return render(request, 'qr_create.html', context)
+
 
 @login_required(login_url='login')
 def qrcode_gallery_view(request):
