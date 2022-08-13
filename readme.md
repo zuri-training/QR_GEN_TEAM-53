@@ -19,6 +19,10 @@
 A platform that allows users generate QR code for data inputted while also providing analytics and metrics. 
 
 
+## Architecture
+
+Monolith
+
 ### The challenge
 
 User: Unauthenticated
