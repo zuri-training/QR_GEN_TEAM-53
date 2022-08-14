@@ -1,102 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ Page</title>
-    <link rel="stylesheet" href="./Gilmer-Font/Gilmer Bold.otf">
-    <link rel="stylesheet" href="./Gilmer-Font/Gilmer Heavy.otf">
-    <link rel="stylesheet" href="./Gilmer-Font/Gilmer Light.otf">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="script.js" type="text/Javascript"></script>
-</head>
-<body>
-    <div class="main-body">
-        <nav class="navbar">
-            <div><img src="Logo.png" alt="MiQr logo"></div>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links navbar1">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="navbar-links navbar2">
-                <ul>
-                    <li><a href="#">Login</a></li>
-                    <button class="first-b">Get Started</button>
-                </ul>
-            </div>
-        </nav>
-        <h2>Frequently Asked Questions</h2>
-        <p class="one">Here are the answers to our most frequently asked questions.<br> If your question is not listed here, please contact us.</p>
-        <div class="flexbox-container">
-            <div class="flexbox-item flexbox-item1">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>1</h3>
-                <p class="p1">Can you generate QR Code from URL?</p>
-            </div>
-            <div class="flexbox-item flexbox-item2">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>2</h3>
-                <p class="p1">Do I have to sign up to generate my code?</p>
-            </div>
-            <div class="flexbox-item flexbox-item3">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>3</h3>
-                <p class="p1">Is generating my QR Code free?</p>
-            </div>
-            <div class="flexbox-item flexbox-item4">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>4</h3>
-                <p class="p1">Can my QR code be deactivated?</p>
-            </div>
-            <div class="flexbox-item flexbox-item5">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>5</h3>
-                <p class="p1">How many times can the code be scanned? Is there a limit?</p>
-            </div>
-            <div class="flexbox-item flexbox-item6">
-                <span class="iconify icons" data-icon="eva:question-mark-fill"></span>
-                <h3>6</h3>
-                <p class="p1">Dynamic vs Static QR Code, which is better?</p>
-            </div>
+    <script
+      src="https://kit.fontawesome.com/d061793390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="faq_style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="content-header">
+        <div class="content-header-nav">
+          <div class="content-header-logo">
+            <img src="images/Logo.svg" alt="MiQr logo" />
+          </div>
+
+          <div class="content-header-nav1">
+            <ul>
+              <li><a href="#" class="nav-links">Home</a></li>
+              <li><a href="#" class="nav-links">About</a></li>
+              <li><a href="#" class="nav-links">Contact</a></li>
+              <li><a href="#" class="nav-links">FAQ</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="middle">
-            <button class="second-b"><a href="#">Create QR Codes</a></button><br> </div>
-            
-        <footer class="footer">
-            <div class="footer-logo">
-                <span><img src="/Logo.png" alt="MiQR logo" id="logo"></span>
-                <p class="two">Generates different QR Codes depending on your purpose, you can
-                    use our QR code generator to create QR codes to open a website, store 
-                    Image, Files, view PDF files, connect to a Wifi and more.
+
+        <div class="content-header-nav2">
+          <ul>
+            <li><a href="#" class="nav-links">Login</a></li>
+            <button class="first-b">Get Started</button>
+          </ul>
+        </div>
+
+        <div class="mobile-nav">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mobile-menu"
+          >
+            <path
+              d="M21 10H3"
+              stroke="#061232"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 6H3"
+              stroke="#061232"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 14H3"
+              stroke="#061232"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 18H3"
+              stroke="#061232"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </nav>
+      <div class="content-h3">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="content-p1">
+        <p>
+          Here are the answers to our most frequently asked questions.<br />
+          If your question is not listed here, please contact us.
+        </p>
+      </div>
+
+      <section class="container">
+        <div class="faq">
+          <div class="faq-item" id="faq1">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq1" class="faq-link">
+                  Can you generate QR Code from URL?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+
+              <div class="answer">
+                <p>Yes, it is possible to generate QR Code from URL.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq2">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq2" class="faq-link">
+                  Do I have to sign up to generate my code?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+              <div class="answer">
+                <p>
+                  Yes, it is neccessary. To enable the user save their data and
+                  edit later.
                 </p>
+              </div>
             </div>
-            <div class="foot-wrap">
+          </div>
+
+          <div class="faq-item" id="faq3">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq3" class="faq-link">
+                  Is Generating my QR code free?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+              <div class="answer">
+                <p>It is totally free.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq4">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq4" class="faq-link">
+                  Can my QR Code be deactivated?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+              <div class="answer">
+                <p>It can be deactivated, only by the user.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq5">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq5" class="faq-link">
+                  How many times can the code be scanned? Is there a limit?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+              <div class="answer">
+                <p>
+                  There is absolutely no limits to the amount of times it can be
+                  scanned.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq6">
+            <div class="faq-box">
+              <div class="question">
+                <img src="images/Vector.svg" alt="Question Mark Icon" />
+                <a href="#faq6" class="faq-link">
+                  Dynamic vs Static QR Code, which is better?
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-minus"></i>
+                </a>
+              </div>
+              <div class="answer">
+                <p>
+                  The difference between the two is that the dynamic QR code can
+                  be edited even after being printed, and the static one cannot.
+                  So it entirely depends on the user.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="middle">
+        <button class="second-b"><a href="#">Create QR Codes</a></button><br />
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/images/Logo.svg" alt="MiQR logo" id="logo" />
+            <p class="two">
+              Generates different QR Codes depending on your purpose, you can
+              use our QR code generator to create QR codes to open a website,
+              store Image, Files, view PDF files, connect to a Wifi and more.
+            </p>
+          </div>
+          <div class="foot-wrap">
             <div class="foot1">
-                <h3 class="second">Useful Links</h3>
-                <p><a href="#">Create QR Code</a></p>
-                <p><a href="#">About Us</a></p>
-                <p><a href="#">Terms of Service</a></p>
-                <p><a href="#">Privacy Policy</a></p>
+              <h3 class="second">Useful Links</h3>
+              <p><a href="#">Create QR Code</a></p>
+              <p><a href="#">About Us</a></p>
+              <p><a href="#">Terms of Service</a></p>
+              <p><a href="#">Privacy Policy</a></p>
             </div>
             <div class="foot1">
-                <h3 class="second">Support</h3>
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">FAQ</a></p>
+              <h3 class="second">Support</h3>
+              <p><a href="#">Contact</a></p>
+              <p><a href="#">FAQ</a></p>
             </div>
-            </div>
-        </footer>
+          </div>
+        </div>
         <div class="copy"><p>copyright &copy; 2022 MiQr</p></div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
