@@ -330,12 +330,12 @@ select{
         height: 35px;
     }
     .select_and_input{
-        display: flex;
+        display: flex;  
     }
 }
 @media screen and (max-width: 380px) {
     .notification_and_pic{
         margin: 0 0 0 10px;
     }
-
+    
 }
