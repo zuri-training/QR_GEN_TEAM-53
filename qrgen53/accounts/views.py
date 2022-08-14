@@ -25,7 +25,7 @@ def register_view(request):
             password = form.cleaned_data['password1']
             user = authenticate(username=username, password=password)
             login(request, user)
-            return redirect('home')
+            return redirect('dashboard-main')
     else:
         form = UserCreationForm()
     context = {'form': form}
