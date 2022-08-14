@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="updated readme">
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="prep for deployment">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_10_2022_4_52_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_10_2022_4_52_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/home/templates/tos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/templates/qr_gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

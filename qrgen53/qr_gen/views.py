@@ -110,9 +110,10 @@ def qrcode_gallery_view(request):
     queryset = QRcode.objects.filter(owner=userid)  # list of objects
     # TODO: add functionality for when the qr code gallery is empty
     if queryset.exists():
+
         context = {
             "object_list": queryset,
-            'username': request.user
+            'username': request.user,
         }
         return render(request, 'qr_gallery.html', context)
     else:
@@ -127,7 +128,7 @@ def qrcode_detail_dy_view(request, qr_id):
     # TODO: apply this
     # obj = QRcode.objects.get(id=qr_id)
     obj = get_object_or_404(QRcode, id=qr_id)
-    location = '/' + str(obj.qrcode)
+    location = '/media/' + str(obj.qrcode)
     context = {
         'owner': request.user,
         'title': obj.title,
