@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="updated the FAQ page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qr_gen/views.py" afterDir="false" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added Wifi and email">
+      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,17 +55,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/home/templates/faq.html",
+    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/templates",
     "settings.editor.selected.configurable": "preferences.keymap",
     "two.files.diff.last.used.file": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/home/templates/faq.html"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -90,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00041" summary="building frame dashboard integrated">
-      <created>1659987083511</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1659987083511</updated>
     </task>
     <task id="LOCAL-00042" summary="rebuilding user structure">
       <created>1659988872006</created>
@@ -434,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660522080498</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="added Wifi and email">
+      <created>1660556183219</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1660556183219</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="building frame dashboard integrated" />
     <MESSAGE value="rebuilding user structure" />
     <MESSAGE value="fixed the dashboards" />
     <MESSAGE value="added logging out functionality" />
@@ -548,6 +544,7 @@
     <MESSAGE value="fixed the gallery view and details" />
     <MESSAGE value="updated the nav, dashboard and qrcodes" />
     <MESSAGE value="updated the FAQ page" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the FAQ page" />
+    <MESSAGE value="added Wifi and email" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Wifi and email" />
   </component>
 </project>

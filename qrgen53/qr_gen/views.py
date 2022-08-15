@@ -87,7 +87,7 @@ def qrcode_create_view(request):
     }
     return render(request, 'qr_create.html', context)
 
-"""
+
 @login_required(login_url='login')
 def qrcode_wifi_view(request):
     form = QrcodeWifiCreate()
@@ -146,7 +146,7 @@ def qrcode_wifi_view(request):
                 'username': request.user,
                 'name': t2,
             }
-            return render(request, 'qr_wifi_create.html', context)
+            return render(request, 'create-wifi-qr.html', context)
         else:
             print(form.errors)
 
@@ -154,7 +154,7 @@ def qrcode_wifi_view(request):
         'form': form,
         'username': request.user
     }
-    return render(request, 'qr_wifi_create.html', context)
+    return render(request, 'create-wifi-qr.html', context)
 
 
 @login_required(login_url='login')
@@ -214,7 +214,7 @@ def qrcode_location_view(request):
                 'username': request.user,
                 'name': t2,
             }
-            return render(request, 'qr_location_create.html', context)
+            return render(request, 'create-location-qr.html', context)
         else:
             print(form.errors)
 
@@ -222,7 +222,7 @@ def qrcode_location_view(request):
         'form': form,
         'username': request.user
     }
-    return render(request, 'qr_location_create.html', context)
+    return render(request, 'create-location-qr.html', context)
 
 
 @login_required(login_url='login')
@@ -282,7 +282,7 @@ def qrcode_email_view(request):
                 'username': request.user,
                 'name': t2,
             }
-            return render(request, 'qr_email_create.html', context)
+            return render(request, 'create-email-qr.html', context)
         else:
             print(form.errors)
 
@@ -290,9 +290,8 @@ def qrcode_email_view(request):
         'form': form,
         'username': request.user
     }
-    return render(request, 'qr_email_create.html', context)
+    return render(request, 'create-email-qr.html', context)
 
-"""
 
 def download_file_view(request, filename=''):
     if filename != '':
