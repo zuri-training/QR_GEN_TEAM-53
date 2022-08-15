@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added Wifi and email" />
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added Wifi and email">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,25 +57,25 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/qr_gen/templates",
+    "last_opened_file_path": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53",
     "settings.editor.selected.configurable": "preferences.keymap",
     "two.files.diff.last.used.file": "C:/Users/DR NANCY WOODS/Documents/GitHub/QR_GEN_TEAM-53/qrgen53/home/templates/faq.html"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\styles" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\runner\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\home\static\images" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\Members_contributions\Folarinde_Olusola" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\accounts\templates" />
       <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\static" />
-      <recent name="C:\Users\DR NANCY WOODS\Documents\GitHub\QR_GEN_TEAM-53\qrgen53\qr_gen\static\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

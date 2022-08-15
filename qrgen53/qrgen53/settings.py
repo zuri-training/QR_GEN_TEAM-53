@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import django_heroku
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-h5mjs9%0#xkb)_+m0*2x&+5n*(wl5$zqkv1c-4jio404z5h4#b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False  # TODO: change during production
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['miqr-zuri.herokuapp.com']
 
 # Application definition
 
@@ -94,13 +96,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'qrgen53',
+        'NAME': 'dpdtbkk2poau6',
 
-        'USER': 'postgres',
+        'USER': 'fsqgyftofgikfs',
 
-        'PASSWORD': '63509',
+        'PASSWORD': '36f6369b61af75a73e4e8534ee689dbf5d40482b3f5e92d6c21e722fe4363dd2',
 
-        'HOST': 'localhost',
+        'HOST': 'ec2-44-195-169-163.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
@@ -141,8 +143,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
