@@ -2,14 +2,16 @@ import io
 import mimetypes
 from datetime import date, datetime
 from pathlib import Path
+
 import segno
 from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
 from django.http.response import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
+from segno import helpers
 
-from .forms import QrcodeCreate
-from .models import QRcode
+from .forms import QrcodeCreate, QrcodeLocationCreate, QrcodeEmailCreate, QrcodeWifiCreate
+from .models import QRcode, QRcodeEmail, QRcodeWifi
 
 # Create your views here.
 
@@ -85,6 +87,212 @@ def qrcode_create_view(request):
     }
     return render(request, 'qr_create.html', context)
 
+"""
+@login_required(login_url='login')
+def qrcode_wifi_view(request):
+    form = QrcodeWifiCreate()
+    if request.method == 'POST':
+        form = QrcodeWifiCreate(request.POST)
+        if form.is_valid():
+            owner = request.user.id
+            title = form.cleaned_data['title'].replace(' ', '_')
+            ssid = form.cleaned_data['ssid']
+            password = form.cleaned_data['password']
+            security = form.cleaned_data['security']
+            dark = form.cleaned_data['dark']
+            light = form.cleaned_data['light']
+            tag = form.cleaned_data['tag']
+            qrcode = helpers.make_wifi(ssid, password, security)
+            qrcode.save(title + '.' + tag, scale=7)
+            if tag == 'jpg':
+                img = qrcode.to_pil(light=light, dark=dark, scale=7)
+                buff = io.BytesIO()
+                img.save(buff, format='jpeg')
+
+            else:
+                buff = io.BytesIO()
+                qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
+
+            qr_code = QRcodeWifi(title=title, owner=owner, ssid=ssid, password=password, security=security,
+                                 light=light, dark=dark, tag=tag, )
+            url_img = '/media/media/' + title + '.' + tag
+            url_down = ''
+            created = True
+            if tag != 'pdf':
+                url_down = url_img
+                t2 = title + '.' + tag
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+            else:
+                t2 = title + '.pdf'
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+
+                b2 = io.BytesIO()
+                qrcode.save(b2, kind='png', light=light, dark=dark, scale=7)
+                q_code = QRcode(title=title, owner=owner, ssid=ssid, password=password, security=security,
+                                light=light, dark=dark, tag='png',
+                                )
+                t3 = title + '.png'
+                q_code.qrcode.save(t3, ContentFile(b2.getvalue()), save=True)
+
+                url_img = '/media/media/' + title + '.png'
+                url_down = '/media/media/' + title + '.pdf'
+            print(url_down)
+
+            context = {
+                'form': form,
+                'url_img': url_img,
+                'created': created,
+                'url_down': url_down,
+                'username': request.user,
+                'name': t2,
+            }
+            return render(request, 'qr_wifi_create.html', context)
+        else:
+            print(form.errors)
+
+    context = {
+        'form': form,
+        'username': request.user
+    }
+    return render(request, 'qr_wifi_create.html', context)
+
+
+@login_required(login_url='login')
+def qrcode_location_view(request):
+    form = QrcodeLocationCreate()
+    if request.method == 'POST':
+        form = QrcodeLocationCreate(request.POST)
+        if form.is_valid():
+            owner = request.user.id
+            title = form.cleaned_data['title'].replace(' ', '_')
+            long = form.cleaned_data['long']
+            lat = form.cleaned_data['lat']
+            dark = form.cleaned_data['dark']
+            light = form.cleaned_data['light']
+            tag = form.cleaned_data['tag']
+            qrcode = helpers.make_geo(lat=lat, lng=long)
+            qrcode.save(title + '.' + tag, scale=7)
+            if tag == 'jpg':
+                img = qrcode.to_pil(light=light, dark=dark, scale=7)
+                buff = io.BytesIO()
+                img.save(buff, format='jpeg')
+
+            else:
+                buff = io.BytesIO()
+                qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
+
+            qr_code = QRcodeWifi(title=title, owner=owner, long=long, lat=lat,
+                                 light=light, dark=dark, tag=tag, )
+            url_img = '/media/media/' + title + '.' + tag
+            url_down = ''
+            created = True
+            if tag != 'pdf':
+                url_down = url_img
+                t2 = title + '.' + tag
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+            else:
+                t2 = title + '.pdf'
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+
+                b2 = io.BytesIO()
+                qrcode.save(b2, kind='png', light=light, dark=dark, scale=7)
+                q_code = QRcode(title=title, owner=owner, long=long, lat=lat,
+                                light=light, dark=dark, tag='png',
+                                )
+                t3 = title + '.png'
+                q_code.qrcode.save(t3, ContentFile(b2.getvalue()), save=True)
+
+                url_img = '/media/media/' + title + '.png'
+                url_down = '/media/media/' + title + '.pdf'
+            print(url_down)
+
+            context = {
+                'form': form,
+                'url_img': url_img,
+                'created': created,
+                'url_down': url_down,
+                'username': request.user,
+                'name': t2,
+            }
+            return render(request, 'qr_location_create.html', context)
+        else:
+            print(form.errors)
+
+    context = {
+        'form': form,
+        'username': request.user
+    }
+    return render(request, 'qr_location_create.html', context)
+
+
+@login_required(login_url='login')
+def qrcode_email_view(request):
+    form = QrcodeEmailCreate()
+    if request.method == 'POST':
+        form = QrcodeEmailCreate(request.POST)
+        if form.is_valid():
+            owner = request.user.id
+            title = form.cleaned_data['title'].replace(' ', '_')
+            to = form.cleaned_data['to']
+            subject = form.cleaned_data['subject']
+            body = form.cleaned_data['body']
+            dark = form.cleaned_data['dark']
+            light = form.cleaned_data['light']
+            tag = form.cleaned_data['tag']
+            qrcode = helpers.make_email(to=to, subject=subject, body=body)
+            qrcode.save(title + '.' + tag, scale=7)
+            if tag == 'jpg':
+                img = qrcode.to_pil(light=light, dark=dark, scale=7)
+                buff = io.BytesIO()
+                img.save(buff, format='jpeg')
+
+            else:
+                buff = io.BytesIO()
+                qrcode.save(buff, kind=tag, light=light, dark=dark, scale=7)
+
+            qr_code = QRcodeEmail(title=title, owner=owner, to=to, subject=subject, body=body,
+                                  light=light, dark=dark, tag=tag, )
+            url_img = '/media/media/' + title + '.' + tag
+            url_down = ''
+            created = True
+            if tag != 'pdf':
+                url_down = url_img
+                t2 = title + '.' + tag
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+            else:
+                t2 = title + '.pdf'
+                qr_code.qrcode.save(t2, ContentFile(buff.getvalue()), save=True)
+
+                b2 = io.BytesIO()
+                qrcode.save(b2, kind='png', light=light, dark=dark, scale=7)
+                q_code = QRcode(title=title, owner=owner, to=to, subject=subject, body=body,
+                                light=light, dark=dark, tag='png', )
+                t3 = title + '.png'
+                q_code.qrcode.save(t3, ContentFile(b2.getvalue()), save=True)
+
+                url_img = '/media/media/' + title + '.png'
+                url_down = '/media/media/' + title + '.pdf'
+            print(url_down)
+
+            context = {
+                'form': form,
+                'url_img': url_img,
+                'created': created,
+                'url_down': url_down,
+                'username': request.user,
+                'name': t2,
+            }
+            return render(request, 'qr_email_create.html', context)
+        else:
+            print(form.errors)
+
+    context = {
+        'form': form,
+        'username': request.user
+    }
+    return render(request, 'qr_email_create.html', context)
+
+"""
 
 def download_file_view(request, filename=''):
     if filename != '':
@@ -199,5 +407,3 @@ def setting_view(request):
         'username': username
     }
     return render(request, "settings.html", context)
-
-
