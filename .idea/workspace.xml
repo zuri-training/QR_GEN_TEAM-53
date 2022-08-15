@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added Wifi and email">
-      <change beforePath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qrgen53/qrgen53/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ccb49c7-67eb-4333-a643-5592caa56b93" name="Changes" comment="added Wifi and email" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,27 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658856047755</updated>
-    </task>
-    <task id="LOCAL-00042" summary="rebuilding user structure">
-      <created>1659988872006</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1659988872006</updated>
-    </task>
-    <task id="LOCAL-00043" summary="rebuilding user structure">
-      <created>1659993130798</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1659993130798</updated>
-    </task>
-    <task id="LOCAL-00044" summary="rebuilding user structure">
-      <created>1659993386511</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1659993386511</updated>
     </task>
     <task id="LOCAL-00045" summary="fixed the dashboards">
       <created>1660031852026</created>
@@ -431,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660556183219</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="added Wifi and email">
+      <created>1660556507791</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1660556507791</updated>
+    </task>
+    <task id="LOCAL-00092" summary="added Wifi and email">
+      <created>1660556522581</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1660556522581</updated>
+    </task>
+    <task id="LOCAL-00093" summary="added Wifi and email">
+      <created>1660556541669</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1660556541669</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
