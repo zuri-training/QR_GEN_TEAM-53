@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h5mjs9%0#xkb)_+m0*2x&+5n*(wl5$zqkv1c-4jio404z5h4#b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # TODO: change during production
+DEBUG = True # TODO: change during production
 
-ALLOWED_HOSTS = ['miqr-zuri.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'https://miqr-zuri.herokuapp.com/']
 
 # Application definition
 
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'qrgen53.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-"""
+
 # uncomment this part out during deployment
 
 DATABASES = {
@@ -108,7 +108,7 @@ DATABASES = {
 
     }
 }
-
+"""
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
